@@ -34,7 +34,8 @@ return [
                 '-strip all'
             ],
             'gifsicle_options' => [
-                '-O3'
+                '-O3',
+                '-b'
             ]
         ]
     ]
