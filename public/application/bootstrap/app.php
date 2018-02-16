@@ -1,4 +1,11 @@
 <?php
+/** @var \Concrete\Core\Application\Application $app */
+$app = \Concrete\Core\Support\Facade\Application::getFacadeApplication();
+if ($app->isInstalled() && $app->isRunThroughCommandLineInterface()) {
+    /** @var \Concrete\Core\Console\Application $console */
+    $console = $app->make('console');
+    $console->add(new \Application\Console\Command\ImageOptimizeCommand());
+}
 
 /*
  * ----------------------------------------------------------------------------

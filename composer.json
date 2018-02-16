@@ -6,7 +6,8 @@
   "prefer-stable": true,
   "autoload": {
     "psr-4": {
-      "Application\\Asset\\" : "./public/application/src/Asset"
+      "Application\\Asset\\" : "./public/application/src/Asset",
+      "Application\\Console\\" : "./public/application/src/Console"
     }
   },
   "require": {
