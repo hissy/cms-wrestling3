@@ -3,7 +3,8 @@
 
 # Ignore concrete5 stuff
 public/concrete
-public/application/files
+public/application/files/*
+!public/application/files/index.html
 
 # Ignore developer stuff
 .idea
