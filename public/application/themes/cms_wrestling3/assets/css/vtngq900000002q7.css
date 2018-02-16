@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+@import url("/application/themes/cms_wrestling3/assets/css/vtngq900000002qh.css");
+
+/* --------------------------------------------------------------------------------------
+ none
+--------------------------------------------------------------------------------------- */
+
+.hd_nav_link,
+.hd_other,
+.gnav,
+.location,
+#ct_left,
+.pagetop,
+.ft_nav,
+.copy_box ul {
+	display: none !important;
+}
+
+#hd {
+	margin: 0 0 20px 0 !important;
+}
+
+#ct_area{
+	float: none !important;
+	width: 1000px !important;
+	margin: 0 auto !important;
+}
+
+#ct_right{
+	float: none !important;
+	width: 100% !important;
+	margin: 0 auto !important;
+}
+

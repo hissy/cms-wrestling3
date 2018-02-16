@@ -1,0 +1,1996 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "Noto Sans";
+  font-weight: normal;
+  src: url(../hak1k3000000gw6f/hak1k3000000gw6k.woff2) format("woff2"), url(../hak1k3000000gw6f/hak1k3000000gw6m.woff) format("woff"), url(../hak1k3000000gw6f/hak1k3000000gw6o.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Noto Sans";
+  font-weight: bold;
+  src: url(../hak1k3000000gw6f/hak1k3000000gw6q.woff2) format("woff2"), url(../hak1k3000000gw6f/hak1k3000000gw6s.woff) format("woff"), url(../hak1k3000000gw6f/hak1k3000000gw6u.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Noto Serif";
+  font-weight: normal;
+  src: url(../hak1k3000000gw6f/hak1k3000000gw6w.woff2) format("woff2"), url(../hak1k3000000gw6f/hak1k3000000gw6y.woff) format("woff"), url(../hak1k3000000gw6f/hak1k3000000gw70.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Noto Serif";
+  font-weight: bold;
+  src: url(../hak1k3000000gw6f/hak1k3000000gw72.woff2) format("woff2"), url(../hak1k3000000gw6f/hak1k3000000gw74.woff) format("woff"), url(../hak1k3000000gw6f/hak1k3000000gw76.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Theano Didot";
+  font-weight: normal;
+  src: url(../hak1k3000000gw6f/hak1k3000000gw78.woff2) format("woff2"), url(../hak1k3000000gw6f/hak1k3000000gw7a.woff) format("woff"), url(../hak1k3000000gw6f/hak1k3000000gw7c.ttf) format("truetype");
+}
+/* Slider */
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+.slick-list:focus {
+  outline: none;
+}
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+}
+.slick-track:before, .slick-track:after {
+  content: "";
+  display: table;
+}
+.slick-track:after {
+  clear: both;
+}
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+.slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  display: none;
+}
+[dir="rtl"] .slick-slide {
+  float: right;
+}
+.slick-slide img {
+  display: block;
+}
+.slick-slide.slick-loading img {
+  display: none;
+}
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+.slick-initialized .slick-slide {
+  display: block;
+}
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+
+.slick-arrow.slick-hidden {
+  display: none;
+}
+
+body.prospect a:hover {
+  cursor: pointer;
+}
+body.prospect br.sp_only {
+  display: none;
+}
+body.prospect div#ct_area {
+  width: auto;
+  font-family: "Noto Sans";
+}
+body.prospect div#ct_area [lang="en"] {
+  font-family: "Theano Didot";
+}
+body.prospect div#ct_area .link_btn {
+  display: block;
+  padding-bottom: 3px;
+  overflow: visible;
+}
+body.prospect div#ct_area .link_btn > span {
+  display: block;
+  position: relative;
+  border-radius: 5px;
+  box-shadow: 0 3px #840000;
+  background-color: #B30926;
+  overflow: hidden;
+  transition: background-color 0.3s;
+}
+body.prospect div#ct_area .link_btn > span:before {
+  content: "";
+  position: absolute;
+  left: 100%;
+  bottom: 0;
+  margin-left: -20px;
+  width: 100%;
+  height: 100%;
+  background-color: #840000;
+  -webkit-transform-origin: 0 100%;
+          transform-origin: 0 100%;
+  -webkit-transform: skewX(-45deg);
+          transform: skewX(-45deg);
+}
+body.prospect div#ct_area .link_btn > span > span {
+  display: block;
+  position: relative;
+  top: 50%;
+  padding: 0 25px;
+  text-align: center;
+  color: #FFF;
+  font-size: 114%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+body.prospect div#ct_area .link_btn:hover {
+  text-decoration: none;
+}
+body.prospect div#ct_area .link_btn:hover > span {
+  background-color: #840000;
+}
+body.prospect div#ct_area .link_btn:hover > span:before {
+  left: auto;
+  right: 100%;
+  top: 0;
+  bottom: auto;
+  margin-right: -20px;
+  background-color: #B30926;
+  -webkit-transform-origin: 100% 0;
+          transform-origin: 100% 0;
+}
+body.prospect div#ct_area .container {
+  position: relative;
+  z-index: 1;
+  margin: 0 auto;
+  width: 1000px;
+}
+body.prospect div#ct_area .section_hdg {
+  margin-bottom: 50px;
+  text-align: center;
+}
+body.prospect div#ct_area .section_hdg [lang="en"] {
+  display: block;
+  color: #B30926;
+  font-size: 342%;
+  line-height: 1.4;
+}
+body.prospect div#ct_area .section_hdg [lang="ja"] {
+  font-size: 114%;
+  font-weight: bold;
+}
+body.prospect div#ct_area .section {
+  position: relative;
+}
+body.prospect div#ct_area .section:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: -40px;
+  z-index: 10;
+  margin-left: -8px;
+  width: 16px;
+  height: 80px;
+  background-color: rgba(255, 240, 1, 0.65);
+}
+body.prospect div#ct_area .section.mv {
+  background-position: 50%;
+  background-size: cover;
+}
+body.prospect div#ct_area .section.mv:before {
+  content: none;
+}
+body.prospect div#ct_area .section.mv .section_inner {
+  height: 710px;
+  overflow: hidden;
+}
+body.prospect div#ct_area .section.mv .section_inner:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 50%;
+  top: 0;
+  margin: 0 -200px 0 0;
+  width: auto;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.3) 75%, transparent);
+}
+body.prospect div#ct_area .section.mv .section_inner:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: auto;
+  bottom: 0;
+  margin-left: 340px;
+  width: 100%;
+  height: 100%;
+  background-color: #BE2640;
+  -webkit-transform-origin: 0 100%;
+          transform-origin: 0 100%;
+  -webkit-transform: skewX(-45deg);
+          transform: skewX(-45deg);
+}
+body.prospect div#ct_area .section.mv .copy {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  z-index: 10;
+  margin: 0 auto;
+  width: 1000px;
+  color: #FFF;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+body.prospect div#ct_area .section.mv .copy a {
+  color: #FFF;
+  text-decoration: none;
+}
+body.prospect div#ct_area .section.mv .copy span {
+  display: block;
+}
+body.prospect div#ct_area .section.mv .copy .main_copy {
+  font-size: 585%;
+  line-height: 1.2;
+}
+body.prospect div#ct_area .section.mv .copy .sub_copy {
+  margin-top: 20px;
+  font-family: "Noto Serif";
+  font-size: 200%;
+}
+body.prospect div#ct_area .section.mv .nav_menu {
+  position: absolute;
+  left: 50%;
+  bottom: -175px;
+  z-index: 11;
+  margin-left: 522px;
+}
+body.prospect div#ct_area .section.mv .nav_menu a:hover {
+  text-decoration: none;
+}
+body.prospect div#ct_area .section.mv .nav_menu .anchor_list li {
+  position: relative;
+  margin: 0 auto;
+  width: 100px;
+}
+body.prospect div#ct_area .section.mv .nav_menu .anchor_list li:before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+body.prospect div#ct_area .section.mv .nav_menu .anchor_list li ~ li {
+  margin-top: 16px;
+}
+body.prospect div#ct_area .section.mv .nav_menu .anchor_list li:nth-child(even) a > span:before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+body.prospect div#ct_area .section.mv .nav_menu .anchor_list a {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+body.prospect div#ct_area .section.mv .nav_menu .anchor_list a > span {
+  display: table;
+  position: relative;
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  border-radius: 50%;
+  background-color: #840000;
+}
+body.prospect div#ct_area .section.mv .nav_menu .anchor_list a > span:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 10px;
+  border-top-color: #B30926;
+  border-right-color: #B30926;
+  border-radius: 50%;
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+}
+body.prospect div#ct_area .section.mv .nav_menu .anchor_list a > span > span {
+  display: table-cell;
+  position: relative;
+  padding-top: 2px;
+  border-radius: 50%;
+  background-color: #F8F6ED;
+  text-align: center;
+  vertical-align: middle;
+  color: #B30926;
+  font-size: 93%;
+  transition-property: background-color,color;
+  transition-duration: 0.3s;
+}
+body.prospect div#ct_area .section.mv .nav_menu .anchor_list a:hover > span > span, body.prospect div#ct_area .section.mv .nav_menu .anchor_list a.is-crnt > span > span {
+  background-color: transparent;
+  color: #FFF;
+}
+body.prospect div#ct_area .section.mv .nav_menu .link {
+  margin-top: 40px;
+}
+body.prospect div#ct_area .section.mv .nav_menu .link a {
+  display: block;
+  position: relative;
+  width: 110px;
+  height: 80px;
+}
+body.prospect div#ct_area .section.mv .nav_menu .link a:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 80px 55px 0;
+  border-top-color: #B30926;
+  transition: border-top-color 0.3s;
+}
+body.prospect div#ct_area .section.mv .nav_menu .link a span {
+  display: block;
+  position: relative;
+  padding-top: 10px;
+  text-align: center;
+  color: #FFF;
+  font-size: 93%;
+}
+body.prospect div#ct_area .section.mv .nav_menu .link a:hover:before {
+  border-top-color: #840000;
+}
+body.prospect div#ct_area .section .section_inner,
+body.prospect div#ct_area .section .section_inner2 {
+  position: relative;
+  overflow: hidden;
+}
+body.prospect div#ct_area .section.topics {
+  background-color: #FFF;
+}
+body.prospect div#ct_area .section.topics .section_inner:before, body.prospect div#ct_area .section.topics .section_inner:after {
+  content: "";
+  position: absolute;
+  right: 50%;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transform-origin: 100% 0;
+          transform-origin: 100% 0;
+  -webkit-transform: skewX(-45deg);
+          transform: skewX(-45deg);
+}
+body.prospect div#ct_area .section.topics .section_inner:before {
+  margin-right: -340px;
+  background-color: #FAF4E7;
+}
+body.prospect div#ct_area .section.topics .section_inner:after {
+  margin-right: 660px;
+  background-color: #F1E5CE;
+}
+body.prospect div#ct_area .section.topics .section_inner2 {
+  padding: 60px 0 100px;
+}
+body.prospect div#ct_area .section.topics .section_inner2:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  margin-left: 240px;
+  width: 100%;
+  height: 100%;
+  background-color: #BE2640;
+  -webkit-transform-origin: 0 100%;
+          transform-origin: 0 100%;
+  -webkit-transform: skewX(-45deg);
+          transform: skewX(-45deg);
+}
+body.prospect div#ct_area .section.topics .topics_slide {
+  position: relative;
+}
+body.prospect div#ct_area .section.topics .topics_slide .slick-dots {
+  position: absolute;
+  left: 0;
+  bottom: 25px;
+  padding-left: 8px;
+}
+body.prospect div#ct_area .section.topics .topics_slide .slick-dots li {
+  display: inline-block;
+  position: relative;
+  line-height: 1;
+}
+body.prospect div#ct_area .section.topics .topics_slide .slick-dots li ~ li {
+  margin-left: 35px;
+}
+body.prospect div#ct_area .section.topics .topics_slide .slick-dots button {
+  border: none;
+  padding: 0;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #C1C1C1;
+  vertical-align: top;
+  font-size: 0;
+  cursor: pointer;
+  outline: none;
+}
+body.prospect div#ct_area .section.topics .topics_slide .slick-dots .slick-active button {
+  background-color: #B30926;
+}
+body.prospect div#ct_area .section.topics .topics_slide .slick-dots .slick-active button:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  border: 1px solid #B30926;
+  width: 30px;
+  height: 30px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+body.prospect div#ct_area .section.topics .topics_item {
+  position: relative;
+}
+body.prospect div#ct_area .section.topics .topics_item .image {
+  text-align: right;
+}
+body.prospect div#ct_area .section.topics .topics_item .image img {
+  display: inline-block;
+}
+body.prospect div#ct_area .section.topics .topics_item .text_area {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding-top: 15px;
+}
+body.prospect div#ct_area .section.topics .topics_item .sub_title {
+  margin-bottom: 28px;
+  color: #B30926;
+  font-family: "Noto Serif";
+  font-size: 200%;
+}
+body.prospect div#ct_area .section.topics .topics_item .main_title span {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #FFF;
+  color: #B30926;
+  font-family: "Noto Serif";
+  font-size: 271%;
+}
+body.prospect div#ct_area .section.topics .topics_item .text {
+  margin-top: 10px;
+}
+body.prospect div#ct_area .section.topics .topics_item .text span {
+  display: inline-block;
+  padding: 10px 16px;
+  background-color: #FFF;
+  font-size: 114%;
+}
+body.prospect div#ct_area .section.topics .topics_item .btn {
+  margin-top: 48px;
+  width: 230px;
+}
+body.prospect div#ct_area .section.topics .topics_item .link_btn > span {
+  height: 60px;
+}
+body.prospect div#ct_area .section.topics .topics_item:focus {
+  outline: none;
+}
+body.prospect div#ct_area .section.topics .news_area {
+  margin-top: 50px;
+  border: 1px solid #EDE9CD;
+  padding: 28px 39px 34px 34px;
+  background-color: #FFF;
+}
+body.prospect div#ct_area .section.topics .news_area:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+body.prospect div#ct_area .section.topics .news_area .hdg {
+  margin-bottom: 25px;
+  font-family: "Noto Serif";
+  font-size: 142%;
+  font-weight: bold;
+}
+body.prospect div#ct_area .section.topics .news_area .digest {
+  float: left;
+  width: 375px;
+}
+body.prospect div#ct_area .section.topics .news_area .digest .btn {
+  display: inline-block;
+}
+body.prospect div#ct_area .section.topics .news_area .digest .btn a {
+  display: block;
+  position: relative;
+  overflow: visible;
+}
+body.prospect div#ct_area .section.topics .news_area .digest .btn a:hover .image:before {
+  bottom: 0;
+  border-color: #fff001;
+}
+body.prospect div#ct_area .section.topics .news_area .digest .btn a:hover .image:after {
+  background-color: #fff001;
+}
+body.prospect div#ct_area .section.topics .news_area .digest .btn .click {
+  position: absolute;
+  right: 6px;
+  top: -25px;
+  width: 90px;
+  height: 70px;
+  z-index: 1;
+}
+body.prospect div#ct_area .section.topics .news_area .digest .btn .click:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 70px 45px 0;
+  border-top-color: #B30926;
+}
+body.prospect div#ct_area .section.topics .news_area .digest .btn .click span {
+  display: block;
+  position: relative;
+  padding-top: 15px;
+  text-align: center;
+  color: #FFF;
+}
+body.prospect div#ct_area .section.topics .news_area .digest .btn .image {
+  display: inline-block;
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+}
+body.prospect div#ct_area .section.topics .news_area .digest .btn .image:before, body.prospect div#ct_area .section.topics .news_area .digest .btn .image:after {
+  content: "";
+  position: absolute;
+}
+body.prospect div#ct_area .section.topics .news_area .digest .btn .image:before {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 4px;
+  border: 4px solid transparent;
+  box-shadow: 0 4px rgba(51, 51, 51, 0.6);
+  border-radius: 5px;
+  transition: border-color 0.3s;
+}
+body.prospect div#ct_area .section.topics .news_area .digest .btn .image:after {
+  left: 100%;
+  bottom: 4px;
+  margin-left: -25px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(51, 51, 51, 0.6);
+  -webkit-transform-origin: 0 100%;
+          transform-origin: 0 100%;
+  -webkit-transform: skewX(-45deg);
+          transform: skewX(-45deg);
+  transition: background-color 0.3s;
+}
+body.prospect div#ct_area .section.topics .news_area .digest .text {
+  margin-top: 15px;
+}
+body.prospect div#ct_area .section.topics .news_area .news {
+  float: right;
+  width: 550px;
+}
+body.prospect div#ct_area .section.topics .news_area .news_list {
+  border: none;
+  padding: 0;
+  border-radius: 0;
+  background: none;
+}
+body.prospect div#ct_area .section.topics .news_area .news_list dl {
+  border-bottom: 1px solid #EFEACD;
+}
+body.prospect div#ct_area .section.topics .news_area .news_list dl dt {
+  margin-right: 12px;
+  padding-left: 0;
+  background: none;
+  font-size: 100%;
+}
+body.prospect div#ct_area .section.topics .news_area .news_list dl dt img {
+  margin-left: 0;
+}
+body.prospect div#ct_area .section.topics .news_area .news_list dl dd {
+  width: 447px;
+}
+body.prospect div#ct_area .section.topics .news_area .news_list dl dd a {
+  border-bottom: 1px solid transparent;
+  transition: border-bottom-color 0.3s;
+}
+body.prospect div#ct_area .section.topics .news_area .news_list dl dd a:link {
+  color: #840000;
+}
+body.prospect div#ct_area .section.topics .news_area .news_list dl dd a:hover {
+  border-bottom-color: #840000;
+  text-decoration: none;
+}
+body.prospect div#ct_area .section.topics .news_area .news_list dl:last-child {
+  margin-bottom: 0;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+body.prospect div#ct_area .section.admission {
+  background-attachment: fixed;
+  background-position: 50%;
+  background-size: cover;
+  color: #FFF;
+}
+body.prospect div#ct_area .section.admission:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+body.prospect div#ct_area .section.admission .section_inner {
+  padding-top: 70px;
+  min-height: 650px;
+  box-sizing: border-box;
+}
+body.prospect div#ct_area .section.admission .container:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+body.prospect div#ct_area .section.admission .section_hdg [lang="en"] {
+  color: #FFF;
+}
+body.prospect div#ct_area .section.admission .info,
+body.prospect div#ct_area .section.admission .contents {
+  width: 470px;
+}
+body.prospect div#ct_area .section.admission .info {
+  float: left;
+}
+body.prospect div#ct_area .section.admission .contents {
+  float: right;
+}
+body.prospect div#ct_area .section.admission .hdg {
+  margin-bottom: 50px;
+  text-align: center;
+  overflow: hidden;
+  font-family: "Noto Serif";
+  font-size: 142%;
+}
+body.prospect div#ct_area .section.admission .hdg span {
+  position: relative;
+}
+body.prospect div#ct_area .section.admission .hdg span:before, body.prospect div#ct_area .section.admission .hdg span:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 470px;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+body.prospect div#ct_area .section.admission .hdg span:before {
+  right: 100%;
+  margin-right: 40px;
+}
+body.prospect div#ct_area .section.admission .hdg span:after {
+  left: 100%;
+  margin-left: 40px;
+}
+body.prospect div#ct_area .section.admission .btn_area {
+  position: relative;
+  margin: -55px 0 0 -27px;
+}
+body.prospect div#ct_area .section.admission .btn_area:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+body.prospect div#ct_area .section.admission .btn_area .btn {
+  float: left;
+  width: 50%;
+  padding: 55px 0 0 27px;
+  box-sizing: border-box;
+}
+body.prospect div#ct_area .section.admission .btn_area .btn--full {
+  width: 100%;
+}
+body.prospect div#ct_area .section.admission .btn_area .link_btn {
+  position: relative;
+  z-index: 1;
+}
+body.prospect div#ct_area .section.admission .btn_area .link_btn > span {
+  height: 90px;
+}
+body.prospect div#ct_area .section.admission .btn_area .link_btn > span:before {
+  margin-left: -28px;
+}
+body.prospect div#ct_area .section.admission .btn_area .link_btn:hover > span:before {
+  margin-right: -28px;
+}
+body.prospect div#ct_area .section.admission .btn_area .link_text {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  z-index: 1;
+  padding: 10px 0 0 27px;
+  text-align: center;
+}
+body.prospect div#ct_area .section.admission .btn_area .link_text a {
+  color: #FFF;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom-color 0.3s;
+}
+body.prospect div#ct_area .section.admission .btn_area .link_text a:after {
+  content: "";
+  display: inline-block;
+  margin-left: 10px;
+  width: 16px;
+  height: 10px;
+  background: url(../hak1k3000000gw6f/hak1k3000000gw7e.png) no-repeat;
+  background-size: 16px;
+}
+body.prospect div#ct_area .section.admission .btn_area .link_text a:hover {
+  border-bottom-color: #FFF;
+  text-decoration: none;
+}
+body.prospect div#ct_area .section.learning {
+  background-color: #FBF6EC;
+}
+body.prospect div#ct_area .section.learning .section_inner {
+  padding: 70px 0 95px;
+}
+body.prospect div#ct_area .section.learning .section_inner:before, body.prospect div#ct_area .section.learning .section_inner:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: skewX(-45deg);
+          transform: skewX(-45deg);
+}
+body.prospect div#ct_area .section.learning .section_inner:before {
+  right: 50%;
+  margin-right: 340px;
+  background-color: #BE2640;
+  -webkit-transform-origin: 100% 0;
+          transform-origin: 100% 0;
+}
+body.prospect div#ct_area .section.learning .section_inner:after {
+  left: 50%;
+  margin-left: -220px;
+  background-color: #F1E5CE;
+  -webkit-transform-origin: 0 100%;
+          transform-origin: 0 100%;
+}
+body.prospect div#ct_area .section.learning .section_hdg {
+  position: relative;
+  z-index: 1;
+  margin: 0 auto 50px;
+  width: 1000px;
+}
+body.prospect div#ct_area .section.learning .sub_section.school .container:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+body.prospect div#ct_area .section.learning .sub_section.school .liberal_arts {
+  float: left;
+  width: 790px;
+}
+body.prospect div#ct_area .section.learning .sub_section.school .policy {
+  float: right;
+  width: 188px;
+}
+body.prospect div#ct_area .section.learning .sub_section.school .hdg {
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 4px;
+  background-color: #F6EBD6;
+  text-align: center;
+  color: #B30926;
+  font-weight: bold;
+}
+body.prospect div#ct_area .section.learning .sub_section.school .dept_list {
+  margin-left: -14px;
+}
+body.prospect div#ct_area .section.learning .sub_section.school .dept_list:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+body.prospect div#ct_area .section.learning .sub_section.school .dept_list li {
+  float: left;
+  margin-left: 14px;
+  width: 187px;
+}
+body.prospect div#ct_area .section.learning .sub_section.school .dept_list li img {
+  width: 100%;
+  height: auto;
+}
+body.prospect div#ct_area .section.learning .sub_section.school .dept_list a {
+  display: block;
+  position: relative;
+}
+body.prospect div#ct_area .section.learning .sub_section.school .dept_list a:hover .circle {
+  width: 100%;
+  height: 100%;
+  background-color: #840000;
+}
+body.prospect div#ct_area .section.learning .sub_section.school .dept_list .circle {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: rgba(179, 9, 38, 0.9);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  transition-property: width,height;
+  transition-duration: 0.3s;
+}
+body.prospect div#ct_area .section.learning .sub_section.school .dept_list .text {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  z-index: 1;
+  margin-top: -5px;
+  width: 100%;
+  text-align: center;
+  color: #FFF;
+  font-size: 114%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+body.prospect div#ct_area .section.learning .sub_section.school .dept_list .text:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  margin-top: 12px;
+  width: 18px;
+  height: 11px;
+  background: url(../hak1k3000000gw6f/hak1k3000000gw7g.png) no-repeat;
+  background-size: 18px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+body.prospect div#ct_area .section.learning .sub_section.school .dept_list li.is-new a:before {
+  content: "NEW";
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background-color: #FCF243;
+  text-align: center;
+  color: #B30926;
+  font-weight: bold;
+  line-height: 54px;
+}
+body.prospect div#ct_area .section.learning .sub_section.school .btn_area {
+  clear: both;
+  padding-top: 40px;
+}
+body.prospect div#ct_area .section.learning .sub_section.school .btn_area .btn {
+  margin: 0 auto;
+  width: 320px;
+}
+body.prospect div#ct_area .section.learning .sub_section.school .btn_area .link_btn > span {
+  height: 60px;
+}
+body.prospect div#ct_area .section.learning .sub_section.word {
+  position: relative;
+  z-index: 1;
+  margin-top: 80px;
+}
+body.prospect div#ct_area .section.learning .sub_section.word .word_list:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+body.prospect div#ct_area .section.learning .sub_section.word .word_list li {
+  float: left;
+  position: relative;
+  width: 25%;
+  overflow: hidden;
+}
+body.prospect div#ct_area .section.learning .sub_section.word .word_list li:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+body.prospect div#ct_area .section.learning .sub_section.word .word_list li:hover .bg {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+body.prospect div#ct_area .section.learning .sub_section.word .word_list a {
+  display: table;
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 220px;
+}
+body.prospect div#ct_area .section.learning .sub_section.word .word_list .cell {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+body.prospect div#ct_area .section.learning .sub_section.word .word_list .text {
+  display: inline-block;
+  position: relative;
+  border-bottom: 1px solid #FFF;
+  padding-bottom: 4px;
+  color: #FFF;
+  font-size: 135%;
+  letter-spacing: 1px;
+}
+body.prospect div#ct_area .section.learning .sub_section.word .word_list .text:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  margin-top: 18px;
+  width: 16px;
+  height: 10px;
+  background: url(../hak1k3000000gw6f/hak1k3000000gw7e.png) no-repeat;
+  background-size: 16px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+body.prospect div#ct_area .section.learning .sub_section.word .word_list .bg {
+  position: absolute;
+  left: -20px;
+  right: -20px;
+  top: -20px;
+  bottom: -20px;
+  background-position: 50%;
+  background-size: cover;
+  transition: all 0.3s;
+}
+body.prospect div#ct_area .section.learning .sub_section.grad_school {
+  margin-top: 70px;
+}
+body.prospect div#ct_area .section.learning .sub_section.grad_school .btn_area {
+  margin-left: -50px;
+}
+body.prospect div#ct_area .section.learning .sub_section.grad_school .btn_area:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+body.prospect div#ct_area .section.learning .sub_section.grad_school .btn_area .btn {
+  float: left;
+  margin-left: 50px;
+  width: 300px;
+}
+body.prospect div#ct_area .section.learning .sub_section.grad_school .btn_area .link_btn > span {
+  height: 65px;
+}
+body.prospect div#ct_area .section.learning .sub_section_hdg {
+  margin-bottom: 40px;
+  text-align: center;
+  overflow: hidden;
+  font-family: "Noto Serif";
+  font-size: 157%;
+  font-weight: bold;
+}
+body.prospect div#ct_area .section.learning .sub_section_hdg span {
+  position: relative;
+}
+body.prospect div#ct_area .section.learning .sub_section_hdg span:before, body.prospect div#ct_area .section.learning .sub_section_hdg span:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 470px;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+body.prospect div#ct_area .section.learning .sub_section_hdg span:before {
+  right: 100%;
+  margin-right: 40px;
+}
+body.prospect div#ct_area .section.learning .sub_section_hdg span:after {
+  left: 100%;
+  margin-left: 40px;
+}
+body.prospect div#ct_area .section.career {
+  background-color: #FFF;
+}
+body.prospect div#ct_area .section.career .section_inner {
+  padding: 75px 0 100px;
+}
+body.prospect div#ct_area .section.career .section_inner:before, body.prospect div#ct_area .section.career .section_inner:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: skewX(-45deg);
+          transform: skewX(-45deg);
+}
+body.prospect div#ct_area .section.career .section_inner:before {
+  right: 50%;
+  margin-right: 220px;
+  background-color: #F1E5CE;
+  -webkit-transform-origin: 100% 0;
+          transform-origin: 100% 0;
+}
+body.prospect div#ct_area .section.career .section_inner:after {
+  left: 50%;
+  margin-left: 500px;
+  background-color: #BE2640;
+  -webkit-transform-origin: 0 100%;
+          transform-origin: 0 100%;
+}
+body.prospect div#ct_area .section.career .section_hdg {
+  margin-bottom: 70px;
+}
+body.prospect div#ct_area .section.career .btn_area {
+  margin: 0 -34px 200px;
+  text-align: center;
+}
+body.prospect div#ct_area .section.career .btn_area > div {
+  display: inline-block;
+  position: relative;
+}
+body.prospect div#ct_area .section.career .btn_area .btn {
+  display: inline-block;
+  position: relative;
+  margin: 0 34px;
+  width: 190px;
+  vertical-align: top;
+}
+body.prospect div#ct_area .section.career .btn_area .btn:before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+body.prospect div#ct_area .section.career .btn_area .link_btn {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+body.prospect div#ct_area .section.career .btn_area .link_btn > span {
+  height: 100%;
+}
+body.prospect div#ct_area .section.career .btn_area .link_btn img {
+  display: block;
+  margin: 0 auto 20px;
+  width: auto;
+  height: 70px;
+}
+body.prospect div#ct_area .section.career .btn_area .balloon {
+  position: absolute;
+  top: 100%;
+  margin-top: 60px;
+  width: 300px;
+  height: 140px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background-color: #F6EFDF;
+}
+body.prospect div#ct_area .section.career .btn_area .balloon:before {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 0 14px 20px;
+  border-bottom-color: #F6EFDF;
+}
+body.prospect div#ct_area .section.career .btn_area .balloon .row {
+  display: table;
+  width: 100%;
+  box-sizing: border-box;
+}
+body.prospect div#ct_area .section.career .btn_area .balloon .row > div {
+  display: table-cell;
+  vertical-align: middle;
+}
+body.prospect div#ct_area .section.career .btn_area .balloon .row .head {
+  text-align: left;
+  font-weight: bold;
+}
+body.prospect div#ct_area .section.career .btn_area .balloon .row .num {
+  color: #B30926;
+  font-family: "Theano Didot";
+  line-height: 1.2;
+}
+body.prospect div#ct_area .section.career .btn_area .balloon .row .num .unit {
+  display: inline-block;
+  margin-left: 5px;
+  vertical-align: 5%;
+  font-family: "Theano Didot", "Noto Serif";
+}
+body.prospect div#ct_area .section.career .btn_area .balloon.support {
+  right: 34px;
+}
+body.prospect div#ct_area .section.career .btn_area .balloon.support:before {
+  right: 80px;
+}
+body.prospect div#ct_area .section.career .btn_area .balloon.support .row {
+  padding: 30px 0 30px 30px;
+  height: 100%;
+}
+body.prospect div#ct_area .section.career .btn_area .balloon.support .head {
+  width: 10.5em;
+}
+body.prospect div#ct_area .section.career .btn_area .balloon.support .body {
+  padding-right: 10px;
+  text-align: center;
+}
+body.prospect div#ct_area .section.career .btn_area .balloon.support .text {
+  font-weight: bold;
+}
+body.prospect div#ct_area .section.career .btn_area .balloon.support .num {
+  font-size: 342%;
+}
+body.prospect div#ct_area .section.career .btn_area .balloon.support .num .unit {
+  font-size: 37.5%;
+}
+body.prospect div#ct_area .section.career .btn_area .balloon.job {
+  left: 34px;
+}
+body.prospect div#ct_area .section.career .btn_area .balloon.job:before {
+  left: 80px;
+}
+body.prospect div#ct_area .section.career .btn_area .balloon.job .row {
+  padding: 0 20px;
+  height: 50%;
+}
+body.prospect div#ct_area .section.career .btn_area .balloon.job .row ~ .row {
+  border-top: 1px solid #E7D7BB;
+}
+body.prospect div#ct_area .section.career .btn_area .balloon.job .num {
+  text-align: right;
+  font-size: 357%;
+}
+body.prospect div#ct_area .section.career .btn_area .balloon.job .num .unit {
+  font-size: 52%;
+}
+body.prospect div#ct_area .section.campus {
+  color: #FFF;
+}
+body.prospect div#ct_area .section.campus:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+body.prospect div#ct_area .section.campus .container {
+  padding: 70px 0 60px;
+  min-height: 950px;
+  box-sizing: border-box;
+}
+body.prospect div#ct_area .section.campus .section_hdg {
+  margin-bottom: 70px;
+}
+body.prospect div#ct_area .section.campus .section_hdg [lang="en"] {
+  color: #FFF;
+}
+body.prospect div#ct_area .section.campus .bg_list {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+body.prospect div#ct_area .section.campus .bg_list li {
+  float: left;
+  width: 25%;
+  height: 50%;
+  background-position: 50%;
+  background-size: cover;
+}
+body.prospect div#ct_area .section.campus .bg_list li img {
+  width: 100%;
+  height: auto;
+}
+body.prospect div#ct_area .section.campus .bg_list li:first-child {
+  width: 50%;
+  height: 100%;
+}
+body.prospect div#ct_area .section.campus .bg_list li:nth-child(n+6) {
+  display: none;
+}
+body.prospect div#ct_area .section.campus .link_list li {
+  text-align: center;
+}
+body.prospect div#ct_area .section.campus .link_list li ~ li {
+  margin-top: 30px;
+}
+body.prospect div#ct_area .section.campus .link_list a {
+  display: inline-block;
+  position: relative;
+  overflow: visible;
+  color: #FFF;
+  font-size: 107%;
+  font-weight: bold;
+}
+body.prospect div#ct_area .section.campus .link_list a:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 100%;
+  margin-top: 4px;
+  width: 0;
+  height: 1px;
+  background-color: #FFF;
+  transition: width 0.3s;
+}
+body.prospect div#ct_area .section.campus .link_list a:hover {
+  text-decoration: none;
+}
+body.prospect div#ct_area .section.campus .link_list a:hover:before {
+  width: 100%;
+}
+body.prospect div#ct_area .section.campus .plum_link {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 60px;
+  text-align: center;
+}
+body.prospect div#ct_area .section.campus .plum_link .text {
+  color: #FFF;
+  font-size: 107%;
+  font-weight: bold;
+}
+body.prospect div#ct_area .section.campus .plum_link .btn {
+  display: inline-block;
+}
+body.prospect div#ct_area .section.campus .plum_link .btn a {
+  display: block;
+  position: relative;
+  overflow: visible;
+}
+body.prospect div#ct_area .section.campus .plum_link .btn a:hover .image:before {
+  bottom: 0;
+  border-color: #fff001;
+}
+body.prospect div#ct_area .section.campus .plum_link .btn a:hover .image:after {
+  background-color: #fff001;
+}
+body.prospect div#ct_area .section.campus .plum_link .btn .click {
+  position: absolute;
+  right: 6px;
+  top: -25px;
+  width: 90px;
+  height: 70px;
+  z-index: 1;
+}
+body.prospect div#ct_area .section.campus .plum_link .btn .click:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 70px 45px 0;
+  border-top-color: #B30926;
+}
+body.prospect div#ct_area .section.campus .plum_link .btn .click span {
+  display: block;
+  position: relative;
+  padding-top: 15px;
+  text-align: center;
+  color: #FFF;
+}
+body.prospect div#ct_area .section.campus .plum_link .btn .image {
+  display: block;
+  position: relative;
+  margin-top: 40px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+body.prospect div#ct_area .section.campus .plum_link .btn .image:before, body.prospect div#ct_area .section.campus .plum_link .btn .image:after {
+  content: "";
+  position: absolute;
+}
+body.prospect div#ct_area .section.campus .plum_link .btn .image:before {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 4px;
+  border: 4px solid transparent;
+  box-shadow: 0 4px rgba(51, 51, 51, 0.3);
+  border-radius: 3px;
+  transition: border-color 0.3s;
+}
+body.prospect div#ct_area .section.campus .plum_link .btn .image:after {
+  left: 100%;
+  bottom: 4px;
+  margin-left: -20px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(51, 51, 51, 0.3);
+  -webkit-transform-origin: 0 100%;
+          transform-origin: 0 100%;
+  -webkit-transform: skewX(-45deg);
+          transform: skewX(-45deg);
+  transition: background-color 0.3s;
+}
+
+@media screen and (max-width: 640px) {
+  body.prospect br.sp_only {
+    display: inline;
+  }
+  body.prospect div#ct_area {
+    margin-bottom: 8px;
+  }
+  body.prospect div#ct_area .link_btn > span {
+    border-radius: 3px;
+  }
+  body.prospect div#ct_area .link_btn > span:before {
+    margin-left: -15px;
+  }
+  body.prospect div#ct_area .link_btn > span > span {
+    padding: 0 15px;
+    font-size: 93%;
+  }
+  body.prospect div#ct_area .link_btn:hover > span:before {
+    margin-right: -15px;
+  }
+  body.prospect div#ct_area .container {
+    margin: 0 20px;
+    width: auto;
+  }
+  body.prospect div#ct_area .section_hdg {
+    margin-bottom: 32px;
+  }
+  body.prospect div#ct_area .section_hdg [lang="en"] {
+    font-size: 278%;
+  }
+  body.prospect div#ct_area .section_hdg [lang="ja"] {
+    font-size: 93%;
+  }
+  body.prospect div#ct_area .section:before {
+    top: -25px;
+    margin-left: -6px;
+    width: 12px;
+    height: 50px;
+  }
+  body.prospect div#ct_area .section.mv .section_inner {
+    height: 528px;
+  }
+  body.prospect div#ct_area .section.mv .section_inner:before {
+    right: 0;
+    margin: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.3);
+  }
+  body.prospect div#ct_area .section.mv .section_inner:after {
+    z-index: 11;
+    margin-left: 60px;
+  }
+  body.prospect div#ct_area .section.mv .copy {
+    top: auto;
+    bottom: 50%;
+    padding: 0 30px;
+    width: auto;
+    -webkit-transform: none;
+            transform: none;
+  }
+  body.prospect div#ct_area .section.mv .copy .main_copy {
+    font-size: 321%;
+  }
+  body.prospect div#ct_area .section.mv .copy .sub_copy {
+    margin-top: 10px;
+    font-size: 128%;
+  }
+  body.prospect div#ct_area .section.mv .nav_menu {
+    left: 0;
+    right: 0;
+    top: 50%;
+    bottom: auto;
+    margin: 35px 0 0;
+    overflow: hidden;
+  }
+  body.prospect div#ct_area .section.mv .nav_menu .anchor_list {
+    margin: 0 -1.2%;
+    padding: 0 5px;
+    text-align: center;
+    font-size: 0;
+  }
+  body.prospect div#ct_area .section.mv .nav_menu .anchor_list li {
+    display: inline-block;
+    margin: 0 1.2%;
+    width: 22%;
+    max-width: 85px;
+    font-size: 14px;
+  }
+  body.prospect div#ct_area .section.mv .nav_menu .anchor_list li ~ li {
+    margin-top: 0;
+  }
+  body.prospect div#ct_area .section.mv .nav_menu .anchor_list li:nth-child(even) a > span:before {
+    -webkit-transform: rotate(-135deg);
+            transform: rotate(-135deg);
+  }
+  body.prospect div#ct_area .section.mv .nav_menu .anchor_list a > span {
+    padding: 6px;
+  }
+  body.prospect div#ct_area .section.mv .nav_menu .anchor_list a > span:before {
+    border-width: 6px;
+  }
+  body.prospect div#ct_area .section.mv .nav_menu .anchor_list a > span > span {
+    font-size: 86%;
+  }
+  body.prospect div#ct_area .section.mv .nav_menu .anchor_list a:hover > span > span, body.prospect div#ct_area .section.mv .nav_menu .anchor_list a.is-crnt > span > span {
+    background-color: #F8F6ED;
+    color: #B30926;
+  }
+  body.prospect div#ct_area .section.mv .nav_menu .link {
+    margin-top: 20px;
+  }
+  body.prospect div#ct_area .section.mv .nav_menu .link a {
+    margin: 0 auto;
+    width: 104px;
+    height: 78px;
+  }
+  body.prospect div#ct_area .section.mv .nav_menu .link a:before {
+    border-width: 78px 52px 0;
+  }
+  body.prospect div#ct_area .section.mv .nav_menu .link a span {
+    padding-top: 12px;
+    font-size: 78%;
+  }
+  body.prospect div#ct_area .section.mv .nav_menu .link a:hover:before {
+    border-top-color: #B30926;
+  }
+  body.prospect div#ct_area .section.topics .section_inner:before {
+    margin-right: -60px;
+  }
+  body.prospect div#ct_area .section.topics .section_inner:after {
+    content: none;
+  }
+  body.prospect div#ct_area .section.topics .section_inner2 {
+    padding: 50px 0 60px;
+  }
+  body.prospect div#ct_area .section.topics .section_inner2:before {
+    margin-left: 50px;
+  }
+  body.prospect div#ct_area .section.topics .topics_slide .slick-dots {
+    position: static;
+    margin-top: 40px;
+    padding-left: 0;
+    text-align: center;
+  }
+  body.prospect div#ct_area .section.topics .topics_slide .slick-dots li ~ li {
+    margin-left: 25px;
+  }
+  body.prospect div#ct_area .section.topics .topics_item .text_area {
+    position: static;
+  }
+  body.prospect div#ct_area .section.topics .topics_item .sub_title {
+    margin-bottom: 8px;
+    font-size: 142%;
+  }
+  body.prospect div#ct_area .section.topics .topics_item .main_title span {
+    padding: 0;
+    font-size: 185%;
+  }
+  body.prospect div#ct_area .section.topics .topics_item .text {
+    margin-top: 12px;
+  }
+  body.prospect div#ct_area .section.topics .topics_item .text span {
+    padding: 0;
+    font-size: 93%;
+  }
+  body.prospect div#ct_area .section.topics .topics_item .btn {
+    margin: 30px auto 0;
+    width: 200px;
+  }
+  body.prospect div#ct_area .section.topics .topics_item .link_btn {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3);
+  }
+  body.prospect div#ct_area .section.topics .topics_item .link_btn > span {
+    height: 50px;
+  }
+  body.prospect div#ct_area .section.topics .topics_item .link_btn:hover > span {
+    background-color: #B30926;
+  }
+  body.prospect div#ct_area .section.topics .topics_item .link_btn:hover > span:before {
+    left: 100%;
+    right: auto;
+    top: auto;
+    bottom: 0;
+    margin: 0 0 0 -15px;
+    background-color: #840000;
+    -webkit-transform-origin: 0 100%;
+            transform-origin: 0 100%;
+  }
+  body.prospect div#ct_area .section.topics .news_area {
+    margin-top: 45px;
+    padding: 25px 15px;
+  }
+  body.prospect div#ct_area .section.topics .news_area .hdg {
+    text-align: center;
+    font-size: 128%;
+  }
+  body.prospect div#ct_area .section.topics .news_area .digest {
+    float: none;
+    width: auto;
+    text-align: center;
+  }
+  body.prospect div#ct_area .section.topics .news_area .digest .btn a {
+    display: inline-block;
+  }
+  body.prospect div#ct_area .section.topics .news_area .digest .btn .click {
+    top: -15px;
+    width: 68px;
+    height: 50px;
+  }
+  body.prospect div#ct_area .section.topics .news_area .digest .btn .click:before {
+    border-width: 50px 34px 0;
+  }
+  body.prospect div#ct_area .section.topics .news_area .digest .btn .click span {
+    padding-top: 10px;
+    font-size: 71%;
+  }
+  body.prospect div#ct_area .section.topics .news_area .digest .btn .image:before {
+    bottom: 3px;
+    box-shadow: 0 3px rgba(51, 51, 51, 0.6);
+    border-radius: 4px;
+  }
+  body.prospect div#ct_area .section.topics .news_area .digest .btn .image:after {
+    bottom: 3px;
+    margin-left: -20px;
+  }
+  body.prospect div#ct_area .section.topics .news_area .digest .text {
+    text-align: left;
+    font-size: 85%;
+  }
+  body.prospect div#ct_area .section.topics .news_area .news {
+    float: none;
+    margin-top: 30px;
+    width: auto;
+  }
+  body.prospect div#ct_area .section.topics .news_area .news .hdg {
+    margin-bottom: 18px;
+  }
+  body.prospect div#ct_area .section.topics .news_area .news_list {
+    margin: 0;
+  }
+  body.prospect div#ct_area .section.topics .news_area .news_list dl dt {
+    float: left;
+    margin-right: 0;
+    padding-left: 13px;
+    background: url(../images/ico_circle3.gif) no-repeat 0 0.35em;
+  }
+  body.prospect div#ct_area .section.topics .news_area .news_list dl dt img {
+    margin: 4px 0 0 -13px;
+  }
+  body.prospect div#ct_area .section.topics .news_area .news_list dl dd {
+    width: 60%;
+    min-height: 45px;
+  }
+  body.prospect div#ct_area .section.admission {
+    background-attachment: scroll;
+    background-size: auto 100%;
+  }
+  body.prospect div#ct_area .section.admission .section_inner {
+    padding: 50px 0 60px;
+    min-height: 0;
+  }
+  body.prospect div#ct_area .section.admission .info,
+  body.prospect div#ct_area .section.admission .contents {
+    width: auto;
+  }
+  body.prospect div#ct_area .section.admission .info {
+    float: none;
+  }
+  body.prospect div#ct_area .section.admission .contents {
+    float: none;
+    margin-top: 30px;
+  }
+  body.prospect div#ct_area .section.admission .hdg {
+    margin-bottom: 25px;
+    font-size: 100%;
+  }
+  body.prospect div#ct_area .section.admission .hdg span:before {
+    margin-right: 25px;
+  }
+  body.prospect div#ct_area .section.admission .hdg span:after {
+    margin-left: 25px;
+  }
+  body.prospect div#ct_area .section.admission .btn_area {
+    margin: -20px 0 0 -20px;
+  }
+  body.prospect div#ct_area .section.admission .btn_area .btn {
+    padding: 20px 0 0 20px;
+  }
+  body.prospect div#ct_area .section.admission .btn_area .link_btn > span {
+    height: 63px;
+  }
+  body.prospect div#ct_area .section.admission .btn_area .link_btn > span:before {
+    margin-left: -20px;
+  }
+  body.prospect div#ct_area .section.admission .btn_area .link_btn:hover > span:before {
+    margin-right: -20px;
+  }
+  body.prospect div#ct_area .section.admission .btn_area .link_text {
+    position: static;
+    clear: both;
+    padding: 10px 0 0 20px;
+    font-size: 78%;
+  }
+  body.prospect div#ct_area .section.admission .btn_area .link_text a:after {
+    margin-left: 8px;
+    width: 12px;
+    height: 7px;
+    background-size: 12px;
+    vertical-align: 5%;
+  }
+  body.prospect div#ct_area .section.admission .btn_area.grad_school {
+    margin-top: 0;
+  }
+  body.prospect div#ct_area .section.learning .section_inner {
+    padding: 50px 0 55px;
+  }
+  body.prospect div#ct_area .section.learning .section_inner:before {
+    z-index: 2;
+    margin-right: 115px;
+  }
+  body.prospect div#ct_area .section.learning .section_inner:after {
+    margin-left: -98px;
+  }
+  body.prospect div#ct_area .section.learning .section_hdg {
+    margin-bottom: 32px;
+    width: auto;
+  }
+  body.prospect div#ct_area .section.learning .sub_section.school .liberal_arts {
+    float: none;
+    width: auto;
+  }
+  body.prospect div#ct_area .section.learning .sub_section.school .policy {
+    float: none;
+    margin-top: 28px;
+    width: auto;
+  }
+  body.prospect div#ct_area .section.learning .sub_section.school .hdg {
+    margin-bottom: 24px;
+    padding: 8px;
+    font-size: 85%;
+  }
+  body.prospect div#ct_area .section.learning .sub_section.school .dept_list {
+    margin: -25px 0 0 -25px;
+  }
+  body.prospect div#ct_area .section.learning .sub_section.school .dept_list li {
+    margin-left: 0;
+    padding: 25px 0 0 25px;
+    width: 50%;
+    box-sizing: border-box;
+  }
+  body.prospect div#ct_area .section.learning .sub_section.school .dept_list .circle {
+    width: 63%;
+    height: 63%;
+  }
+  body.prospect div#ct_area .section.learning .sub_section.school .dept_list .text {
+    font-size: 93%;
+  }
+  body.prospect div#ct_area .section.learning .sub_section.school .dept_list .text:before {
+    margin-top: 10px;
+    width: 15px;
+    height: 9px;
+    background-size: 15px;
+  }
+  body.prospect div#ct_area .section.learning .sub_section.school .dept_list li.is-new a:before {
+    width: 45px;
+    height: 45px;
+    font-size: 85%;
+    line-height: 45px;
+  }
+  body.prospect div#ct_area .section.learning .sub_section.school .dept_list.is-single li {
+    float: none;
+    margin: 0 auto;
+  }
+  body.prospect div#ct_area .section.learning .sub_section.school .btn_area {
+    padding-top: 28px;
+  }
+  body.prospect div#ct_area .section.learning .sub_section.school .btn_area .btn {
+    width: 280px;
+  }
+  body.prospect div#ct_area .section.learning .sub_section.school .btn_area .link_btn > span {
+    height: 50px;
+  }
+  body.prospect div#ct_area .section.learning .sub_section.word {
+    margin-top: 50px;
+  }
+  body.prospect div#ct_area .section.learning .sub_section.word .word_list {
+    margin: 0 -20px;
+  }
+  body.prospect div#ct_area .section.learning .sub_section.word .word_list li {
+    width: 50%;
+  }
+  body.prospect div#ct_area .section.learning .sub_section.word .word_list a {
+    height: 85px;
+  }
+  body.prospect div#ct_area .section.learning .sub_section.word .word_list .text {
+    font-size: 93%;
+  }
+  body.prospect div#ct_area .section.learning .sub_section.word .word_list .text:before {
+    margin-top: 10px;
+    width: 12px;
+    height: 7px;
+    background-size: 12px;
+  }
+  body.prospect div#ct_area .section.learning .sub_section.grad_school {
+    margin-top: 45px;
+  }
+  body.prospect div#ct_area .section.learning .sub_section.grad_school .btn_area {
+    margin-left: 0;
+  }
+  body.prospect div#ct_area .section.learning .sub_section.grad_school .btn_area .btn {
+    float: none;
+    margin: 0 auto;
+    width: 280px;
+  }
+  body.prospect div#ct_area .section.learning .sub_section.grad_school .btn_area .btn ~ .btn {
+    margin-top: 20px;
+  }
+  body.prospect div#ct_area .section.learning .sub_section.grad_school .btn_area .link_btn > span {
+    height: 50px;
+  }
+  body.prospect div#ct_area .section.learning .sub_section_hdg {
+    margin: 0 -20px 28px;
+    font-size: 135%;
+  }
+  body.prospect div#ct_area .section.learning .sub_section_hdg span:before {
+    margin-right: 25px;
+  }
+  body.prospect div#ct_area .section.learning .sub_section_hdg span:after {
+    margin-left: 25px;
+  }
+  body.prospect div#ct_area .section.career .section_inner {
+    padding: 50px 0 60px;
+  }
+  body.prospect div#ct_area .section.career .section_inner:before {
+    margin-right: 98px;
+  }
+  body.prospect div#ct_area .section.career .section_hdg {
+    margin-bottom: 35px;
+  }
+  body.prospect div#ct_area .section.career .btn_area {
+    margin: 0;
+  }
+  body.prospect div#ct_area .section.career .btn_area > div {
+    display: block;
+    margin: 0 -4.11% 100px;
+    font-size: 0;
+  }
+  body.prospect div#ct_area .section.career .btn_area > div.lower {
+    padding-top: 25px;
+  }
+  body.prospect div#ct_area .section.career .btn_area .btn {
+    margin: 0 4.11%;
+    width: 39.18%;
+    font-size: 14px;
+  }
+  body.prospect div#ct_area .section.career .btn_area .link_btn > span {
+    width: 100%;
+  }
+  body.prospect div#ct_area .section.career .btn_area .link_btn img {
+    height: 53px;
+  }
+  body.prospect div#ct_area .section.career .btn_area .balloon {
+    left: 7%;
+    right: 7%;
+    margin-top: 25px;
+    width: auto;
+    height: 73px;
+    font-size: 14px;
+  }
+  body.prospect div#ct_area .section.career .btn_area .balloon:before {
+    border-width: 0 11px 15px;
+  }
+  body.prospect div#ct_area .section.career .btn_area .balloon .row .num {
+    white-space: nowrap;
+  }
+  body.prospect div#ct_area .section.career .btn_area .balloon.support {
+    right: 7%;
+  }
+  body.prospect div#ct_area .section.career .btn_area .balloon.support:before {
+    right: 22.5%;
+    margin-right: -11px;
+  }
+  body.prospect div#ct_area .section.career .btn_area .balloon.support .row {
+    padding: 10px 16px 10px 15px;
+  }
+  body.prospect div#ct_area .section.career .btn_area .balloon.support .head {
+    font-size: 78%;
+  }
+  body.prospect div#ct_area .section.career .btn_area .balloon.support .body {
+    padding-right: 0;
+    text-align: right;
+    white-space: nowrap;
+  }
+  body.prospect div#ct_area .section.career .btn_area .balloon.support .body > p {
+    display: inline;
+    vertical-align: middle;
+  }
+  body.prospect div#ct_area .section.career .btn_area .balloon.support .text {
+    margin-right: 1em;
+    font-size: 78%;
+  }
+  body.prospect div#ct_area .section.career .btn_area .balloon.support .num {
+    font-size: 292%;
+  }
+  body.prospect div#ct_area .section.career .btn_area .balloon.support .num .unit {
+    font-size: 38%;
+  }
+  body.prospect div#ct_area .section.career .btn_area .balloon.job {
+    left: 7%;
+    font-size: 0;
+  }
+  body.prospect div#ct_area .section.career .btn_area .balloon.job:before {
+    left: 22.5%;
+    margin-left: -11px;
+  }
+  body.prospect div#ct_area .section.career .btn_area .balloon.job:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background-color: #E7D7BB;
+  }
+  body.prospect div#ct_area .section.career .btn_area .balloon.job .row {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    z-index: 1;
+    padding: 0 8px;
+    width: 50%;
+    box-sizing: border-box;
+    height: auto;
+    font-size: 14px;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  body.prospect div#ct_area .section.career .btn_area .balloon.job .row > div {
+    display: inline-block;
+    width: 45%;
+    vertical-align: middle;
+  }
+  body.prospect div#ct_area .section.career .btn_area .balloon.job .row:first-child {
+    padding-left: 10px;
+  }
+  body.prospect div#ct_area .section.career .btn_area .balloon.job .row ~ .row {
+    left: 50%;
+    border-top: none;
+  }
+  body.prospect div#ct_area .section.career .btn_area .balloon.job .head {
+    font-size: 78%;
+  }
+  body.prospect div#ct_area .section.career .btn_area .balloon.job .num {
+    font-size: 292%;
+  }
+  body.prospect div#ct_area .section.career .btn_area .balloon.job .num .unit {
+    font-size: 48%;
+  }
+  body.prospect div#ct_area .section.campus .container {
+    padding: 50px 0 40px;
+    min-height: 0;
+  }
+  body.prospect div#ct_area .section.campus .bg_list li {
+    width: 50%;
+    height: 25%;
+  }
+  body.prospect div#ct_area .section.campus .bg_list li:first-child {
+    width: 100%;
+    height: 50%;
+  }
+  body.prospect div#ct_area .section.campus .link_list li {
+    text-align: center;
+  }
+  body.prospect div#ct_area .section.campus .link_list li ~ li {
+    margin-top: 30px;
+  }
+  body.prospect div#ct_area .section.campus .link_list a {
+    font-size: 85%;
+    font-weight: bold;
+  }
+  body.prospect div#ct_area .section.campus .link_list a:before {
+    width: 100%;
+  }
+  body.prospect div#ct_area .section.campus .plum_link {
+    position: static;
+    margin-top: 90px;
+  }
+  body.prospect div#ct_area .section.campus .plum_link .text {
+    font-size: 85%;
+  }
+  body.prospect div#ct_area .section.campus .plum_link .btn .click {
+    right: 0;
+    top: -16px;
+    width: 66px;
+    height: 50px;
+  }
+  body.prospect div#ct_area .section.campus .plum_link .btn .click:before {
+    border-width: 50px 33px 0;
+  }
+  body.prospect div#ct_area .section.campus .plum_link .btn .click span {
+    padding-top: 8px;
+    font-size: 78%;
+  }
+  body.prospect div#ct_area .section.campus .plum_link .btn .image {
+    margin-top: 30px;
+    width: 250px;
+  }
+  body.prospect div#ct_area .section.campus .plum_link .btn .image:before {
+    bottom: 3px;
+  }
+  body.prospect div#ct_area .section.campus .plum_link .btn .image:after {
+    bottom: 3px;
+    margin-left: -15px;
+  }
+}
