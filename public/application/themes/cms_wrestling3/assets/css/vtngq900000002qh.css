@@ -1,2063 +1,2104 @@
 @charset "utf-8";
 
-@import url("/application/themes/cms_wrestling3/assets/css/vtngq900000002q2.css");
-
-/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-+
-+　タイトル : ページ共有のスタイル
-+　ファイル名 : ファイルのパスを入れます。(ルート、相対どちらでも)
-+　概要 : CSSの用途を説明を入れます。
-+　サイト名 : サイトの説明を入れます。
-+　URL : http://
-+
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-
-/* --------------------------------------------------------------------------------------
- index
---------------------------------------------------------------------------------------- */
-
-/* .main_bg ------------------------------ */
-
-.index #main_img span{
-	position: absolute;
-	left: 0;
-	bottom: 0;
-	display: block;
-	width: 100%;
-	height: 80px;
-	background: -moz-linear-gradient(top, rgba(255,255,255,0), #fff);
-	background: -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,0)), to(#fff));
-	z-index: 900;
-}
-
-.index #main_img p {
-	display: none;
-}
-
-
-.index .btn_ct_sp{
-	display: none;
-}
-
-
-/* .urgent_announcement ------------------------------ */
-
-.index .urgent_announcement{
-	position: relative;
-	display: block;
-	width: 1000px;
-	margin: -113px auto 143px auto;
-	border: 2px #e5b4b8 solid;
-	border-radius: 8px;		/* CSS3草案 */
-	-webkit-border-radius: 8px;	/* Safari,Google Chrome用 */
-	-moz-border-radius: 8px;	/* Firefox用 */
-	background: url(/application/themes/cms_wrestling3/assets/images/bg_emergency.png) repeat;
-	z-index: 9998;
-}
-
-.index .urgent_announcement .inner{
-	padding: 16px 20px 1px 20px;
-}
-
-.index .urgent_announcement h2{
-	display: block;
-	min-height: 27px;
-	margin: 0 0 0 0;
-	padding: 0 0 0 47px;
-	background: url(/application/themes/cms_wrestling3/assets/images/ico_emergency.png) no-repeat left .2em;
-	font-size: 166.9%;
-	font-family: "Hiragino Mincho ProN", "ヒラギノ明朝 Pro W3", "HGS明朝E","ＭＳ Ｐ明朝", "MS PMincho", serif;
-	color: #b30926;
-	z-index: 9999;
-}
-
-.index .urgent_announcement .inner ul{
-	overflow: hidden;
-}
-
-.index .urgent_announcement .inner li{
-	margin: -1px 0 0 0;
-	border-top: 1px #e8b5bd dotted;
-	font-size: 117%;
-}
-
-
-.index .urgent_announcement .inner span{
-	display: block;
-	margin: 15px 0 0 0;
-	padding: 0 0 15px 0;
-	color: #000;
-}
-
-.index .urgent_announcement h2 span{
-	position: absolute;
-	right: 0;
-	top: 0px;
-	color: #333;
-	font-size: 60%;
-	font-weight: normal;
-}
-
-
-/* .ct_left ------------------------------ */
-
-.index div.ct_left {
-	float: left;
-	width: 485px;
-}
-
-.index div.ct_left .section_box{
-	margin: 0 0 30px 0;
-}
-
-
-/* prospect_bnr */
-
-.index div.ct_left .section_box .prospect_bnr a {
-	display: inline-block;
-	border-radius: 6px;
-	background-color: #FFF;
-	overflow: hidden;
-}
-
-.index div.ct_left .section_box .prospect_bnr a:hover img {
-	opacity: 0.7;
-}
-
-
-/* pickup_bnr */
-
-.index div.ct_left .section_box .bnr_box {
-	width: 492px;
-}
-
-.index div.ct_left .section_box .bnr_box li{
-	position: relative;
-	margin: 0 0 10px 0;
-	text-align: left;
-}
-
-.index div.ct_left .section_box .bnr_box span.pickup {
-	position: absolute;
-	left: 0;
-	top: 0;
-	z-index: 9999;
-}
-
-.index div.ct_left .section_box .bnr_box span.left_img {
-	display: inline-block;
-	vertical-align: top;
-}
-
-.index div.ct_left .section_box .bnr_box span.right_txt {
-	display: inline-block;
-	width: 60%;
-	margin: 0 0 0 20px;
-	vertical-align: middle;
-}
-
-
-.index div.ct_left .section_box .bnr_box li a{
-	display: block;
-	margin: 0 5px 5px 0;
-	font-size: 128.5%;
-	font-family: "Hiragino Mincho ProN", "ヒラギノ明朝 Pro W3", "HGS明朝E","ＭＳ Ｐ明朝", "MS PMincho", serif;
-	color: #b30926;
-	font-weight: bold;
-	border: 2px #b30926 solid;
-	border-radius: 4px;		/* CSS3草案 */
-	-webkit-border-radius: 4px;	/* Safari,Google Chrome用 */
-	-moz-border-radius: 4px;	/* Firefox用 */
-	background: #b30926;
-	color: #fff;
-}
-
-.index div.ct_left .section_box .bnr_box li a:hover{	border: 2px #ca5367 solid; background: #ca5367;}
-
-.index div.ct_left .section_box .bnr_box em {
-	display: block;
-	font-size: 66.5%;
-	font-family: 'メイリオ','Meiryo','Hiragino Kaku Gothic Pro','ヒラギノ角ゴ Pro W3','Osaka','ＭＳ Ｐゴシック',Arial,sans-serif;
-}
-
-
-
-/* rss */
-.right_rss{
-	margin: 10px 0 0 0;
-	text-align: right;
-	font-size: 12px;
-}
-
-.right_rss img{
-	margin: 0 0 -5px 10px;
-}
-
-.list_right_rss{
-	margin: 10px 0 0 0;
-	text-align: right;
-	font-size: 12px;
-}
-
-.list_right_rss img{
-	margin: 0 0 -5px 10px;
-}
-
-
-/* news_list */
-
-.news_list{
-	display: block;
-	padding: 16px 21px 9px 21px;
-	border-top: 4px #b30926 solid;
-	border-right: 1px #f6f4ed solid;
-	border-bottom: 1px #f6f4ed solid;
-	border-left: 1px #f6f4ed solid;
-	border-radius: 6px;		/* CSS3草案 */
-	-webkit-border-radius: 6px;	/* Safari,Google Chrome用 */
-	-moz-border-radius: 6px;	/* Firefox用 */
-	background: #fff url(/images/bg_topics.gif) repeat-x left top;
-}
-
-.news_list .ttl {
-	position: relative;
-	padding: 3px 0 0 37px;
-	background: url(/application/themes/cms_wrestling3/assets/images/ico_news.gif) no-repeat left .2em;
-	font-size: 142.5%;
-	font-family: "Hiragino Mincho ProN", "ヒラギノ明朝 Pro W3", "HGS明朝E","ＭＳ Ｐ明朝", "MS PMincho", serif;
-	color: #b30926;
-	font-weight: bold;
-	margin: 0 0 18px 0;
-}
-
-.news_list.event .ttl {
-	background: url(/application/themes/cms_wrestling3/assets/images/ico_event.gif) no-repeat left .2em;
-}
-
-.news_list .ttl span{
-	position: absolute;
-	right: 0;
-	top: 5px;
-}
-
-.news_list .right_btn{
-	display: none;
-}
-
-.news_list .right_btn_block{
-	display: block !important;
-	text-align: right;
-}
-
-.news_list dl{
-	margin: 0 0 14px 0;
-	padding: 0 0 14px 0;
-	border-bottom: 1px #e9b9c1 dotted;
-	clear: both;
-}
-.news_list dl:after { content:"."; display:block; height:0; clear:both; visibility:hidden;font-size: .1em;}
-.news_list dl{ display:inline-block; }
-/*\*/
-* html .news_list dl { height:1%; }
-.news_list dl { display:block; }
-/**/
-
-.news_list dl dt{
-	float: left;
-	display: inline-block;
-	width: 91px;
-	padding: 0 0 0 13px;
-	background: url(/application/themes/cms_wrestling3/assets/images/ico_circle3.gif) no-repeat 0 .35em;
-	font-size: 85.5%;
-	vertical-align: top;
-}
-
-.news_list dl dt img{
-	margin: 4px 0 0 -13px;
-}
-
-.news_list dl dd{
-	float: left;
-	display: inline-block;
-	width: 330px;
-}
-
-.news_list dl dd img{
-	vertical-align: middle;
-	margin: 0 0 0 5px;
-}
-
-
-/* news_list_low */
-
-.news_list_low{
-	display: block;
-	padding: 0 0 0 0;
-	border: none;
-	border-radius: 6px;		/* CSS3草案 */
-	-webkit-border-radius: 6px;	/* Safari,Google Chrome用 */
-	-moz-border-radius: 6px;	/* Firefox用 */
-	background: none;
-}
-
-.news_list_low dl dd{
-	display: inline-block;
-	width: 84%;
-}
-
-/* topics_list */
-
-.index div.ct_left .section_box .topics_list{
-	display: block;
-	padding: 16px 21px 9px 21px;
-	border-top: 4px #b30926 solid;
-	border-right: 1px #f6f4ed solid;
-	border-bottom: 1px #f6f4ed solid;
-	border-left: 1px #f6f4ed solid;
-	border-radius: 6px;		/* CSS3草案 */
-	-webkit-border-radius: 6px;	/* Safari,Google Chrome用 */
-	-moz-border-radius: 6px;	/* Firefox用 */
-	background: #fff url(/images/bg_topics.gif) repeat-x left top;
-}
-
-.index div.ct_left .section_box .topics_list .ttl {
-	padding: 0 0 0 37px;
-	background: url(/application/themes/cms_wrestling3/assets/images/ico_topics.gif) no-repeat left .2em;
-	font-size: 142.5%;
-	font-family: "Hiragino Mincho ProN", "ヒラギノ明朝 Pro W3", "HGS明朝E","ＭＳ Ｐ明朝", "MS PMincho", serif;
-	color: #b30926;
-	font-weight: bold;
-	margin: 0 0 18px 0;
-	min-height: 27px;
-}
-
-
-.index div.ct_left .section_box .topics_list .info_txt a{
-	display: block;
-	margin: 0 0 18px 0;
-	padding: 9px 9px 9px 18px;
-	border-top: 1px #f4aeba solid;
-	border-right: 1px #f4aeba solid;
-	border-bottom: 1px #f4aeba solid;
-	border-left: 1px #f4aeba solid;
-	border-radius: 6px;		/* CSS3草案 */
-	-webkit-border-radius: 6px;	/* Safari,Google Chrome用 */
-	-moz-border-radius: 6px;	/* Firefox用 */
-	background: #fff url(/images/ico_arw3.gif) no-repeat 10px 50%;
-	font-size: 128.8%;
-}
-
-.index div.ct_left .section_box .topics_list .info_txt a:hover{
-	background: #fbf2f4 url(/images/ico_arw3.gif) no-repeat 10px 50%;
-}
-
-
-.index div.ct_left .section_box .topics_list .info_txt .left_txt{
-	display: inline-block;
-	width: 290px;
-	vertical-align: middle;
-}
-.index div.ct_left .section_box .topics_list .info_txt .right_img{
-	display: inline-block;
-	width: 117px;
-	vertical-align: middle;
-}
-
-.index div.ct_left .section_box .topics_list li{
-	margin: 0 0 10px 0;
-	padding: 0 0 10px 10px;
-	border-bottom: 1px #e9b9c1 dotted;
-	background: url(/application/themes/cms_wrestling3/assets/images/ico_arw3.gif) no-repeat 0 .6em;
-	font-size: 85.5%;
-}
-
-
-/* .ct_right ------------------------------ */
-
-.index div.ct_right {
-	float: right;
-	width: 485px;
-}
-
-.index div.ct_right .section_box{
-	margin: 0 0 30px 0;
-}
-
-/* teacher_box */
-
-.index div.ct_right .section_box .teacher_box {
-	display: block;
-	padding: 18px 21px 22px 21px;
-	border: 3px #f4f1e2 solid;
-	border-radius: 6px;		/* CSS3草案 */
-	-webkit-border-radius: 6px;	/* Safari,Google Chrome用 */
-	-moz-border-radius: 6px;	/* Firefox用 */
-	background: #fff;
-}
-
-.index div.ct_right .section_box .teacher_box .ttl {
-	position: relative;
-	padding: 3px 0 0 37px;
-	background: url(/application/themes/cms_wrestling3/assets/images/ico_teacher1.gif) no-repeat left .2em;
-	font-size: 142.5%;
-	font-family: "Hiragino Mincho ProN", "ヒラギノ明朝 Pro W3", "HGS明朝E","ＭＳ Ｐ明朝", "MS PMincho", serif;
-	color: #b30926;
-	font-weight: bold;
-	margin: 0 0 18px 0;
-}
-
-.index div.ct_right .section_box .teacher_box .ttl span{
-	position: absolute;
-	right: 0;
-	top: 5px;
-}
-
-.index div.ct_right .section_box .teacher_box .left_img{
-	float: left;
-	margin: 0 0 0 -110px;
-	border: 3px #f4f1e2 solid;
-	border-radius: 6px;		/* CSS3草案 */
-	-webkit-border-radius: 6px;	/* Safari,Google Chrome用 */
-	-moz-border-radius: 6px;	/* Firefox用 */
-}
-
-.index div.ct_right .section_box .teacher_box .right_txt{
-	width: 325px;
-	margin: 0 0 0 88px;
-	padding: 0 0 0 20px;
-	background: #fff;
-}
-
-.index div.ct_right .section_box .teacher_box .right_txt dl{
-	margin: 0 0 13px 0;
-}
-
-.index div.ct_right .section_box .teacher_box .right_txt dt{
-	margin: 0 0 10px 0;
-	padding: 0 0 10px 3px;
-	border-bottom: 2px #b30926 solid;
-	font-size: 129%;
-	font-family: "Hiragino Mincho ProN", "ヒラギノ明朝 Pro W3", "HGS明朝E","ＭＳ Ｐ明朝", "MS PMincho", serif;
-}
-
-.index div.ct_right .section_box .teacher_box .right_txt dt span{
-	font-size: 77.5%;
-}
-
-
-.index div.ct_right .section_box .teacher_box .right_txt .link_det a{
-	display: inline-block;
-	width: 100%;
-	border: 1px #f3f0e0 solid;
-	border-radius: 3px;		/* CSS3草案 */
-	-webkit-border-radius: 3px;	/* Safari,Google Chrome用 */
-	-moz-border-radius: 3px;	/* Firefox用 */
-	text-align: right;
-	font-size: 85.5%;
-	background: #f3f0e0;
-}
-
-.index div.ct_right .section_box .teacher_box .right_txt .link_det a span{
-	display: inline-block;
-	padding: 4px 10px;
-	background: url(/application/themes/cms_wrestling3/assets/images/ico_arw3.gif) no-repeat 0 center;
-}
-.index div.ct_right .section_box .teacher_box .right_txt .link_det a:hover span{
-	text-decoration: underline;
-}
-
-/* plumgarden_box */
-
-.index div.ct_right .section_box .plumgarden_box {
-	display: block;
-	padding: 13px 21px 22px 21px;
-	border: 3px #f4f1e2 solid;
-	border-radius: 6px;		/* CSS3草案 */
-	-webkit-border-radius: 6px;	/* Safari,Google Chrome用 */
-	-moz-border-radius: 6px;	/* Firefox用 */
-	background: #fff;
-}
-
-.index div.ct_right .section_box .plumgarden_box h2.ttl {
-	position: relative;
-	font-family: "Hiragino Mincho ProN", "ヒラギノ明朝 Pro W3", "HGS明朝E","ＭＳ Ｐ明朝", "MS PMincho", serif;
-	font-size: 114%;
-	color: #b30926;
-	font-weight: bold;
-	margin: 0 0 15px 0;
-}
-
-.index div.ct_right .section_box .plumgarden_box h2.ttl .logo {
-	display: block;
-	margin-top: 3px;	
-}
-
-.index div.ct_right .section_box .plumgarden_box h2.ttl .list{
-	position: absolute;
-	right: 0;
-	bottom: 12px;
-}
-
-.index div.ct_right .section_box .plumgarden_box .clearfix .img{
-	float: left;
-	margin: 0 20px 0 0;
-}
-
-.index div.ct_right .section_box .plumgarden_box .clearfix .img img {
-	border-radius: 4px;		/* CSS3草案 */
-	-webkit-border-radius: 4px;	/* Safari,Google Chrome用 */
-	-moz-border-radius: 4px;	/* Firefox用 */
-}
-
-.index div.ct_right .section_box .plumgarden_box .clearfix .txt{
-	width: 327px;
-	float: right;
-}
-
-.index div.ct_right .section_box .plumgarden_box .clearfix .txt .date{
-	display: block;
-	margin: 5px 0 8px 0;
-	font-size: 85.5%;
-}
-
-.index div.ct_right .section_box .plumgarden_box .clearfix .txt .ttl{
-	font-size: 115%;
-	display: none;	
-}
-
-
-
-/* university_box */
-
-.index div.ct_right .section_box .university_box {
-	margin: 0 0 30px 0;
-	padding: 20px;
-	background-color: #fff;
-	border: 3px #f4f1e2 solid;
-	border-radius: 6px;		/* CSS3草案 */
-	-webkit-border-radius: 6px;	/* Safari,Google Chrome用 */
-	-moz-border-radius: 6px;	/* Firefox用 */
-}
-
-.index div.ct_right .section_box .university_box .ttl {
-	padding: 0 0 0 37px;
-	background:#fff url(/images/ico_university1.gif) no-repeat 0px 50%;
-	font-size: 142.5%;
-	font-family: "Hiragino Mincho ProN", "ヒラギノ明朝 Pro W3", "HGS明朝E","ＭＳ Ｐ明朝", "MS PMincho", serif;
-	color: #b30926;
-	font-weight: bold;
-	margin: 0 0 18px 0;
-	padding: 0 21px 0 45px;
-}
-
-
-.index div.ct_right .section_box .university_box h3 {
-	font-size: 129%;
-	font-family: "Hiragino Mincho ProN", "ヒラギノ明朝 Pro W3", "HGS明朝E","ＭＳ Ｐ明朝", "MS PMincho", serif;
-	color: #b30926;
-	font-weight: bold;
-	margin: 0 0 7px 0;
-}
-
-.index div.ct_right .section_box .university_list1 {
-	width: 453px;
-	margin: 0 -14px 10px 0;
-	overflow: hidden;
-}
-
-.index div.ct_right .section_box .university_list1 li{
-	display: block;
-	float: left;
-	width: 47.5%;
-	margin: 0 7px 7px 0;
-}
-
-.index div.ct_right .section_box .university_list1 a{
-	display: block;
-	width: 88%;
-	padding: 7px 2% 7px 10%;
-	border: 1px #f4aeba solid;
-	border-radius: 3px;		/* CSS3草案 */
-	-webkit-border-radius: 3px;	/* Safari,Google Chrome用 */
-	-moz-border-radius: 3px;	/* Firefox用 */
-	background: #fff url(/images/ico_arw2.gif) no-repeat 3% .7em;
-	font-size: 129%;
-	font-family: "Hiragino Mincho ProN", "ヒラギノ明朝 Pro W3", "HGS明朝E","ＭＳ Ｐ明朝", "MS PMincho", serif;
-	font-weight: bold;
-}
-
-.index div.ct_right .section_box .university_list1 a:hover{
-	background: #fbf2f4 url(/images/ico_arw2.gif) no-repeat 3% .7em;
-	text-decoration: none;
-}
-
-.index div.ct_right .section_box .university_list1 img{
-	float: right;
-}
-
-.index div.ct_right .section_box .university_list1 span{
-	display: block;
-	font-size: 66.5%;
-}
-
-.index div.ct_right .section_box .university_list2 {
-	display: block;
-	padding: 15px 21px 15px 21px;
-	border: 1px #f4f1e2 solid;
-	border-radius: 6px;		/* CSS3草案 */
-	-webkit-border-radius: 6px;	/* Safari,Google Chrome用 */
-	-moz-border-radius: 6px;	/* Firefox用 */
-	background: #fff;
-}
-
-.index div.ct_right .section_box .university_list2 a{
-	display: inline-block;
-	min-height: 18px;
-	padding: 0 0 0 21px;
-	background: url(/application/themes/cms_wrestling3/assets/images/ico_arw2.gif) no-repeat 0 center;
-	font-size: 129%;
-	font-family: "Hiragino Mincho ProN", "ヒラギノ明朝 Pro W3", "HGS明朝E","ＭＳ Ｐ明朝", "MS PMincho", serif;
-	font-weight: bold;
-}
-
-
-/* campus_box */
-
-.index div.ct_right .section_box .campus_box {
-	padding: 9px 8px;
-	border: 1px #eeeeee solid;
-	background: url(/application/themes/cms_wrestling3/assets/images/bg_campus.gif) repeat;
-}
-
-.index div.ct_right .section_box .campus_box .ttl {
-	position: relative;
-	padding: 7px 11px;
-	background: #fff;
-	font-size: 142.5%;
-	font-family: "Hiragino Mincho ProN", "ヒラギノ明朝 Pro W3", "HGS明朝E","ＭＳ Ｐ明朝", "MS PMincho", serif;
-	color: #b30926;
-	font-weight: bold;
-	margin: 0 0 9px 0;
-}
-
-.index div.ct_right .section_box .campus_box .ttl span{
-	position: absolute;
-	right: 11px;
-	top: 10px;
-}
-
-.index div.ct_right .section_box .campus_box .campus_img {
-	width: 483px;
-	margin: 0 -18px 0 0;
-	overflow: hidden;
-}
-
-.index div.ct_right .section_box .campus_box .campus_img li{
-	display: inline;
-	float: left;
-	width: 228px;
-	margin: 0 9px 12px 0;
-}
-
-.index div.ct_right .section_box .campus_box .campus_img li p{
-	position: relative;
-	width: 228px;
-}
-
-.index div.ct_right .section_box .campus_box .campus_img li em{
-	display: block;
-	width: 210px;
-	position: absolute;
-	left: 0;
-	bottom: 0;
-	padding: 8px 9px 8px 9px;
- background: url(/application/themes/cms_wrestling3/assets/images/bg_black.png) repeat;
-	color: #fff;
-}
-
-.index div.ct_right .section_box .campus_box .campus_img li a {
-	display: block;
-	color: #fff;
-}
-
-.index div.ct_right .section_box .campus_box a:hover {
-	opacity: 0.9;
-	background: #fff;
-}
-
-.index div.ct_right .section_box .campus_box a:hover img {
-	opacity: 0.7;
-	background: #fff;
-}
-
-.index div.ct_right .section_box .campus_box .campus_img li span{
-	display: block;
-	margin: 4px 0 0 0;
-	font-size: 85.5%;
-}
-
-
-/* link_list */
-
-.index div.ct_right .section_box .link_list {
-	width: 492px;
-	margin: 0 -10px 0 0;
-	overflow: hidden;
-}
-
-.index div.ct_right .section_box .link_list li{
-	position: relative;
-	display: block;
-	float: left;
-	width: 238px;
-}
-.index div.ct_right .section_box .link_list li em{
-	position: absolute;
-	left: 25px;
-	top: 1px;
-	display: block;
-	width: 35px;
-	height: 38px;
-	background: -moz-linear-gradient(left, rgba(255,255,255,0), #fff);
-	background: -webkit-gradient(linear, left top, right top, from(rgba(255,255,255,0)), to(#fff));
-	z-index: 900;
-}
-
-.index div.ct_right .section_box .link_list li a{
-	display: block;
-	margin: 0 5px 5px 0;
-	padding: 10px 0 10px 0;
-	border: 1px #f4aeba solid;
-	border-radius: 3px;		/* CSS3草案 */
-	-webkit-border-radius: 3px;	/* Safari,Google Chrome用 */
-	-moz-border-radius: 3px;	/* Firefox用 */
-	font-size: 85.5%;
-}
-
-.index div.ct_right .section_box .link_list li span{
-	position: relative;
-	display: block;
-	min-height: 13px;
-	margin: 0 0 0 48px;
-	padding: 0 5px 0 20px;
-	background: url(/application/themes/cms_wrestling3/assets/images/ico_arw2.gif) no-repeat 0 .25em;
-	z-index: 950;
-}
-
-
-	.index div.ct_right .section_box .link_list li.nav1 a{background: #fff url(/hak1k3000000clmt-img/hak1k3000000i7qc.jpg) no-repeat left top;}
-	.index div.ct_right .section_box .link_list li.nav1 a:hover{background: #fbf2f4 url(/hak1k3000000clmt-img/hak1k3000000i7qc.jpg) no-repeat left top;}
-	
-	.index div.ct_right .section_box .link_list li.nav2 a{background: #fff url(/hak1k3000000es17-img/hak1k3000000i7qj.jpg) no-repeat left top;}
-	.index div.ct_right .section_box .link_list li.nav2 a:hover{background: #fbf2f4 url(/hak1k3000000es17-img/hak1k3000000i7qj.jpg) no-repeat left top;}
-	
-	.index div.ct_right .section_box .link_list li.nav3 a{background: #fff url(/hak1k3000000c6e0-img/hak1k3000000i7qq.gif) no-repeat left top;}
-	.index div.ct_right .section_box .link_list li.nav3 a:hover{background: #fbf2f4 url(/hak1k3000000c6e0-img/hak1k3000000i7qq.gif) no-repeat left top;}
-	
-	.index div.ct_right .section_box .link_list li.nav4 a{background: #fff url(/hak1k3000000c6e0-img/hak1k3000000i7qx.gif) no-repeat left top;}
-	.index div.ct_right .section_box .link_list li.nav4 a:hover{background: #fbf2f4 url(/hak1k3000000c6e0-img/hak1k3000000i7qx.gif) no-repeat left top;}
-	
-	.index div.ct_right .section_box .link_list li.nav5 a{background: #fff url(/hak1k3000000c6e0-img/hak1k3000000i7r4.gif) no-repeat left top;}
-	.index div.ct_right .section_box .link_list li.nav5 a:hover{background: #fbf2f4 url(/hak1k3000000c6e0-img/hak1k3000000i7r4.gif) no-repeat left top;}
-	
-	.index div.ct_right .section_box .link_list li.nav6 a{background: #fff url(/hak1k3000000c6e0-img/hak1k3000000i7rb.gif) no-repeat left top;}
-	.index div.ct_right .section_box .link_list li.nav6 a:hover{background: #fbf2f4 url(/hak1k3000000c6e0-img/hak1k3000000i7rb.gif) no-repeat left top;}
-	
-	.index div.ct_right .section_box .link_list li.nav7 a{background: #fff url(/hak1k3000000c6e0-img/hak1k3000000i7ri.gif) no-repeat left top;}
-	.index div.ct_right .section_box .link_list li.nav7 a:hover{background: #fbf2f4 url(/hak1k3000000c6e0-img/hak1k3000000i7ri.gif) no-repeat left top;}
-	
-	.index div.ct_right .section_box .link_list li.nav8 a{background: #fff url(/hak1k3000000c6e0-img/hak1k3000000i7rp.gif) no-repeat left top;}
-	.index div.ct_right .section_box .link_list li.nav8 a:hover{background: #fbf2f4 url(/hak1k3000000c6e0-img/hak1k3000000i7rp.gif) no-repeat left top;}
-	
-	.index div.ct_right .section_box .link_list li.nav9 a{background: #fff url(/hak1k3000000c6e0-img/hak1k3000000i7rw.gif) no-repeat left top;}
-	.index div.ct_right .section_box .link_list li.nav9 a:hover{background: #fbf2f4 url(/hak1k3000000c6e0-img/hak1k3000000i7rw.gif) no-repeat left top;}
-	
-	.index div.ct_right .section_box .link_list li.nav10 a{background: #fff url(/hak1k3000000c6e0-img/hak1k3000000i7s3.jpg) no-repeat left top;}
-	.index div.ct_right .section_box .link_list li.nav10 a:hover{background: #fbf2f4 url(/hak1k3000000c6e0-img/hak1k3000000i7s3.jpg) no-repeat left top;}
-	
-	.index div.ct_right .section_box .link_list li.nav11 a{background: #fff url(/hak1k3000000c6e0-img/hak1k3000000i7sa.gif) no-repeat left top;}
-	.index div.ct_right .section_box .link_list li.nav11 a:hover{background: #fbf2f4 url(/hak1k3000000c6e0-img/hak1k3000000i7sa.gif) no-repeat left top;}
-	
-	.index div.ct_right .section_box .link_list li.nav12 a{background: #fff url(/hak1k3000000i3c9-img/hak1k3000000i7sh.jpg) no-repeat left top;}
-	.index div.ct_right .section_box .link_list li.nav12 a:hover{background: #fbf2f4 url(/hak1k3000000i3c9-img/hak1k3000000i7sh.jpg) no-repeat left top;}
-	
-	.index div.ct_right .section_box .link_list li.nav13 a{background: #fff url(/hak1k3000000c6e0-img/hak1k3000000i7so.jpg) no-repeat left top;}
-	.index div.ct_right .section_box .link_list li.nav13 a:hover{background: #fbf2f4 url(/hak1k3000000c6e0-img/hak1k3000000i7so.jpg) no-repeat left top;}
-	
-	.index div.ct_right .section_box .link_list li.nav14 a{background: #fff url(/hak1k3000000eq1w-img/hak1k3000000i7sv.jpg) no-repeat left top;}
-	.index div.ct_right .section_box .link_list li.nav14 a:hover{background: #fbf2f4 url(/hak1k3000000eq1w-img/hak1k3000000i7sv.jpg) no-repeat left top;}
-	
-	.index div.ct_right .section_box .link_list li.nav15 a{background: #fff url(/hak1k3000000fu9n-img/hak1k3000000i7t2.jpg) no-repeat left top;}
-	.index div.ct_right .section_box .link_list li.nav15 a:hover{background: #fbf2f4 url(/hak1k3000000fu9n-img/hak1k3000000i7t2.jpg) no-repeat left top;}
-	
-	.index div.ct_right .section_box .link_list li.nav16 a{background: #fff url(/hak1k3000000fu9n-img/hak1k3000000i7t9.jpg) no-repeat left top;}
-	.index div.ct_right .section_box .link_list li.nav16 a:hover{background: #fbf2f4 url(/hak1k3000000fu9n-img/hak1k3000000i7t9.jpg) no-repeat left top;}
-	
-	.index div.ct_right .section_box .link_list li.nav17 a{background: #fff url(/hak1k3000000gpfo-img/copy_of_copy_of_TOU_banner.png) no-repeat left top;}
-	.index div.ct_right .section_box .link_list li.nav17 a:hover{background: #fbf2f4 url(/hak1k3000000gpfo-img/copy_of_copy_of_TOU_banner.png) no-repeat left top;}
-	
-
-/* --------------------------------------------------------------------------------------
- sitemap
---------------------------------------------------------------------------------------- */
-
-/* .ttl ------------------------------ */
-
-.sitemap .ttl{
-	margin: 0 0 35px 0;
-	padding: 0 0 13px 0;
-	border-bottom: 1px #cdc6a2 solid;
-}
-
-.sitemap .ttl a{
-	padding: 0 0 0 24px;
-	background: url(/application/themes/cms_wrestling3/assets/images/ico_arw2.gif) no-repeat 0 50%;
-	line-height: 20px;
-}
-
-
-/* .link_box ------------------------------ */
-
-.sitemap .link_box {
-	margin: 0 0 35px 20px;
-}
-
-.sitemap .link_box li{
-	float: left;
-	width: 29.3%;
-	margin: 0 1% 0 0;
-}
-
-.sitemap .link_box li img{
-	vertical-align: middle;
-	margin: 0 0 0 5px;
-}
-
-.sitemap .link_box li{
-	padding: 0 0 0 22px;
-	background: url(/application/themes/cms_wrestling3/assets/images/ico_arw2.gif) no-repeat 0 .45em;
-}
-
-.sitemap .link_box li ul{
-	margin: 15px 0 0 5px;
-}
-
-.sitemap .link_box li ul li{
-	float: none;
-	width: auto;
-	margin: 0 0 2px 0;
-}
-
-.sitemap .link_box li ul li{
-	padding: 0 0 0 14px;
-	background: url(/application/themes/cms_wrestling3/assets/images/ico_arw3.gif) no-repeat 0 .45em;
-	line-height: 18px;
-}
-
-.sitemap .link_box li.small_arw{
-	padding: 0 0 0 14px;
-	background: url(/application/themes/cms_wrestling3/assets/images/ico_arw3.gif) no-repeat 0 .45em;
-}
-
-/* .link_box_border ------------------------------ */
-
-.sitemap .link_box_border {
-	margin: 0 0 35px 0;
-	padding: 0 0 13px 0;
-	border-bottom: 1px #cdc6a2 solid;
-}
-
-.sitemap .link_box_border li{
-	float: left;
-	width: 30.1%;
-	margin: 0 1% 5px 0;
-}
-
-
-/* --------------------------------------------------------------------------------------
- detail
---------------------------------------------------------------------------------------- */
-
-/* .detail right ------------------------------ */
-
-#ct_right .news_data {
-	display: inline-block;
-	margin: 0 0 10px 0;
-}
-
-#ct_right .news_data img{
-	margin: -3px 0 0 10px;
-	vertical-align: middle;
-}
-
-.ttl_main {
-	margin: 0 0 40px 0;
-	padding: 22px 0 25px 0;
-	border-bottom: 4px #544436 solid;
-	font-size: 171%;
-	font-family: "Hiragino Mincho ProN", "ヒラギノ明朝 Pro W3", "HGS明朝E","ＭＳ Ｐ明朝", "MS PMincho", serif;
-}
-
-.detail #ct_right .lead_box {
-	margin: 0 0 26px 0;
-	padding: 15px 10px 15px 10px;
-	border: 1px #f2ecd4 solid;
-	border-radius: 8px;		/* CSS3草案 */
-	-webkit-border-radius: 8px;	/* Safari,Google Chrome用 */
-	-moz-border-radius: 8px;	/* Firefox用 */
-	background: #fff;
-	font-size: 142.5%;
-	font-family: "Hiragino Mincho ProN", "ヒラギノ明朝 Pro W3", "HGS明朝E","ＭＳ Ｐ明朝", "MS PMincho", serif;
-}
-
-.detail #ct_right .ttl1 {
-	margin: 0 0 21px 0;
-	padding: 10px 0 18px 0;
-	border-bottom: 2px #c1b78a solid;
-	font-size: 128.3%;
-	font-family: "Hiragino Mincho ProN", "ヒラギノ明朝 Pro W3", "HGS明朝E","ＭＳ Ｐ明朝", "MS PMincho", serif;
-}
-
-.detail #ct_right .ttl2 {
-	position: relative;
-	margin: 0 0 -15px 0;
-	padding: 0 0 3px 0;
-	font-size: 128.3%;
-	font-family: "Hiragino Mincho ProN", "ヒラギノ明朝 Pro W3", "HGS明朝E","ＭＳ Ｐ明朝", "MS PMincho", serif;
-}
-*:first-child+html .detail #ct_right .ttl2 {
-	margin: 0 0 15px 0;
-}
-
-/* .detail img_list ------------------------------ */
-
-.detail #ct_right .txt_box .img_list {
-	width: 720px;
-	margin: 25px 0 0 0;
-}
-
-.detail #ct_right .txt_box .img_list ul{
-	width: 740px;
-	margin: 0 -20px 0 0;
-	overflow: hidden;
-}
-
-.detail #ct_right .txt_box .img_list ul li{
-	float: left;
-	width: 350px;
-	margin: 0 20px 20px 0;
-/* text-align: center;*/
-}
-
-.detail #ct_right .txt_box .img_list ul a{
-	display: block;
-	position: relative;
-}
-.detail #ct_right .txt_box .img_list ul a:hover {
-    background: none repeat scroll 0 0;
-    opacity: 0.7;
-}
-
-.detail #ct_right .txt_box .img_list em{
-	display: block;
-	width: 93.8%;
-	position: absolute;
-	left: 0;
-	bottom: 0;
-	padding: 8px 3.1% 8px 3.1%;
- background: url(/application/themes/cms_wrestling3/assets/images/bg_black.png) repeat;
-	color: #fff;
-	text-align: left;
-}
-
-.detail #ct_right .txt_box .img_list a {
-	text-decoration: none;
-}
-
-.detail #ct_right .txt_box .img_list a:hover {
-	opacity: 0.9;
-/* color: #fff !important; */
-	text-decoration: underline !important;
-}
-
-.detail #ct_right .txt_box .img_list a:hover img {
-	opacity: 0.7;
-	background: #fff;
-}
-
-.detail #ct_right .txt_box .img_list ul li span {
-	display: block;
-	width: auto;
-	margin: 3px 0 0 0;
-	font-size: 92.6%;
-	text-align: left;
-}
-
-.detail #ct_right .txt_box .img_list ul li span.photo_txt {
-	display: block;
-	width: auto;
-	margin: 13px 0 0 0;
-	font-size: 99.8%;
-}
-
-
-/* .detail img_list ------------------------------ */
-
-.detail #ct_right .txt_box .img_list_detail ul li {
-	float: none;
-	width: 720px;
-	margin: 0 0 20px 0;
-}
-
-.detail #ct_right .txt_box .img_list_detail ul li span{
-	display: block;
-	width: auto;
-	margin: 0 0 10px 0;
-	font-size: 100%;
-}
-
-
-/* .detail num_box ------------------------------ */
-
-.detail #ct_right .txt_box .num_box {
-	display: block;
-	margin: 0 0 0 0;
-	padding: 23px 0;
-	border: 1px #f2eedc solid;
-	border-radius: 4px;		/* CSS3草案 */
-	-webkit-border-radius: 4px;	/* Safari,Google Chrome用 */
-	-moz-border-radius: 4px;	/* Firefox用 */
-	background: #f2eedc;
-	text-align: center;
-	font-size: 99.8%;
-}
-
-.detail #ct_right .txt_box .num_box li{
-	display: inline;
-	width: 2.5%;
-}
-
-.detail #ct_right .txt_box .num_box li.det_num{
-	display: inline;
-	width: 15%;
-}
-
-.detail #ct_right .txt_box .num_box li.arw_left{
-	width: 97px;
-	margin: 0 70px 0 0;
-}
-
-.detail #ct_right .txt_box .num_box li.arw_right{
-	width: 97px;
-	margin: 0 0 0 70px;
-}
-
-.detail #ct_right .txt_box .num_box li.arw_left a{
-	min-height: 13px;
-	padding: 0 0 0 23px;
-	background: url(/application/themes/cms_wrestling3/assets/images/ico_arw8.gif) no-repeat 0 50%;
-}
-
-.detail #ct_right .txt_box .num_box li.arw_right a{
-	width: 97px;
-	min-height: 13px;
-	padding: 0 23px 0 0;
-	background: url(/application/themes/cms_wrestling3/assets/images/ico_arw2.gif) no-repeat right 50%;
-}
-
-
-.detail #ct_right .txt_box {
-	margin: 0 0 30px 0;
-}
-
-
-.detail #ct_right .txt_box div.wysiwyg_box{
-	margin: 28px 0 0 0;
-	padding:0;
-}
-
-
-.detail #ct_right .txt_box div.wysiwyg_box ul li span{
-	list-style: none;
-	margin: 5px 0 0 0;
-	padding: 0 0 0 21px;
-	background: url(/application/themes/cms_wrestling3/assets/images/ico_arw6.gif) no-repeat 2px .35em;
-}
-
-.detail #ct_right .txt_box div.wysiwyg_box ol li{
-	list-style-position: inside;
-}
-
-.detail #ct_right .txt_box div.wysiwyg_box ol li span{
-	margin: 5px 0 0 0;
-}
-
-.detail #ct_right .txt_box div.wysiwyg_box p{
-	margin: 0 0 0 0;
-}
-
-/* .detail table ------------------------------ */
-
-.detail #ct_right .txt_box div.wysiwyg_box table{
-	width: 100%;
-	margin: 0 0 0 0;
-	border-top: 1px #e9b9c0 dotted;
-	border-right: 1px #fff solid;
-	border-bottom: 1px #e9b9c0 dotted;
-	border-collapse: collapse;
-}
-
-.detail #ct_right .txt_box div.wysiwyg_box th{
-	padding: 11px 13px 11px 13px;
-	border-right: 1px #e9b9c0 dotted;
-	border-bottom: 1px #e9b9c0 dotted;
-	background: #fbf2f4;
-	text-align: center;
-	font-weight: normal;
-	vertical-align: middle;
-}
-
-.detail #ct_right .txt_box div.wysiwyg_box td{
-	padding: 11px 13px 11px 13px;
-	border-right: 1px #e9b9c0 dotted;
-	border-bottom: 1px #e9b9c0 dotted;
-}
-
-.detail #ct_right .txt_box div.wysiwyg_box td.center{
-	padding: 0 0 0 0;
-	border-bottom: 1px #e9b9c0 dotted;
-	text-align: center;
-}
-
-
-
-.detail #ct_right .txt_box p {
-	margin: 28px 0 0 0;
-}
-
-.detail #ct_right .txt_box .img_float {
-	margin: 28px 0 0 0;
-}
-
-.detail #ct_right .txt_box .right_img {
-	float: right;
-	margin: 0 0 0 23px;
-}
-
-.detail #ct_right .txt_box .center_img {
-	margin: 14px auto 0 auto;
-}
-
-.detail #ct_right .txt_box .left_img {
-	float: left;
-	margin: 0 23px 0 0;
-}
-
-.detail #ct_right .txt_box .mg_none {
-	margin: 0 0 0 0;
-}
-
-.detail #ct_right .txt_box .right_img span,
-.detail #ct_right .txt_box .left_img span,
-.detail #ct_right .txt_box .center_img span {
-	display: block;
-	margin: 3px 0 0 0;
-	font-size: 92.6%;
-}
-
-.detail #ct_right .txt_box .txt_right {
-	display: block;
-	margin: 3px 0 0 0;
-	font-size: 92.6%;
-	text-align: right;
-}
-
-.detail #ct_right .txt_box .arw_list {
-	margin: 28px 0 0 0;
-}
-
-.detail #ct_right .txt_box .arw_list li{
-	margin: 5px 0 0 0;
-	padding: 0 0 0 42px;
-	background: url(/application/themes/cms_wrestling3/assets/images/ico_arw6.gif) no-repeat 11px .4em;
-}
-
-.detail #ct_right .txt_box .number_list {
-	margin: 28px 0 0 33px;
-}
-
-.detail #ct_right .txt_box .number_list li{
-	margin: 5px 0 0 0;
-	padding: 0 0 0 0;
-}
-
-
-/* .detail table ------------------------------ */
-
-.detail #ct_right .txt_box .det_table table{
-	width: 100%;
-	margin: 40px 0 0 0;
-	border-top: 1px #e9b9c0 dotted;
-	border-right: 1px #fff solid;
-	border-bottom: 1px #e9b9c0 dotted;
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-.detail #ct_right .txt_box .det_table th{
-	padding: 11px 13px 11px 13px;
-	border-bottom: 1px #e9b9c0 dotted;
-	background: #fbf2f4;
-	text-align: center;
-	font-weight: normal;
-	vertical-align: middle;
-}
-
-.detail #ct_right .txt_box .det_table td{
-	padding: 11px 13px 11px 13px;
-	border-right: 1px #e9b9c0 dotted;
-	border-bottom: 1px #e9b9c0 dotted;
-}
-
-.detail #ct_right .txt_box .det_table td.center{
-	padding: 0 0 0 0;
-	border-bottom: 1px #e9b9c0 dotted;
-	text-align: center;
-}
-
-
-/* .detail link_box ------------------------------ */
-
-.detail #ct_right .link_box{
-	margin: 0 0 40px 0;
-}
-
-.detail #ct_right .link_box h2{
-	padding: 7px 13px 7px 13px;
-	border: 1px #554537 solid;
-	border-radius: 6px;		/* CSS3草案 */
-	-webkit-border-radius: 6px;	/* Safari,Google Chrome用 */
-	-moz-border-radius: 6px;	/* Firefox用 */
-	background: #554537;
-	font-size: 128.5%;
-	color: #fff;
-}
-
-.detail #ct_right .link_box .lead{
-	margin: 15px 0 0 3px;
-}
-
-.detail #ct_right .link_box .arw_list{
-	margin: 15px 0 0 0;
-}
-
-.detail #ct_right .link_box .arw_list_none{
-	position: relative;
-	margin: -35px 0 0 0;
-}
-
-.detail #ct_right .link_box .arw_list li{
-	margin: 0 0 5px 0;
-	padding: 0 0 0 41px;
-	background: url(/application/themes/cms_wrestling3/assets/images/ico_arw7.gif) no-repeat 11px .3em;
-}
-
-.detail #ct_right .link_box .arw_list li img{
-	vertical-align: middle;
-	margin: 0 0 0 5px;
-}
-
-
-/* .detail link_location_box ------------------------------ */
-
-.detail #ct_right .link_location_box{
-	margin: 0 0 40px 0;
-}
-
-.detail #ct_right .link_location_box h2{
-	padding: 7px 13px 7px 13px;
-	border: 1px #b30926 solid;
-	border-radius: 6px 6px 0 0;		/* CSS3草案 */
-	-webkit-border-radius:  6px 6px 0 0;	/* Safari,Google Chrome用 */
-	-moz-border-radius:  6px 6px 0 0;	/* Firefox用 */
-	background: #b30926;
-	font-size: 128.5%;
-	color: #fff;
-}
-
-.detail #ct_right .link_location_box .lead{
-	margin: 15px 0 15px 3px;
-}
-
-.detail #ct_right .link_location_box .arw_list {
-	padding: 18px 20px 18px 20px;
-	border: 1px #f2ecd4 solid;
-	border-radius: 0 0 8px 8px;		/* CSS3草案 */
-	-webkit-border-radius:  0 0 8px 8px;	/* Safari,Google Chrome用 */
-	-moz-border-radius:  0 0 8px 8px;	/* Firefox用 */
-	background: #fff;
-}
-
-.detail #ct_right .link_location_box .arw_list li{
-	float: left;
-	display: inline;
-	width: 300px;
-	margin: 0 0 5px 0;
-	padding: 0 0 0 20px;
-	background: url(/application/themes/cms_wrestling3/assets/images/ico_arw3.gif) no-repeat 11px .55em;
-	vertical-align: top;
-}
-
-.detail #ct_right .link_location_box .arw_list li img{
-	vertical-align: middle;
-	margin: 0 0 0 5px;
-}
-
-
-/* --------------------------------------------------------------------------------------
- guide
---------------------------------------------------------------------------------------- */
-
-/* .guide ------------------------------ */
-
-.guide .main_bg {
-	position: relative;
-	width: 1000px;
-	height: 276px;
-}
-
-.guide .main_bg img{
-	position: relative;
-	border-radius: 6px;		/* CSS3草案 */
-	-webkit-border-radius: 6px;	/* Safari,Google Chrome用 */
-	-moz-border-radius: 6px;	/* Firefox用 */
-	z-index: -1;
-}
-
-.guide .main_bg h1{
-	position: absolute;
-	left: 0;
-	bottom: 0;
-	width: 98%;
-	padding: 10px 1% 10px 1%;
-	border-radius: 0 0 6px 6px;		/* CSS3草案 */
-	-webkit-border-radius: 0 0 6px 6px;	/* Safari,Google Chrome用 */
-	-moz-border-radius: 0 0 6px 6px;	/* Firefox用 */
-	background: url(/application/themes/cms_wrestling3/assets/images/bg_ttl_gray.png) repeat;
-	font-size: 171%;
-	font-family: "Hiragino Mincho ProN", "ヒラギノ明朝 Pro W3", "HGS明朝E","ＭＳ Ｐ明朝", "MS PMincho", serif;
-	color: #000000;
-	font-weight: bold;
-}
-
-/* .guide_box ------------------------------ */
-
-.guide .guide_box {
-	position: relative;
-	width: 1081px;
-	margin: 0 -81px 0 0;
-	overflow: hidden;
-}
-
-.guide .guide_box .left_box1{
-	float: left;
-	width: 690px;
-}
-
-.guide .guide_box .left_box2{
-	float: left;
-	width: 306;
-}
-
-.guide .guide_box1 {
-	float: left;
-	width: 300px;
-	margin: 0 36px 30px 0;
-	border: 3px #e2ddc2 solid;
-	background: #f3f0e0;
-	vertical-align: top;
-}
-
-.guide .guide_box1 div{
-	padding: 21px 23px 21px 23px;
-}
-
-.guide .guide_box1 div div{
-	padding:0;
-}
-
-.guide .guide_box1 div ul{
-	margin: 0 0 0 23px;
-}
-
-.guide .guide_box1 div ul li{
-	list-style: disc;
-}
-
-.guide .guide_box1 div ol{
-	margin: 0 0 0 23px;
-}
-
-.guide .guide_box2 {
-	float: left;
-	width: 306px;
-	margin: 0 34px 50px 0;
-	vertical-align: top;
-}
-
-.guide .guide_box2 .ttl{
-	margin: 0 0 16px 0;
-	padding: 10px 0 11px 0;
-	border-top: 4px #b30925 solid;
-	border-bottom: 1px #cdc6a2 solid;
-	font-size: 128.3%;
-	font-family: "Hiragino Mincho ProN", "ヒラギノ明朝 Pro W3", "HGS明朝E","ＭＳ Ｐ明朝", "MS PMincho", serif;
-}
-
-.guide .guide_box2 p{
-	margin: 0 0 10px 0;
-}
-
-.guide .guide_box2 .line_dot{
-	margin: 10px 0 0 0;
-	padding: 10px 0 0 0;
-	background: url(/application/themes/cms_wrestling3/assets/images/line_dot1.gif) repeat-x left top;
-}
-
-/* link_large */
-
-
-.guide .guide_box2 .link_det a{
-	display: inline-block;
-	width: 100%;
-	padding: 4px 0;
-	border: 1px #f3f0e0 solid;
-	border-radius: 3px;		/* CSS3草案 */
-	-webkit-border-radius: 3px;	/* Safari,Google Chrome用 */
-	-moz-border-radius: 3px;	/* Firefox用 */
-	text-align: right;
-	font-size: 85.5%;
-	background: #f3f0e0;
-}
-
-.guide .guide_box2 .link_det a:hover{
-	text-decoration: underline !important;
-}
-
-.guide .guide_box2 .link_det span{
-	padding: 10px 0 10px 10px;
-	background: url(/application/themes/cms_wrestling3/assets/images/ico_arw3.gif) no-repeat 0 center;
-}
-
-.guide .guide_box2 .ttl_lead{
-	margin: 0 0 24px 0;
-}
-
-.guide .guide_box2 .link_arw a{
-	min-height: 13px;
-	padding: 0 0 0 25px;
-	background: url(/application/themes/cms_wrestling3/assets/images/ico_arw2.gif) no-repeat 0 50%;
-}
-
-/* link_large */
-
-.guide .guide_box2 ul.link_large{
-	padding: 0 0 10px 26px;
-}
-
-.guide .guide_box2 ul.link_large li{
-	margin: 0 0 5px 0;
-	padding: 0 0 0 19px;
-	background: url(/application/themes/cms_wrestling3/assets/images/ico_arw3.gif) no-repeat 0 .5em;
-}
-
-.guide .guide_box2 ul.link_large li img{
-	vertical-align: middle;
-	margin: 0 0 0 5px;
-}
-
-/* link_small */
-
-.guide .guide_box2 ul.link_small {
-	padding-left: 3px;
-}
-
-.guide .guide_box2 ul.link_small img{
-	vertical-align: middle;
-	margin: 0 0 0 5px;
-}
-
-.guide .guide_box2 ul.link_small li{
-	margin: 0 0 7px 0;
-	padding: 0 0 0 23px;
-	background: url(/application/themes/cms_wrestling3/assets/images/ico_circle1.gif) no-repeat 0 .4em;
-}
-
-.guide .guide_box2 ul.link_small li ul{
-	float: none;
-	margin: 9px 0 0 0;
-}
-
-.guide .guide_box2 ul.link_small li ul li{
-	margin: 0 0 0 0;
-	padding: 0 0 7px 23px;
-	background: url(/application/themes/cms_wrestling3/assets/images/ico_circle2.gif) no-repeat 0 .3em;
-}
-
-
-/* news_list */
-
-.guide .guide_box2 .news_list{
-	display: block;
-	padding: 0;
-	border: none;
-	border-radius: 0;		/* CSS3草案 */
-	background: none;
-}
-
-.guide .guide_box2 .news_list .ttl {
-	position: relative;
-	padding: 0 0 4px 12px;
-	border-radius: 5px;		/* CSS3草案 */
-	-webkit-border-radius: 5px;	/* Safari,Google Chrome用 */
-	-moz-border-radius: 5px;	/* Firefox用 */
-	background: #b30925;
-	font-size: 128.5%;
-	font-family: "Hiragino Mincho ProN", "ヒラギノ明朝 Pro W3", "HGS明朝E","ＭＳ Ｐ明朝", "MS PMincho", serif;
-	color: #fff;
-	font-weight: normal;
-	margin: 0 0 18px 0;
-}
-
-.guide .guide_box2 .news_list .ttl span{
-	position: absolute;
-	right: 0;
-	top: 5px;
-}
-
-.guide .guide_box2 .news_list .right_btn{
-	display: none;
-}
-
-.guide .guide_box2 .news_list dl{
-	margin: 0 0 14px 0;
-	padding: 0 0 14px 0;
-	border-bottom: 1px #e9b9c1 dotted;
-}
-.guide .guide_box2 .news_list dl:after { content:"."; display:block; height:0; clear:both; visibility:hidden;font-size: .1em;}
-.guide .guide_box2 .news_list dl{ display:inline-block; }
-/*\*/
-* html .guide .guide_box2 .news_list dl { height:1%; }
-.guide .guide_box2 .news_list dl { display:block; }
-/**/
-
-.guide .guide_box2 .news_list dl dt{
-	float: left;
-	display: inline-block;
-	width: 91px;
-	padding: 0 0 0 13px;
-	background: url(/application/themes/cms_wrestling3/assets/images/ico_circle3.gif) no-repeat 0 .35em;
-	font-size: 85.5%;
-	vertical-align: top;
-}
-
-.guide .guide_box2 .news_list dl dt img{
-	margin: 4px 0 0 -13px;
-}
-
-.guide .guide_box2 .news_list dl dd{
-	float: left;
-	display: inline-block;
-	width: 65%;
-}
-
-.news_list dl dd img{
-	vertical-align: middle;
-	margin: 0 0 0 5px;
-}
-
-
-/* news_list_low */
-
-.guide .guide_box2 .news_list_low{
-	display: block;
-	padding: 0 0 0 0;
-	border: none;
-	border-radius: 6px;		/* CSS3草案 */
-	-webkit-border-radius: 6px;	/* Safari,Google Chrome用 */
-	-moz-border-radius: 6px;	/* Firefox用 */
-	background: none;
-}
-
-.guide .guide_box2 .news_list_low dl dd{
-	display: inline-block;
-	width: 84%;
-}
-
-
-/* --------------------------------------------------------------------------------------
- course
---------------------------------------------------------------------------------------- */
-
-/* .course ------------------------------ */
-
-.course .top_list1 {
-	width: auto;
-	margin: 0 0 40px 0;
-}
-
-.course .top_list1 .left_box{
-	float: left;
-	width: 48%;
-}
-
-.course .top_list1 .right_box{
-	float: right;
-	width: 48%;
-}
-
-.course .top_list1 h3{
-	margin: 12px 0 12px 0;
-	padding: 0 0 0 20px;
-	background: url(/application/themes/cms_wrestling3/assets/images/ico_arw2.gif) no-repeat 0 50%;
-	font-size: 142.5%;
-	font-family: "Hiragino Mincho ProN", "ヒラギノ明朝 Pro W3", "HGS明朝E","ＭＳ Ｐ明朝", "MS PMincho", serif;
-}
-
-.course .top_list1 .img_link img{
-	border: 1px #ffffff solid;
-	border-radius: 10px;		/* CSS3草案 */
-	-webkit-border-radius: 10px;	/* Safari,Google Chrome用 */
-	-moz-border-radius: 10px;	/* Firefox用 */
-}
-
-.course .top_list1 .img_link a:hover{
-	opacity: 0.6;
-}
-
-.course .top_list2 {
-	float: left;
-	width: 31.3%;
-	margin: 0 2% 25px 0;
-	vertical-align: top;
-}
-
-.course .top_list2 .ttl{
-	margin: 0 0 10px 0;
-	padding: 10px 0 11px 20px;
-	border-top: 4px #b30925 solid;
-	border-bottom: 1px #cdc6a2 solid;
-	background: url(/application/themes/cms_wrestling3/assets/images/ico_arw2.gif) no-repeat 0 .9em;
-	font-size: 128.3%;
-	font-family: "Hiragino Mincho ProN", "ヒラギノ明朝 Pro W3", "HGS明朝E","ＭＳ Ｐ明朝", "MS PMincho", serif;
-}
-
-.course .top_list2 .link_kamoku{
-	margin: 0 0 20px 0;
-	font-size: 128.3%;
-}
-
-.course .top_list2 .link_kamoku li{
-	float: right;
-	margin: 0 0 0 2%;
-	padding: 5px 10px;
-	text-align: center;
-	color: #fff;
-}
-
-.course .top_list2 .link_kamoku li.blue{
-	border: 1px #4d9ccc solid;
-	border-radius: 5px;		/* CSS3草案 */
-	-webkit-border-radius: 5px;	/* Safari,Google Chrome用 */
-	-moz-border-radius: 5px;	/* Firefox用 */
-	background: #4d9ccc;
-}
-
-.course .top_list2 .link_kamoku li.green{
-	border: 1px #89cc32 solid;
-	border-radius: 5px;		/* CSS3草案 */
-	-webkit-border-radius: 5px;	/* Safari,Google Chrome用 */
-	-moz-border-radius: 5px;	/* Firefox用 */
-	background: #89cc32;
-}
-
-.course .top_list2 .link_kamoku li.yellow{
-	border: 1px #f6bd0f solid;
-	border-radius: 5px;		/* CSS3草案 */
-	-webkit-border-radius: 5px;	/* Safari,Google Chrome用 */
-	-moz-border-radius: 5px;	/* Firefox用 */
-	background: #f6bd0f;
-}
-
-.course .top_list2 .link_kamoku li.pink{
-	border: 1px #f27f91 solid;
-	border-radius: 5px;		/* CSS3草案 */
-	-webkit-border-radius: 5px;	/* Safari,Google Chrome用 */
-	-moz-border-radius: 5px;	/* Firefox用 */
-	background: #f27f91;
-}
-
-.course .top_list2 p{
-	margin: 0 0 10px 0;
-}
-
-/* .link_box ------------------------------ */
-
-.course .link_box {
-	margin: 0 0 0 0;
-	padding: 37px 0 0 0;
-	border-top: 1px #cdc6a2 solid;
-}
-
-.course .link_box li{
-	margin: 0 0 5px 0;
-}
-
-.course .link_box li{
-	margin: 0 0 5px 0;
-}
-
-.course .link_box li img{
-	vertical-align: middle;
-	margin: 0 0 0 5px;
-}
-
-.course .link_box li a{
-	display: inline-block;
-	padding: 0 0 0 24px;
-	background: url(/application/themes/cms_wrestling3/assets/images/ico_arw2.gif) no-repeat 0 .35em;
-}
-
-
-/* .course detail ------------------------------ */
-
-.course .link_arw1{
-	margin: 5px 0 0 0;
-	padding: 0 0 0 20px;
-	background: url(/application/themes/cms_wrestling3/assets/images/ico_arw2.gif) no-repeat 0 50%;
-}
-
-.course .link_arw1 img{
-	margin: 0 0 0 5px;
-	vertical-align: middle;
-}
-
-.course .course_list {
-	width: 112%;
-	margin-right: -12%;
-	overflow: hidden;
-	_zoom: 1;
-}
-
-.course .teacher_area {
-	float: left;
-	width: 41.9%;
-	margin: 35px 5.5% 0 0;
-}
-
-
-.course .teacher_area .name_box{
-	padding: 0;
-	margin: 0 0 3.5% 0;
-}
-
-.course .teacher_area .name_box_none{
-	position: relative;
-	height: auto;
-}
-
-.course .teacher_area .left_img{
-	display: inline;
-	float: left;
-	margin: 0 15px 0 0;
-}
-
-.course .teacher_area .left_img img{
-	border: 3px #f3f0e0 solid;
-	border-radius: 5px;		/* CSS3草案 */
-	-webkit-border-radius: 5px;	/* Safari,Google Chrome用 */
-	-moz-border-radius: 5px;	/* Firefox用 */
-}
-
-.course .teacher_area .left_img a:hover {
-	opacity: 0.7;
-	background: #fff;
-}
-
-.course .teacher_area .name_box .name{
-	margin: .5% 0 0 0;
-	font-size: 128.3%;
-	font-family: "Hiragino Mincho ProN", "ヒラギノ明朝 Pro W3", "HGS明朝E","ＭＳ Ｐ明朝", "MS PMincho", serif;
-}
-
-.course .teacher_area .name_box_none .name{
-	float: none;
-	width: 97%;
-	margin: .5% 0 0 0;
-	font-size: 128.3%;
-	font-family: "Hiragino Mincho ProN", "ヒラギノ明朝 Pro W3", "HGS明朝E","ＭＳ Ｐ明朝", "MS PMincho", serif;
-}
-
-.course .teacher_area .name_link {
+@media all and (min-width: 641px) {
+
+	/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    +
+    +　タイトル : ページ共有のスタイル
+    +　ファイル名 : ファイルのパスを入れます。(ルート、相対どちらでも)
+    +　概要 : CSSの用途を説明を入れます。
+    +　サイト名 : サイトの説明を入れます。
+    +　URL : http://
+    +
+    +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+	/* --------------------------------------------------------------------------------------
+     index
+    --------------------------------------------------------------------------------------- */
+	/* .main_bg ------------------------------ */
+	.index #main_img span {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		display: block;
+		width: 100%;
+		height: 80px;
+		background: -moz-linear-gradient(top, rgba(255, 255, 255, 0), #fff);
+		background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(#fff));
+		z-index: 900;
+	}
+
+	.index #main_img p {
+		display: none;
+	}
+
+	.index .btn_ct_sp {
+		display: none;
+	}
+
+	/* .urgent_announcement ------------------------------ */
+	.index .urgent_announcement {
+		position: relative;
+		display: block;
+		width: 1000px;
+		margin: -113px auto 143px auto;
+		border: 2px #e5b4b8 solid;
+		border-radius: 8px; /* CSS3草案 */
+		-webkit-border-radius: 8px; /* Safari,Google Chrome用 */
+		-moz-border-radius: 8px; /* Firefox用 */
+		background: url(../images/bg_emergency.png) repeat;
+		z-index: 9998;
+	}
+
+	.index .urgent_announcement .inner {
+		padding: 16px 20px 1px 20px;
+	}
+
+	.index .urgent_announcement h2 {
+		display: block;
+		min-height: 27px;
+		margin: 0 0 0 0;
+		padding: 0 0 0 47px;
+		background: url(../images/ico_emergency.png) no-repeat left .2em;
+		font-size: 166.9%;
+		font-family: "Hiragino Mincho ProN", "ヒラギノ明朝 Pro W3", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+		color: #b30926;
+		z-index: 9999;
+	}
+
+	.index .urgent_announcement .inner ul {
+		overflow: hidden;
+	}
+
+	.index .urgent_announcement .inner li {
+		margin: -1px 0 0 0;
+		border-top: 1px #e8b5bd dotted;
+		font-size: 117%;
+	}
+
+	.index .urgent_announcement .inner span {
+		display: block;
+		margin: 15px 0 0 0;
+		padding: 0 0 15px 0;
+		color: #000;
+	}
+
+	.index .urgent_announcement h2 span {
+		position: absolute;
+		right: 0;
+		top: 0px;
+		color: #333;
+		font-size: 60%;
+		font-weight: normal;
+	}
+
+	/* .ct_left ------------------------------ */
+	.index div.ct_left {
+		float: left;
+		width: 485px;
+	}
+
+	.index div.ct_left .section_box {
+		margin: 0 0 30px 0;
+	}
+
+	/* prospect_bnr */
+	.index div.ct_left .section_box .prospect_bnr a {
+		display: inline-block;
+		border-radius: 6px;
+		background-color: #FFF;
+		overflow: hidden;
+	}
+
+	.index div.ct_left .section_box .prospect_bnr a:hover img {
+		opacity: 0.7;
+	}
+
+	/* pickup_bnr */
+	.index div.ct_left .section_box .bnr_box {
+		width: 492px;
+	}
+
+	.index div.ct_left .section_box .bnr_box li {
+		position: relative;
+		margin: 0 0 10px 0;
+		text-align: left;
+	}
+
+	.index div.ct_left .section_box .bnr_box span.pickup {
+		position: absolute;
+		left: 0;
+		top: 0;
+		z-index: 9999;
+	}
+
+	.index div.ct_left .section_box .bnr_box span.left_img {
+		display: inline-block;
+		vertical-align: top;
+	}
+
+	.index div.ct_left .section_box .bnr_box span.right_txt {
+		display: inline-block;
+		width: 60%;
+		margin: 0 0 0 20px;
+		vertical-align: middle;
+	}
+
+	.index div.ct_left .section_box .bnr_box li a {
+		display: block;
+		margin: 0 5px 5px 0;
+		font-size: 128.5%;
+		font-family: "Hiragino Mincho ProN", "ヒラギノ明朝 Pro W3", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+		color: #b30926;
+		font-weight: bold;
+		border: 2px #b30926 solid;
+		border-radius: 4px; /* CSS3草案 */
+		-webkit-border-radius: 4px; /* Safari,Google Chrome用 */
+		-moz-border-radius: 4px; /* Firefox用 */
+		background: #b30926;
+		color: #fff;
+	}
+
+	.index div.ct_left .section_box .bnr_box li a:hover {
+		border: 2px #ca5367 solid;
+		background: #ca5367;
+	}
+
+	.index div.ct_left .section_box .bnr_box em {
+		display: block;
+		font-size: 66.5%;
+		font-family: 'メイリオ', 'Meiryo', 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'Osaka', 'ＭＳ Ｐゴシック', Arial, sans-serif;
+	}
+
+	/* rss */
+	.right_rss {
+		margin: 10px 0 0 0;
+		text-align: right;
+		font-size: 12px;
+	}
+
+	.right_rss img {
+		margin: 0 0 -5px 10px;
+	}
+
+	.list_right_rss {
+		margin: 10px 0 0 0;
+		text-align: right;
+		font-size: 12px;
+	}
+
+	.list_right_rss img {
+		margin: 0 0 -5px 10px;
+	}
+
+	/* news_list */
+	.news_list {
+		display: block;
+		padding: 16px 21px 9px 21px;
+		border-top: 4px #b30926 solid;
+		border-right: 1px #f6f4ed solid;
+		border-bottom: 1px #f6f4ed solid;
+		border-left: 1px #f6f4ed solid;
+		border-radius: 6px; /* CSS3草案 */
+		-webkit-border-radius: 6px; /* Safari,Google Chrome用 */
+		-moz-border-radius: 6px; /* Firefox用 */
+		background: #fff url(/images/bg_topics.gif) repeat-x left top;
+	}
+
+	.news_list .ttl {
+		position: relative;
+		padding: 3px 0 0 37px;
+		background: url(../images/ico_news.gif) no-repeat left .2em;
+		font-size: 142.5%;
+		font-family: "Hiragino Mincho ProN", "ヒラギノ明朝 Pro W3", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+		color: #b30926;
+		font-weight: bold;
+		margin: 0 0 18px 0;
+	}
+
+	.news_list.event .ttl {
+		background: url(../images/ico_event.gif) no-repeat left .2em;
+	}
+
+	.news_list .ttl span {
+		position: absolute;
+		right: 0;
+		top: 5px;
+	}
+
+	.news_list .right_btn {
+		display: none;
+	}
+
+	.news_list .right_btn_block {
+		display: block !important;
+		text-align: right;
+	}
+
+	.news_list dl {
+		margin: 0 0 14px 0;
+		padding: 0 0 14px 0;
+		border-bottom: 1px #e9b9c1 dotted;
+		clear: both;
+	}
+
+	.news_list dl:after {
+		content: ".";
+		display: block;
+		height: 0;
+		clear: both;
+		visibility: hidden;
+		font-size: .1em;
+	}
+
+	.news_list dl {
+		display: inline-block;
+	}
+
+	/*\*/
+	* html .news_list dl {
+		height: 1%;
+	}
+
+	.news_list dl {
+		display: block;
+	}
+
+	/**/
+	.news_list dl dt {
+		float: left;
+		display: inline-block;
+		width: 91px;
+		padding: 0 0 0 13px;
+		background: url(../images/ico_circle3.gif) no-repeat 0 .35em;
+		font-size: 85.5%;
+		vertical-align: top;
+	}
+
+	.news_list dl dt img {
+		margin: 4px 0 0 -13px;
+	}
+
+	.news_list dl dd {
+		float: left;
+		display: inline-block;
+		width: 330px;
+	}
+
+	.news_list dl dd img {
+		vertical-align: middle;
+		margin: 0 0 0 5px;
+	}
+
+	/* news_list_low */
+	.news_list_low {
+		display: block;
+		padding: 0 0 0 0;
+		border: none;
+		border-radius: 6px; /* CSS3草案 */
+		-webkit-border-radius: 6px; /* Safari,Google Chrome用 */
+		-moz-border-radius: 6px; /* Firefox用 */
+		background: none;
+	}
+
+	.news_list_low dl dd {
+		display: inline-block;
+		width: 84%;
+	}
+
+	/* topics_list */
+	.index div.ct_left .section_box .topics_list {
+		display: block;
+		padding: 16px 21px 9px 21px;
+		border-top: 4px #b30926 solid;
+		border-right: 1px #f6f4ed solid;
+		border-bottom: 1px #f6f4ed solid;
+		border-left: 1px #f6f4ed solid;
+		border-radius: 6px; /* CSS3草案 */
+		-webkit-border-radius: 6px; /* Safari,Google Chrome用 */
+		-moz-border-radius: 6px; /* Firefox用 */
+		background: #fff url(/images/bg_topics.gif) repeat-x left top;
+	}
+
+	.index div.ct_left .section_box .topics_list .ttl {
+		padding: 0 0 0 37px;
+		background: url(../images/ico_topics.gif) no-repeat left .2em;
+		font-size: 142.5%;
+		font-family: "Hiragino Mincho ProN", "ヒラギノ明朝 Pro W3", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+		color: #b30926;
+		font-weight: bold;
+		margin: 0 0 18px 0;
+		min-height: 27px;
+	}
+
+	.index div.ct_left .section_box .topics_list .info_txt a {
+		display: block;
+		margin: 0 0 18px 0;
+		padding: 9px 9px 9px 18px;
+		border-top: 1px #f4aeba solid;
+		border-right: 1px #f4aeba solid;
+		border-bottom: 1px #f4aeba solid;
+		border-left: 1px #f4aeba solid;
+		border-radius: 6px; /* CSS3草案 */
+		-webkit-border-radius: 6px; /* Safari,Google Chrome用 */
+		-moz-border-radius: 6px; /* Firefox用 */
+		background: #fff url(/images/ico_arw3.gif) no-repeat 10px 50%;
+		font-size: 128.8%;
+	}
+
+	.index div.ct_left .section_box .topics_list .info_txt a:hover {
+		background: #fbf2f4 url(/images/ico_arw3.gif) no-repeat 10px 50%;
+	}
+
+	.index div.ct_left .section_box .topics_list .info_txt .left_txt {
+		display: inline-block;
+		width: 290px;
+		vertical-align: middle;
+	}
+
+	.index div.ct_left .section_box .topics_list .info_txt .right_img {
+		display: inline-block;
+		width: 117px;
+		vertical-align: middle;
+	}
+
+	.index div.ct_left .section_box .topics_list li {
+		margin: 0 0 10px 0;
+		padding: 0 0 10px 10px;
+		border-bottom: 1px #e9b9c1 dotted;
+		background: url(../images/ico_arw3.gif) no-repeat 0 .6em;
+		font-size: 85.5%;
+	}
+
+	/* .ct_right ------------------------------ */
+	.index div.ct_right {
+		float: right;
+		width: 485px;
+	}
+
+	.index div.ct_right .section_box {
+		margin: 0 0 30px 0;
+	}
+
+	/* teacher_box */
+	.index div.ct_right .section_box .teacher_box {
+		display: block;
+		padding: 18px 21px 22px 21px;
+		border: 3px #f4f1e2 solid;
+		border-radius: 6px; /* CSS3草案 */
+		-webkit-border-radius: 6px; /* Safari,Google Chrome用 */
+		-moz-border-radius: 6px; /* Firefox用 */
+		background: #fff;
+	}
+
+	.index div.ct_right .section_box .teacher_box .ttl {
+		position: relative;
+		padding: 3px 0 0 37px;
+		background: url(../images/ico_teacher1.gif) no-repeat left .2em;
+		font-size: 142.5%;
+		font-family: "Hiragino Mincho ProN", "ヒラギノ明朝 Pro W3", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+		color: #b30926;
+		font-weight: bold;
+		margin: 0 0 18px 0;
+	}
+
+	.index div.ct_right .section_box .teacher_box .ttl span {
+		position: absolute;
+		right: 0;
+		top: 5px;
+	}
+
+	.index div.ct_right .section_box .teacher_box .left_img {
+		float: left;
+		margin: 0 0 0 -110px;
+		border: 3px #f4f1e2 solid;
+		border-radius: 6px; /* CSS3草案 */
+		-webkit-border-radius: 6px; /* Safari,Google Chrome用 */
+		-moz-border-radius: 6px; /* Firefox用 */
+	}
+
+	.index div.ct_right .section_box .teacher_box .right_txt {
+		width: 325px;
+		margin: 0 0 0 88px;
+		padding: 0 0 0 20px;
+		background: #fff;
+	}
+
+	.index div.ct_right .section_box .teacher_box .right_txt dl {
+		margin: 0 0 13px 0;
+	}
+
+	.index div.ct_right .section_box .teacher_box .right_txt dt {
+		margin: 0 0 10px 0;
+		padding: 0 0 10px 3px;
+		border-bottom: 2px #b30926 solid;
+		font-size: 129%;
+		font-family: "Hiragino Mincho ProN", "ヒラギノ明朝 Pro W3", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+	}
+
+	.index div.ct_right .section_box .teacher_box .right_txt dt span {
+		font-size: 77.5%;
+	}
+
+	.index div.ct_right .section_box .teacher_box .right_txt .link_det a {
+		display: inline-block;
+		width: 100%;
+		border: 1px #f3f0e0 solid;
+		border-radius: 3px; /* CSS3草案 */
+		-webkit-border-radius: 3px; /* Safari,Google Chrome用 */
+		-moz-border-radius: 3px; /* Firefox用 */
+		text-align: right;
+		font-size: 85.5%;
+		background: #f3f0e0;
+	}
+
+	.index div.ct_right .section_box .teacher_box .right_txt .link_det a span {
+		display: inline-block;
+		padding: 4px 10px;
+		background: url(../images/ico_arw3.gif) no-repeat 0 center;
+	}
+
+	.index div.ct_right .section_box .teacher_box .right_txt .link_det a:hover span {
+		text-decoration: underline;
+	}
+
+	/* plumgarden_box */
+	.index div.ct_right .section_box .plumgarden_box {
+		display: block;
+		padding: 13px 21px 22px 21px;
+		border: 3px #f4f1e2 solid;
+		border-radius: 6px; /* CSS3草案 */
+		-webkit-border-radius: 6px; /* Safari,Google Chrome用 */
+		-moz-border-radius: 6px; /* Firefox用 */
+		background: #fff;
+	}
+
+	.index div.ct_right .section_box .plumgarden_box h2.ttl {
+		position: relative;
+		font-family: "Hiragino Mincho ProN", "ヒラギノ明朝 Pro W3", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+		font-size: 114%;
+		color: #b30926;
+		font-weight: bold;
+		margin: 0 0 15px 0;
+	}
+
+	.index div.ct_right .section_box .plumgarden_box h2.ttl .logo {
+		display: block;
+		margin-top: 3px;
+	}
+
+	.index div.ct_right .section_box .plumgarden_box h2.ttl .list {
+		position: absolute;
+		right: 0;
+		bottom: 12px;
+	}
+
+	.index div.ct_right .section_box .plumgarden_box .clearfix .img {
+		float: left;
+		margin: 0 20px 0 0;
+	}
+
+	.index div.ct_right .section_box .plumgarden_box .clearfix .img img {
+		border-radius: 4px; /* CSS3草案 */
+		-webkit-border-radius: 4px; /* Safari,Google Chrome用 */
+		-moz-border-radius: 4px; /* Firefox用 */
+	}
+
+	.index div.ct_right .section_box .plumgarden_box .clearfix .txt {
+		width: 327px;
+		float: right;
+	}
+
+	.index div.ct_right .section_box .plumgarden_box .clearfix .txt .date {
+		display: block;
+		margin: 5px 0 8px 0;
+		font-size: 85.5%;
+	}
+
+	.index div.ct_right .section_box .plumgarden_box .clearfix .txt .ttl {
+		font-size: 115%;
+		display: none;
+	}
+
+	/* university_box */
+	.index div.ct_right .section_box .university_box {
+		margin: 0 0 30px 0;
+		padding: 20px;
+		background-color: #fff;
+		border: 3px #f4f1e2 solid;
+		border-radius: 6px; /* CSS3草案 */
+		-webkit-border-radius: 6px; /* Safari,Google Chrome用 */
+		-moz-border-radius: 6px; /* Firefox用 */
+	}
+
+	.index div.ct_right .section_box .university_box .ttl {
+		padding: 0 0 0 37px;
+		background: #fff url(/images/ico_university1.gif) no-repeat 0px 50%;
+		font-size: 142.5%;
+		font-family: "Hiragino Mincho ProN", "ヒラギノ明朝 Pro W3", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+		color: #b30926;
+		font-weight: bold;
+		margin: 0 0 18px 0;
+		padding: 0 21px 0 45px;
+	}
+
+	.index div.ct_right .section_box .university_box h3 {
+		font-size: 129%;
+		font-family: "Hiragino Mincho ProN", "ヒラギノ明朝 Pro W3", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+		color: #b30926;
+		font-weight: bold;
+		margin: 0 0 7px 0;
+	}
+
+	.index div.ct_right .section_box .university_list1 {
+		width: 453px;
+		margin: 0 -14px 10px 0;
+		overflow: hidden;
+	}
+
+	.index div.ct_right .section_box .university_list1 li {
+		display: block;
+		float: left;
+		width: 47.5%;
+		margin: 0 7px 7px 0;
+	}
+
+	.index div.ct_right .section_box .university_list1 a {
+		display: block;
+		width: 88%;
+		padding: 7px 2% 7px 10%;
+		border: 1px #f4aeba solid;
+		border-radius: 3px; /* CSS3草案 */
+		-webkit-border-radius: 3px; /* Safari,Google Chrome用 */
+		-moz-border-radius: 3px; /* Firefox用 */
+		background: #fff url(/images/ico_arw2.gif) no-repeat 3% .7em;
+		font-size: 129%;
+		font-family: "Hiragino Mincho ProN", "ヒラギノ明朝 Pro W3", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+		font-weight: bold;
+	}
+
+	.index div.ct_right .section_box .university_list1 a:hover {
+		background: #fbf2f4 url(/images/ico_arw2.gif) no-repeat 3% .7em;
+		text-decoration: none;
+	}
+
+	.index div.ct_right .section_box .university_list1 img {
+		float: right;
+	}
+
+	.index div.ct_right .section_box .university_list1 span {
+		display: block;
+		font-size: 66.5%;
+	}
+
+	.index div.ct_right .section_box .university_list2 {
+		display: block;
+		padding: 15px 21px 15px 21px;
+		border: 1px #f4f1e2 solid;
+		border-radius: 6px; /* CSS3草案 */
+		-webkit-border-radius: 6px; /* Safari,Google Chrome用 */
+		-moz-border-radius: 6px; /* Firefox用 */
+		background: #fff;
+	}
+
+	.index div.ct_right .section_box .university_list2 a {
+		display: inline-block;
+		min-height: 18px;
+		padding: 0 0 0 21px;
+		background: url(../images/ico_arw2.gif) no-repeat 0 center;
+		font-size: 129%;
+		font-family: "Hiragino Mincho ProN", "ヒラギノ明朝 Pro W3", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+		font-weight: bold;
+	}
+
+	/* campus_box */
+	.index div.ct_right .section_box .campus_box {
+		padding: 9px 8px;
+		border: 1px #eeeeee solid;
+		background: url(../images/bg_campus.gif) repeat;
+	}
+
+	.index div.ct_right .section_box .campus_box .ttl {
+		position: relative;
+		padding: 7px 11px;
+		background: #fff;
+		font-size: 142.5%;
+		font-family: "Hiragino Mincho ProN", "ヒラギノ明朝 Pro W3", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+		color: #b30926;
+		font-weight: bold;
+		margin: 0 0 9px 0;
+	}
+
+	.index div.ct_right .section_box .campus_box .ttl span {
+		position: absolute;
+		right: 11px;
+		top: 10px;
+	}
+
+	.index div.ct_right .section_box .campus_box .campus_img {
+		width: 483px;
+		margin: 0 -18px 0 0;
+		overflow: hidden;
+	}
+
+	.index div.ct_right .section_box .campus_box .campus_img li {
+		display: inline;
+		float: left;
+		width: 228px;
+		margin: 0 9px 12px 0;
+	}
+
+	.index div.ct_right .section_box .campus_box .campus_img li p {
+		position: relative;
+		width: 228px;
+	}
+
+	.index div.ct_right .section_box .campus_box .campus_img li em {
+		display: block;
+		width: 210px;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		padding: 8px 9px 8px 9px;
+		background: url(../images/bg_black.png) repeat;
+		color: #fff;
+	}
+
+	.index div.ct_right .section_box .campus_box .campus_img li a {
+		display: block;
+		color: #fff;
+	}
+
+	.index div.ct_right .section_box .campus_box a:hover {
+		opacity: 0.9;
+		background: #fff;
+	}
+
+	.index div.ct_right .section_box .campus_box a:hover img {
+		opacity: 0.7;
+		background: #fff;
+	}
+
+	.index div.ct_right .section_box .campus_box .campus_img li span {
+		display: block;
+		margin: 4px 0 0 0;
+		font-size: 85.5%;
+	}
+
+	/* link_list */
+	.index div.ct_right .section_box .link_list {
+		width: 492px;
+		margin: 0 -10px 0 0;
+		overflow: hidden;
+	}
+
+	.index div.ct_right .section_box .link_list li {
+		position: relative;
+		display: block;
+		float: left;
+		width: 238px;
+	}
+
+	.index div.ct_right .section_box .link_list li em {
+		position: absolute;
+		left: 25px;
+		top: 1px;
+		display: block;
+		width: 35px;
+		height: 38px;
+		background: -moz-linear-gradient(left, rgba(255, 255, 255, 0), #fff);
+		background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(#fff));
+		z-index: 900;
+	}
+
+	.index div.ct_right .section_box .link_list li a {
+		display: block;
+		margin: 0 5px 5px 0;
+		padding: 10px 0 10px 0;
+		border: 1px #f4aeba solid;
+		border-radius: 3px; /* CSS3草案 */
+		-webkit-border-radius: 3px; /* Safari,Google Chrome用 */
+		-moz-border-radius: 3px; /* Firefox用 */
+		font-size: 85.5%;
+	}
+
+	.index div.ct_right .section_box .link_list li span {
+		position: relative;
+		display: block;
+		min-height: 13px;
+		margin: 0 0 0 48px;
+		padding: 0 5px 0 20px;
+		background: url(../images/ico_arw2.gif) no-repeat 0 .25em;
+		z-index: 950;
+	}
+
+	.index div.ct_right .section_box .link_list li.nav1 a {
+		background: #fff url(/hak1k3000000clmt-img/hak1k3000000i7qc.jpg) no-repeat left top;
+	}
+
+	.index div.ct_right .section_box .link_list li.nav1 a:hover {
+		background: #fbf2f4 url(/hak1k3000000clmt-img/hak1k3000000i7qc.jpg) no-repeat left top;
+	}
+
+	.index div.ct_right .section_box .link_list li.nav2 a {
+		background: #fff url(/hak1k3000000es17-img/hak1k3000000i7qj.jpg) no-repeat left top;
+	}
+
+	.index div.ct_right .section_box .link_list li.nav2 a:hover {
+		background: #fbf2f4 url(/hak1k3000000es17-img/hak1k3000000i7qj.jpg) no-repeat left top;
+	}
+
+	.index div.ct_right .section_box .link_list li.nav3 a {
+		background: #fff url(/hak1k3000000c6e0-img/hak1k3000000i7qq.gif) no-repeat left top;
+	}
+
+	.index div.ct_right .section_box .link_list li.nav3 a:hover {
+		background: #fbf2f4 url(/hak1k3000000c6e0-img/hak1k3000000i7qq.gif) no-repeat left top;
+	}
+
+	.index div.ct_right .section_box .link_list li.nav4 a {
+		background: #fff url(/hak1k3000000c6e0-img/hak1k3000000i7qx.gif) no-repeat left top;
+	}
+
+	.index div.ct_right .section_box .link_list li.nav4 a:hover {
+		background: #fbf2f4 url(/hak1k3000000c6e0-img/hak1k3000000i7qx.gif) no-repeat left top;
+	}
+
+	.index div.ct_right .section_box .link_list li.nav5 a {
+		background: #fff url(/hak1k3000000c6e0-img/hak1k3000000i7r4.gif) no-repeat left top;
+	}
+
+	.index div.ct_right .section_box .link_list li.nav5 a:hover {
+		background: #fbf2f4 url(/hak1k3000000c6e0-img/hak1k3000000i7r4.gif) no-repeat left top;
+	}
+
+	.index div.ct_right .section_box .link_list li.nav6 a {
+		background: #fff url(/hak1k3000000c6e0-img/hak1k3000000i7rb.gif) no-repeat left top;
+	}
+
+	.index div.ct_right .section_box .link_list li.nav6 a:hover {
+		background: #fbf2f4 url(/hak1k3000000c6e0-img/hak1k3000000i7rb.gif) no-repeat left top;
+	}
+
+	.index div.ct_right .section_box .link_list li.nav7 a {
+		background: #fff url(/hak1k3000000c6e0-img/hak1k3000000i7ri.gif) no-repeat left top;
+	}
+
+	.index div.ct_right .section_box .link_list li.nav7 a:hover {
+		background: #fbf2f4 url(/hak1k3000000c6e0-img/hak1k3000000i7ri.gif) no-repeat left top;
+	}
+
+	.index div.ct_right .section_box .link_list li.nav8 a {
+		background: #fff url(/hak1k3000000c6e0-img/hak1k3000000i7rp.gif) no-repeat left top;
+	}
+
+	.index div.ct_right .section_box .link_list li.nav8 a:hover {
+		background: #fbf2f4 url(/hak1k3000000c6e0-img/hak1k3000000i7rp.gif) no-repeat left top;
+	}
+
+	.index div.ct_right .section_box .link_list li.nav9 a {
+		background: #fff url(/hak1k3000000c6e0-img/hak1k3000000i7rw.gif) no-repeat left top;
+	}
+
+	.index div.ct_right .section_box .link_list li.nav9 a:hover {
+		background: #fbf2f4 url(/hak1k3000000c6e0-img/hak1k3000000i7rw.gif) no-repeat left top;
+	}
+
+	.index div.ct_right .section_box .link_list li.nav10 a {
+		background: #fff url(/hak1k3000000c6e0-img/hak1k3000000i7s3.jpg) no-repeat left top;
+	}
+
+	.index div.ct_right .section_box .link_list li.nav10 a:hover {
+		background: #fbf2f4 url(/hak1k3000000c6e0-img/hak1k3000000i7s3.jpg) no-repeat left top;
+	}
+
+	.index div.ct_right .section_box .link_list li.nav11 a {
+		background: #fff url(/hak1k3000000c6e0-img/hak1k3000000i7sa.gif) no-repeat left top;
+	}
+
+	.index div.ct_right .section_box .link_list li.nav11 a:hover {
+		background: #fbf2f4 url(/hak1k3000000c6e0-img/hak1k3000000i7sa.gif) no-repeat left top;
+	}
+
+	.index div.ct_right .section_box .link_list li.nav12 a {
+		background: #fff url(/hak1k3000000i3c9-img/hak1k3000000i7sh.jpg) no-repeat left top;
+	}
+
+	.index div.ct_right .section_box .link_list li.nav12 a:hover {
+		background: #fbf2f4 url(/hak1k3000000i3c9-img/hak1k3000000i7sh.jpg) no-repeat left top;
+	}
+
+	.index div.ct_right .section_box .link_list li.nav13 a {
+		background: #fff url(/hak1k3000000c6e0-img/hak1k3000000i7so.jpg) no-repeat left top;
+	}
+
+	.index div.ct_right .section_box .link_list li.nav13 a:hover {
+		background: #fbf2f4 url(/hak1k3000000c6e0-img/hak1k3000000i7so.jpg) no-repeat left top;
+	}
+
+	.index div.ct_right .section_box .link_list li.nav14 a {
+		background: #fff url(/hak1k3000000eq1w-img/hak1k3000000i7sv.jpg) no-repeat left top;
+	}
+
+	.index div.ct_right .section_box .link_list li.nav14 a:hover {
+		background: #fbf2f4 url(/hak1k3000000eq1w-img/hak1k3000000i7sv.jpg) no-repeat left top;
+	}
+
+	.index div.ct_right .section_box .link_list li.nav15 a {
+		background: #fff url(/hak1k3000000fu9n-img/hak1k3000000i7t2.jpg) no-repeat left top;
+	}
+
+	.index div.ct_right .section_box .link_list li.nav15 a:hover {
+		background: #fbf2f4 url(/hak1k3000000fu9n-img/hak1k3000000i7t2.jpg) no-repeat left top;
+	}
+
+	.index div.ct_right .section_box .link_list li.nav16 a {
+		background: #fff url(/hak1k3000000fu9n-img/hak1k3000000i7t9.jpg) no-repeat left top;
+	}
+
+	.index div.ct_right .section_box .link_list li.nav16 a:hover {
+		background: #fbf2f4 url(/hak1k3000000fu9n-img/hak1k3000000i7t9.jpg) no-repeat left top;
+	}
+
+	.index div.ct_right .section_box .link_list li.nav17 a {
+		background: #fff url(/hak1k3000000gpfo-img/copy_of_copy_of_TOU_banner.png) no-repeat left top;
+	}
+
+	.index div.ct_right .section_box .link_list li.nav17 a:hover {
+		background: #fbf2f4 url(/hak1k3000000gpfo-img/copy_of_copy_of_TOU_banner.png) no-repeat left top;
+	}
+
+	/* --------------------------------------------------------------------------------------
+     sitemap
+    --------------------------------------------------------------------------------------- */
+	/* .ttl ------------------------------ */
+	.sitemap .ttl {
+		margin: 0 0 35px 0;
+		padding: 0 0 13px 0;
+		border-bottom: 1px #cdc6a2 solid;
+	}
+
+	.sitemap .ttl a {
+		padding: 0 0 0 24px;
+		background: url(../images/ico_arw2.gif) no-repeat 0 50%;
+		line-height: 20px;
+	}
+
+	/* .link_box ------------------------------ */
+	.sitemap .link_box {
+		margin: 0 0 35px 20px;
+	}
+
+	.sitemap .link_box li {
+		float: left;
+		width: 29.3%;
+		margin: 0 1% 0 0;
+	}
+
+	.sitemap .link_box li img {
+		vertical-align: middle;
+		margin: 0 0 0 5px;
+	}
+
+	.sitemap .link_box li {
+		padding: 0 0 0 22px;
+		background: url(../images/ico_arw2.gif) no-repeat 0 .45em;
+	}
+
+	.sitemap .link_box li ul {
+		margin: 15px 0 0 5px;
+	}
+
+	.sitemap .link_box li ul li {
+		float: none;
+		width: auto;
+		margin: 0 0 2px 0;
+	}
+
+	.sitemap .link_box li ul li {
+		padding: 0 0 0 14px;
+		background: url(../images/ico_arw3.gif) no-repeat 0 .45em;
+		line-height: 18px;
+	}
+
+	.sitemap .link_box li.small_arw {
+		padding: 0 0 0 14px;
+		background: url(../images/ico_arw3.gif) no-repeat 0 .45em;
+	}
+
+	/* .link_box_border ------------------------------ */
+	.sitemap .link_box_border {
+		margin: 0 0 35px 0;
+		padding: 0 0 13px 0;
+		border-bottom: 1px #cdc6a2 solid;
+	}
+
+	.sitemap .link_box_border li {
+		float: left;
+		width: 30.1%;
+		margin: 0 1% 5px 0;
+	}
+
+	/* --------------------------------------------------------------------------------------
+     detail
+    --------------------------------------------------------------------------------------- */
+	/* .detail right ------------------------------ */
+	#ct_right .news_data {
+		display: inline-block;
+		margin: 0 0 10px 0;
+	}
+
+	#ct_right .news_data img {
+		margin: -3px 0 0 10px;
+		vertical-align: middle;
+	}
+
+	.ttl_main {
+		margin: 0 0 40px 0;
+		padding: 22px 0 25px 0;
+		border-bottom: 4px #544436 solid;
+		font-size: 171%;
+		font-family: "Hiragino Mincho ProN", "ヒラギノ明朝 Pro W3", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+	}
+
+	.detail #ct_right .lead_box {
+		margin: 0 0 26px 0;
+		padding: 15px 10px 15px 10px;
+		border: 1px #f2ecd4 solid;
+		border-radius: 8px; /* CSS3草案 */
+		-webkit-border-radius: 8px; /* Safari,Google Chrome用 */
+		-moz-border-radius: 8px; /* Firefox用 */
+		background: #fff;
+		font-size: 142.5%;
+		font-family: "Hiragino Mincho ProN", "ヒラギノ明朝 Pro W3", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+	}
+
+	.detail #ct_right .ttl1 {
+		margin: 0 0 21px 0;
+		padding: 10px 0 18px 0;
+		border-bottom: 2px #c1b78a solid;
+		font-size: 128.3%;
+		font-family: "Hiragino Mincho ProN", "ヒラギノ明朝 Pro W3", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+	}
+
+	.detail #ct_right .ttl2 {
+		position: relative;
+		margin: 0 0 -15px 0;
+		padding: 0 0 3px 0;
+		font-size: 128.3%;
+		font-family: "Hiragino Mincho ProN", "ヒラギノ明朝 Pro W3", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+	}
+
+	*:first-child + html .detail #ct_right .ttl2 {
+		margin: 0 0 15px 0;
+	}
+
+	/* .detail img_list ------------------------------ */
+	.detail #ct_right .txt_box .img_list {
+		width: 720px;
+		margin: 25px 0 0 0;
+	}
+
+	.detail #ct_right .txt_box .img_list ul {
+		width: 740px;
+		margin: 0 -20px 0 0;
+		overflow: hidden;
+	}
+
+	.detail #ct_right .txt_box .img_list ul li {
+		float: left;
+		width: 350px;
+		margin: 0 20px 20px 0;
+		/* text-align: center;*/
+	}
+
+	.detail #ct_right .txt_box .img_list ul a {
+		display: block;
+		position: relative;
+	}
+
+	.detail #ct_right .txt_box .img_list ul a:hover {
+		background: none repeat scroll 0 0;
+		opacity: 0.7;
+	}
+
+	.detail #ct_right .txt_box .img_list em {
+		display: block;
+		width: 93.8%;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		padding: 8px 3.1% 8px 3.1%;
+		background: url(../images/bg_black.png) repeat;
+		color: #fff;
+		text-align: left;
+	}
+
+	.detail #ct_right .txt_box .img_list a {
+		text-decoration: none;
+	}
+
+	.detail #ct_right .txt_box .img_list a:hover {
+		opacity: 0.9;
+		/* color: #fff !important; */
+		text-decoration: underline !important;
+	}
+
+	.detail #ct_right .txt_box .img_list a:hover img {
+		opacity: 0.7;
+		background: #fff;
+	}
+
+	.detail #ct_right .txt_box .img_list ul li span {
+		display: block;
+		width: auto;
+		margin: 3px 0 0 0;
+		font-size: 92.6%;
+		text-align: left;
+	}
+
+	.detail #ct_right .txt_box .img_list ul li span.photo_txt {
+		display: block;
+		width: auto;
+		margin: 13px 0 0 0;
+		font-size: 99.8%;
+	}
+
+	/* .detail img_list ------------------------------ */
+	.detail #ct_right .txt_box .img_list_detail ul li {
+		float: none;
+		width: 720px;
+		margin: 0 0 20px 0;
+	}
+
+	.detail #ct_right .txt_box .img_list_detail ul li span {
+		display: block;
+		width: auto;
+		margin: 0 0 10px 0;
+		font-size: 100%;
+	}
+
+	/* .detail num_box ------------------------------ */
+	.detail #ct_right .txt_box .num_box {
+		display: block;
+		margin: 0 0 0 0;
+		padding: 23px 0;
+		border: 1px #f2eedc solid;
+		border-radius: 4px; /* CSS3草案 */
+		-webkit-border-radius: 4px; /* Safari,Google Chrome用 */
+		-moz-border-radius: 4px; /* Firefox用 */
+		background: #f2eedc;
+		text-align: center;
+		font-size: 99.8%;
+	}
+
+	.detail #ct_right .txt_box .num_box li {
+		display: inline;
+		width: 2.5%;
+	}
+
+	.detail #ct_right .txt_box .num_box li.det_num {
+		display: inline;
+		width: 15%;
+	}
+
+	.detail #ct_right .txt_box .num_box li.arw_left {
+		width: 97px;
+		margin: 0 70px 0 0;
+	}
+
+	.detail #ct_right .txt_box .num_box li.arw_right {
+		width: 97px;
+		margin: 0 0 0 70px;
+	}
+
+	.detail #ct_right .txt_box .num_box li.arw_left a {
+		min-height: 13px;
+		padding: 0 0 0 23px;
+		background: url(../images/ico_arw8.gif) no-repeat 0 50%;
+	}
+
+	.detail #ct_right .txt_box .num_box li.arw_right a {
+		width: 97px;
+		min-height: 13px;
+		padding: 0 23px 0 0;
+		background: url(../images/ico_arw2.gif) no-repeat right 50%;
+	}
+
+	.detail #ct_right .txt_box {
+		margin: 0 0 30px 0;
+	}
+
+	.detail #ct_right .txt_box div.wysiwyg_box {
+		margin: 28px 0 0 0;
+		padding: 0;
+	}
+
+	.detail #ct_right .txt_box div.wysiwyg_box ul li span {
+		list-style: none;
+		margin: 5px 0 0 0;
+		padding: 0 0 0 21px;
+		background: url(../images/ico_arw6.gif) no-repeat 2px .35em;
+	}
+
+	.detail #ct_right .txt_box div.wysiwyg_box ol li {
+		list-style-position: inside;
+	}
+
+	.detail #ct_right .txt_box div.wysiwyg_box ol li span {
+		margin: 5px 0 0 0;
+	}
+
+	.detail #ct_right .txt_box div.wysiwyg_box p {
+		margin: 0 0 0 0;
+	}
+
+	/* .detail table ------------------------------ */
+	.detail #ct_right .txt_box div.wysiwyg_box table {
+		width: 100%;
+		margin: 0 0 0 0;
+		border-top: 1px #e9b9c0 dotted;
+		border-right: 1px #fff solid;
+		border-bottom: 1px #e9b9c0 dotted;
+		border-collapse: collapse;
+	}
+
+	.detail #ct_right .txt_box div.wysiwyg_box th {
+		padding: 11px 13px 11px 13px;
+		border-right: 1px #e9b9c0 dotted;
+		border-bottom: 1px #e9b9c0 dotted;
+		background: #fbf2f4;
+		text-align: center;
+		font-weight: normal;
+		vertical-align: middle;
+	}
+
+	.detail #ct_right .txt_box div.wysiwyg_box td {
+		padding: 11px 13px 11px 13px;
+		border-right: 1px #e9b9c0 dotted;
+		border-bottom: 1px #e9b9c0 dotted;
+	}
+
+	.detail #ct_right .txt_box div.wysiwyg_box td.center {
+		padding: 0 0 0 0;
+		border-bottom: 1px #e9b9c0 dotted;
+		text-align: center;
+	}
+
+	.detail #ct_right .txt_box p {
+		margin: 28px 0 0 0;
+	}
+
+	.detail #ct_right .txt_box .img_float {
+		margin: 28px 0 0 0;
+	}
+
+	.detail #ct_right .txt_box .right_img {
+		float: right;
+		margin: 0 0 0 23px;
+	}
+
+	.detail #ct_right .txt_box .center_img {
+		margin: 14px auto 0 auto;
+	}
+
+	.detail #ct_right .txt_box .left_img {
+		float: left;
+		margin: 0 23px 0 0;
+	}
+
+	.detail #ct_right .txt_box .mg_none {
+		margin: 0 0 0 0;
+	}
+
+	.detail #ct_right .txt_box .right_img span,
+	.detail #ct_right .txt_box .left_img span,
+	.detail #ct_right .txt_box .center_img span {
+		display: block;
+		margin: 3px 0 0 0;
+		font-size: 92.6%;
+	}
+
+	.detail #ct_right .txt_box .txt_right {
+		display: block;
+		margin: 3px 0 0 0;
+		font-size: 92.6%;
+		text-align: right;
+	}
+
+	.detail #ct_right .txt_box .arw_list {
+		margin: 28px 0 0 0;
+	}
+
+	.detail #ct_right .txt_box .arw_list li {
+		margin: 5px 0 0 0;
+		padding: 0 0 0 42px;
+		background: url(../images/ico_arw6.gif) no-repeat 11px .4em;
+	}
+
+	.detail #ct_right .txt_box .number_list {
+		margin: 28px 0 0 33px;
+	}
+
+	.detail #ct_right .txt_box .number_list li {
+		margin: 5px 0 0 0;
+		padding: 0 0 0 0;
+	}
+
+	/* .detail table ------------------------------ */
+	.detail #ct_right .txt_box .det_table table {
+		width: 100%;
+		margin: 40px 0 0 0;
+		border-top: 1px #e9b9c0 dotted;
+		border-right: 1px #fff solid;
+		border-bottom: 1px #e9b9c0 dotted;
+		border-collapse: collapse;
+		border-spacing: 0;
+	}
+
+	.detail #ct_right .txt_box .det_table th {
+		padding: 11px 13px 11px 13px;
+		border-bottom: 1px #e9b9c0 dotted;
+		background: #fbf2f4;
+		text-align: center;
+		font-weight: normal;
+		vertical-align: middle;
+	}
+
+	.detail #ct_right .txt_box .det_table td {
+		padding: 11px 13px 11px 13px;
+		border-right: 1px #e9b9c0 dotted;
+		border-bottom: 1px #e9b9c0 dotted;
+	}
+
+	.detail #ct_right .txt_box .det_table td.center {
+		padding: 0 0 0 0;
+		border-bottom: 1px #e9b9c0 dotted;
+		text-align: center;
+	}
+
+	/* .detail link_box ------------------------------ */
+	.detail #ct_right .link_box {
+		margin: 0 0 40px 0;
+	}
+
+	.detail #ct_right .link_box h2 {
+		padding: 7px 13px 7px 13px;
+		border: 1px #554537 solid;
+		border-radius: 6px; /* CSS3草案 */
+		-webkit-border-radius: 6px; /* Safari,Google Chrome用 */
+		-moz-border-radius: 6px; /* Firefox用 */
+		background: #554537;
+		font-size: 128.5%;
+		color: #fff;
+	}
+
+	.detail #ct_right .link_box .lead {
+		margin: 15px 0 0 3px;
+	}
+
+	.detail #ct_right .link_box .arw_list {
+		margin: 15px 0 0 0;
+	}
+
+	.detail #ct_right .link_box .arw_list_none {
+		position: relative;
+		margin: -35px 0 0 0;
+	}
+
+	.detail #ct_right .link_box .arw_list li {
+		margin: 0 0 5px 0;
+		padding: 0 0 0 41px;
+		background: url(../images/ico_arw7.gif) no-repeat 11px .3em;
+	}
+
+	.detail #ct_right .link_box .arw_list li img {
+		vertical-align: middle;
+		margin: 0 0 0 5px;
+	}
+
+	/* .detail link_location_box ------------------------------ */
+	.detail #ct_right .link_location_box {
+		margin: 0 0 40px 0;
+	}
+
+	.detail #ct_right .link_location_box h2 {
+		padding: 7px 13px 7px 13px;
+		border: 1px #b30926 solid;
+		border-radius: 6px 6px 0 0; /* CSS3草案 */
+		-webkit-border-radius: 6px 6px 0 0; /* Safari,Google Chrome用 */
+		-moz-border-radius: 6px 6px 0 0; /* Firefox用 */
+		background: #b30926;
+		font-size: 128.5%;
+		color: #fff;
+	}
+
+	.detail #ct_right .link_location_box .lead {
+		margin: 15px 0 15px 3px;
+	}
+
+	.detail #ct_right .link_location_box .arw_list {
+		padding: 18px 20px 18px 20px;
+		border: 1px #f2ecd4 solid;
+		border-radius: 0 0 8px 8px; /* CSS3草案 */
+		-webkit-border-radius: 0 0 8px 8px; /* Safari,Google Chrome用 */
+		-moz-border-radius: 0 0 8px 8px; /* Firefox用 */
+		background: #fff;
+	}
+
+	.detail #ct_right .link_location_box .arw_list li {
+		float: left;
+		display: inline;
+		width: 300px;
+		margin: 0 0 5px 0;
+		padding: 0 0 0 20px;
+		background: url(../images/ico_arw3.gif) no-repeat 11px .55em;
+		vertical-align: top;
+	}
+
+	.detail #ct_right .link_location_box .arw_list li img {
+		vertical-align: middle;
+		margin: 0 0 0 5px;
+	}
+
+	/* --------------------------------------------------------------------------------------
+     guide
+    --------------------------------------------------------------------------------------- */
+	/* .guide ------------------------------ */
+	.guide .main_bg {
+		position: relative;
+		width: 1000px;
+		height: 276px;
+	}
+
+	.guide .main_bg img {
+		position: relative;
+		border-radius: 6px; /* CSS3草案 */
+		-webkit-border-radius: 6px; /* Safari,Google Chrome用 */
+		-moz-border-radius: 6px; /* Firefox用 */
+		z-index: -1;
+	}
+
+	.guide .main_bg h1 {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 98%;
+		padding: 10px 1% 10px 1%;
+		border-radius: 0 0 6px 6px; /* CSS3草案 */
+		-webkit-border-radius: 0 0 6px 6px; /* Safari,Google Chrome用 */
+		-moz-border-radius: 0 0 6px 6px; /* Firefox用 */
+		background: url(../images/bg_ttl_gray.png) repeat;
+		font-size: 171%;
+		font-family: "Hiragino Mincho ProN", "ヒラギノ明朝 Pro W3", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+		color: #000000;
+		font-weight: bold;
+	}
+
+	/* .guide_box ------------------------------ */
+	.guide .guide_box {
+		position: relative;
+		width: 1081px;
+		margin: 0 -81px 0 0;
+		overflow: hidden;
+	}
+
+	.guide .guide_box .left_box1 {
+		float: left;
+		width: 690px;
+	}
+
+	.guide .guide_box .left_box2 {
+		float: left;
+		width: 306;
+	}
+
+	.guide .guide_box1 {
+		float: left;
+		width: 300px;
+		margin: 0 36px 30px 0;
+		border: 3px #e2ddc2 solid;
+		background: #f3f0e0;
+		vertical-align: top;
+	}
+
+	.guide .guide_box1 div {
+		padding: 21px 23px 21px 23px;
+	}
+
+	.guide .guide_box1 div div {
+		padding: 0;
+	}
+
+	.guide .guide_box1 div ul {
+		margin: 0 0 0 23px;
+	}
+
+	.guide .guide_box1 div ul li {
+		list-style: disc;
+	}
+
+	.guide .guide_box1 div ol {
+		margin: 0 0 0 23px;
+	}
+
+	.guide .guide_box2 {
+		float: left;
+		width: 306px;
+		margin: 0 34px 50px 0;
+		vertical-align: top;
+	}
+
+	.guide .guide_box2 .ttl {
+		margin: 0 0 16px 0;
+		padding: 10px 0 11px 0;
+		border-top: 4px #b30925 solid;
+		border-bottom: 1px #cdc6a2 solid;
+		font-size: 128.3%;
+		font-family: "Hiragino Mincho ProN", "ヒラギノ明朝 Pro W3", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+	}
+
+	.guide .guide_box2 p {
+		margin: 0 0 10px 0;
+	}
+
+	.guide .guide_box2 .line_dot {
+		margin: 10px 0 0 0;
+		padding: 10px 0 0 0;
+		background: url(../images/line_dot1.gif) repeat-x left top;
+	}
+
+	/* link_large */
+	.guide .guide_box2 .link_det a {
+		display: inline-block;
+		width: 100%;
+		padding: 4px 0;
+		border: 1px #f3f0e0 solid;
+		border-radius: 3px; /* CSS3草案 */
+		-webkit-border-radius: 3px; /* Safari,Google Chrome用 */
+		-moz-border-radius: 3px; /* Firefox用 */
+		text-align: right;
+		font-size: 85.5%;
+		background: #f3f0e0;
+	}
+
+	.guide .guide_box2 .link_det a:hover {
+		text-decoration: underline !important;
+	}
+
+	.guide .guide_box2 .link_det span {
+		padding: 10px 0 10px 10px;
+		background: url(../images/ico_arw3.gif) no-repeat 0 center;
+	}
+
+	.guide .guide_box2 .ttl_lead {
+		margin: 0 0 24px 0;
+	}
+
+	.guide .guide_box2 .link_arw a {
+		min-height: 13px;
+		padding: 0 0 0 25px;
+		background: url(../images/ico_arw2.gif) no-repeat 0 50%;
+	}
+
+	/* link_large */
+	.guide .guide_box2 ul.link_large {
+		padding: 0 0 10px 26px;
+	}
+
+	.guide .guide_box2 ul.link_large li {
+		margin: 0 0 5px 0;
+		padding: 0 0 0 19px;
+		background: url(../images/ico_arw3.gif) no-repeat 0 .5em;
+	}
+
+	.guide .guide_box2 ul.link_large li img {
+		vertical-align: middle;
+		margin: 0 0 0 5px;
+	}
+
+	/* link_small */
+	.guide .guide_box2 ul.link_small {
+		padding-left: 3px;
+	}
+
+	.guide .guide_box2 ul.link_small img {
+		vertical-align: middle;
+		margin: 0 0 0 5px;
+	}
+
+	.guide .guide_box2 ul.link_small li {
+		margin: 0 0 7px 0;
+		padding: 0 0 0 23px;
+		background: url(../images/ico_circle1.gif) no-repeat 0 .4em;
+	}
+
+	.guide .guide_box2 ul.link_small li ul {
+		float: none;
+		margin: 9px 0 0 0;
+	}
+
+	.guide .guide_box2 ul.link_small li ul li {
+		margin: 0 0 0 0;
+		padding: 0 0 7px 23px;
+		background: url(../images/ico_circle2.gif) no-repeat 0 .3em;
+	}
+
+	/* news_list */
+	.guide .guide_box2 .news_list {
+		display: block;
+		padding: 0;
+		border: none;
+		border-radius: 0; /* CSS3草案 */
+		background: none;
+	}
+
+	.guide .guide_box2 .news_list .ttl {
+		position: relative;
+		padding: 0 0 4px 12px;
+		border-radius: 5px; /* CSS3草案 */
+		-webkit-border-radius: 5px; /* Safari,Google Chrome用 */
+		-moz-border-radius: 5px; /* Firefox用 */
+		background: #b30925;
+		font-size: 128.5%;
+		font-family: "Hiragino Mincho ProN", "ヒラギノ明朝 Pro W3", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+		color: #fff;
+		font-weight: normal;
+		margin: 0 0 18px 0;
+	}
+
+	.guide .guide_box2 .news_list .ttl span {
+		position: absolute;
+		right: 0;
+		top: 5px;
+	}
+
+	.guide .guide_box2 .news_list .right_btn {
+		display: none;
+	}
+
+	.guide .guide_box2 .news_list dl {
+		margin: 0 0 14px 0;
+		padding: 0 0 14px 0;
+		border-bottom: 1px #e9b9c1 dotted;
+	}
+
+	.guide .guide_box2 .news_list dl:after {
+		content: ".";
+		display: block;
+		height: 0;
+		clear: both;
+		visibility: hidden;
+		font-size: .1em;
+	}
+
+	.guide .guide_box2 .news_list dl {
+		display: inline-block;
+	}
+
+	/*\*/
+	* html .guide .guide_box2 .news_list dl {
+		height: 1%;
+	}
+
+	.guide .guide_box2 .news_list dl {
+		display: block;
+	}
+
+	/**/
+	.guide .guide_box2 .news_list dl dt {
+		float: left;
+		display: inline-block;
+		width: 91px;
+		padding: 0 0 0 13px;
+		background: url(../images/ico_circle3.gif) no-repeat 0 .35em;
+		font-size: 85.5%;
+		vertical-align: top;
+	}
+
+	.guide .guide_box2 .news_list dl dt img {
+		margin: 4px 0 0 -13px;
+	}
+
+	.guide .guide_box2 .news_list dl dd {
+		float: left;
+		display: inline-block;
+		width: 65%;
+	}
+
+	.news_list dl dd img {
+		vertical-align: middle;
+		margin: 0 0 0 5px;
+	}
+
+	/* news_list_low */
+	.guide .guide_box2 .news_list_low {
+		display: block;
+		padding: 0 0 0 0;
+		border: none;
+		border-radius: 6px; /* CSS3草案 */
+		-webkit-border-radius: 6px; /* Safari,Google Chrome用 */
+		-moz-border-radius: 6px; /* Firefox用 */
+		background: none;
+	}
+
+	.guide .guide_box2 .news_list_low dl dd {
+		display: inline-block;
+		width: 84%;
+	}
+
+	/* --------------------------------------------------------------------------------------
+     course
+    --------------------------------------------------------------------------------------- */
+	/* .course ------------------------------ */
+	.course .top_list1 {
+		width: auto;
+		margin: 0 0 40px 0;
+	}
+
+	.course .top_list1 .left_box {
+		float: left;
+		width: 48%;
+	}
+
+	.course .top_list1 .right_box {
+		float: right;
+		width: 48%;
+	}
+
+	.course .top_list1 h3 {
+		margin: 12px 0 12px 0;
+		padding: 0 0 0 20px;
+		background: url(../images/ico_arw2.gif) no-repeat 0 50%;
+		font-size: 142.5%;
+		font-family: "Hiragino Mincho ProN", "ヒラギノ明朝 Pro W3", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+	}
+
+	.course .top_list1 .img_link img {
+		border: 1px #ffffff solid;
+		border-radius: 10px; /* CSS3草案 */
+		-webkit-border-radius: 10px; /* Safari,Google Chrome用 */
+		-moz-border-radius: 10px; /* Firefox用 */
+	}
+
+	.course .top_list1 .img_link a:hover {
+		opacity: 0.6;
+	}
+
+	.course .top_list2 {
+		float: left;
+		width: 31.3%;
+		margin: 0 2% 25px 0;
+		vertical-align: top;
+	}
+
+	.course .top_list2 .ttl {
+		margin: 0 0 10px 0;
+		padding: 10px 0 11px 20px;
+		border-top: 4px #b30925 solid;
+		border-bottom: 1px #cdc6a2 solid;
+		background: url(../images/ico_arw2.gif) no-repeat 0 .9em;
+		font-size: 128.3%;
+		font-family: "Hiragino Mincho ProN", "ヒラギノ明朝 Pro W3", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+	}
+
+	.course .top_list2 .link_kamoku {
+		margin: 0 0 20px 0;
+		font-size: 128.3%;
+	}
+
+	.course .top_list2 .link_kamoku li {
+		float: right;
+		margin: 0 0 0 2%;
+		padding: 5px 10px;
+		text-align: center;
+		color: #fff;
+	}
+
+	.course .top_list2 .link_kamoku li.blue {
+		border: 1px #4d9ccc solid;
+		border-radius: 5px; /* CSS3草案 */
+		-webkit-border-radius: 5px; /* Safari,Google Chrome用 */
+		-moz-border-radius: 5px; /* Firefox用 */
+		background: #4d9ccc;
+	}
+
+	.course .top_list2 .link_kamoku li.green {
+		border: 1px #89cc32 solid;
+		border-radius: 5px; /* CSS3草案 */
+		-webkit-border-radius: 5px; /* Safari,Google Chrome用 */
+		-moz-border-radius: 5px; /* Firefox用 */
+		background: #89cc32;
+	}
+
+	.course .top_list2 .link_kamoku li.yellow {
+		border: 1px #f6bd0f solid;
+		border-radius: 5px; /* CSS3草案 */
+		-webkit-border-radius: 5px; /* Safari,Google Chrome用 */
+		-moz-border-radius: 5px; /* Firefox用 */
+		background: #f6bd0f;
+	}
+
+	.course .top_list2 .link_kamoku li.pink {
+		border: 1px #f27f91 solid;
+		border-radius: 5px; /* CSS3草案 */
+		-webkit-border-radius: 5px; /* Safari,Google Chrome用 */
+		-moz-border-radius: 5px; /* Firefox用 */
+		background: #f27f91;
+	}
+
+	.course .top_list2 p {
+		margin: 0 0 10px 0;
+	}
+
+	/* .link_box ------------------------------ */
+	.course .link_box {
+		margin: 0 0 0 0;
+		padding: 37px 0 0 0;
+		border-top: 1px #cdc6a2 solid;
+	}
+
+	.course .link_box li {
+		margin: 0 0 5px 0;
+	}
+
+	.course .link_box li {
+		margin: 0 0 5px 0;
+	}
+
+	.course .link_box li img {
+		vertical-align: middle;
+		margin: 0 0 0 5px;
+	}
+
+	.course .link_box li a {
+		display: inline-block;
+		padding: 0 0 0 24px;
+		background: url(../images/ico_arw2.gif) no-repeat 0 .35em;
+	}
+
+	/* .course detail ------------------------------ */
+	.course .link_arw1 {
+		margin: 5px 0 0 0;
+		padding: 0 0 0 20px;
+		background: url(../images/ico_arw2.gif) no-repeat 0 50%;
+	}
+
+	.course .link_arw1 img {
+		margin: 0 0 0 5px;
+		vertical-align: middle;
+	}
+
+	.course .course_list {
+		width: 112%;
+		margin-right: -12%;
+		overflow: hidden;
+		_zoom: 1;
+	}
+
+	.course .teacher_area {
+		float: left;
+		width: 41.9%;
+		margin: 35px 5.5% 0 0;
+	}
+
+	.course .teacher_area .name_box {
+		padding: 0;
+		margin: 0 0 3.5% 0;
+	}
+
+	.course .teacher_area .name_box_none {
+		position: relative;
+		height: auto;
+	}
+
+	.course .teacher_area .left_img {
+		display: inline;
+		float: left;
+		margin: 0 15px 0 0;
+	}
+
+	.course .teacher_area .left_img img {
+		border: 3px #f3f0e0 solid;
+		border-radius: 5px; /* CSS3草案 */
+		-webkit-border-radius: 5px; /* Safari,Google Chrome用 */
+		-moz-border-radius: 5px; /* Firefox用 */
+	}
+
+	.course .teacher_area .left_img a:hover {
+		opacity: 0.7;
+		background: #fff;
+	}
+
+	.course .teacher_area .name_box .name {
+		margin: .5% 0 0 0;
+		font-size: 128.3%;
+		font-family: "Hiragino Mincho ProN", "ヒラギノ明朝 Pro W3", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+	}
+
+	.course .teacher_area .name_box_none .name {
+		float: none;
+		width: 97%;
+		margin: .5% 0 0 0;
+		font-size: 128.3%;
+		font-family: "Hiragino Mincho ProN", "ヒラギノ明朝 Pro W3", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+	}
+
+	.course .teacher_area .name_link {
 		float: right;
 		margin: 0 0 0 10px;
-}
+	}
 
-.course .teacher_area .name_link a{
-	display: inline-block;
-	float: right;
-	position: static;
-	right: 0;
-	bottom: 0;
-	width: auto;
-	margin: 10px 0 0 0;
-	padding-left: 10px;
-	border: 1px #f3f0e0 solid;
-	border-radius: 3px;		/* CSS3草案 */
-	-webkit-border-radius: 3px;	/* Safari,Google Chrome用 */
-	-moz-border-radius: 3px;	/* Firefox用 */
-	text-align: right;
-	font-size: 85.5%;
-	background: #f3f0e0;
-}
+	.course .teacher_area .name_link a {
+		display: inline-block;
+		float: right;
+		position: static;
+		right: 0;
+		bottom: 0;
+		width: auto;
+		margin: 10px 0 0 0;
+		padding-left: 10px;
+		border: 1px #f3f0e0 solid;
+		border-radius: 3px; /* CSS3草案 */
+		-webkit-border-radius: 3px; /* Safari,Google Chrome用 */
+		-moz-border-radius: 3px; /* Firefox用 */
+		text-align: right;
+		font-size: 85.5%;
+		background: #f3f0e0;
+	}
 
-.course .teacher_area .name_link a span{
-	display: inline-block;
-	padding: 4px 10px;
-	background: url(/application/themes/cms_wrestling3/assets/images/ico_arw3.gif) no-repeat 0 center;
-}
+	.course .teacher_area .name_link a span {
+		display: inline-block;
+		padding: 4px 10px;
+		background: url(../images/ico_arw3.gif) no-repeat 0 center;
+	}
 
+	.course .teacher_area .link_arw1 {
+		margin: 0 0 0 10px;
+		padding: 0;
+		background: none;
+		float: right;
+	}
 
+	.course .teacher_area .link_arw1 a {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		display: inline-block;
+		width: 32%;
+		border: 1px #f3f0e0 solid;
+		border-radius: 3px; /* CSS3草案 */
+		-webkit-border-radius: 3px; /* Safari,Google Chrome用 */
+		-moz-border-radius: 3px; /* Firefox用 */
+		text-align: right;
+		font-size: 85.5%;
+		background: #f3f0e0;
+	}
 
-.course .teacher_area .link_arw1{
-	margin: 0 0 0 10px;
-	padding: 0;
-	background: none;
-	float: right;
-}
-.course .teacher_area .link_arw1 a{
-	position: absolute;
-	right: 0;
-	bottom: 0;
-	display: inline-block;
-	width: 32%;
-	border: 1px #f3f0e0 solid;
-	border-radius: 3px;		/* CSS3草案 */
-	-webkit-border-radius: 3px;	/* Safari,Google Chrome用 */
-	-moz-border-radius: 3px;	/* Firefox用 */
-	text-align: right;
-	font-size: 85.5%;
-	background: #f3f0e0;
-}
+	.course .teacher_area .link_arw1 a {
+		display: inline-block;
+		float: right;
+		position: static;
+		right: 0;
+		bottom: 0;
+		width: auto;
+		margin: 10px 0 0 0;
+		padding-left: 10px;
+		border: 1px #f3f0e0 solid;
+		border-radius: 3px; /* CSS3草案 */
+		-webkit-border-radius: 3px; /* Safari,Google Chrome用 */
+		-moz-border-radius: 3px; /* Firefox用 */
+		text-align: right;
+		font-size: 85.5%;
+		padding: 4px 10px 4px 20px;
+		background: #f3f0e0 url(/images/ico_arw3.gif) no-repeat 10px center;
+	}
 
-.course .teacher_area .link_arw1 a{
-	display: inline-block;
-	float: right;
-	position: static;
-	right: 0;
-	bottom: 0;
-	width: auto;
-	margin: 10px 0 0 0;
-	padding-left: 10px;
-	border: 1px #f3f0e0 solid;
-	border-radius: 3px;		/* CSS3草案 */
-	-webkit-border-radius: 3px;	/* Safari,Google Chrome用 */
-	-moz-border-radius: 3px;	/* Firefox用 */
-	text-align: right;
-	font-size: 85.5%;
-	padding: 4px 10px 4px 20px;
-	background: #f3f0e0 url(/images/ico_arw3.gif) no-repeat 10px center;
-}
+	.course .teacher_area dt {
+		margin: 0 0 4% 0;
+		font-size: 85.5%;
+		border: 1px solid #c1b78a;
+		padding: 5px 7px;
+		border-radius: 4px; /* CSS3草案 */
+		-webkit-border-radius: 4px; /* Safari,Google Chrome用 */
+		-moz-border-radius: 4px; /* Firefox用 */
+		background: #FFF;
+	}
 
-.course .teacher_area dt{
-	margin: 0 0 4% 0;
-	font-size: 85.5%;
-	border: 1px solid #c1b78a;
-	padding: 5px 7px;
-	border-radius: 4px;		/* CSS3草案 */
-	-webkit-border-radius: 4px;	/* Safari,Google Chrome用 */
-	-moz-border-radius: 4px;	/* Firefox用 */
-	background: #FFF;
-}
+	.interview #ct_right .lead_box {
+		margin: 0 0 26px 0;
+		padding: 15px 10px 15px 10px;
+		border: 1px #f3f0e0 solid;
+		border-radius: 8px; /* CSS3草案 */
+		-webkit-border-radius: 8px; /* Safari,Google Chrome用 */
+		-moz-border-radius: 8px; /* Firefox用 */
+		background: #f3f0e0;
+		font-size: 142.5%;
+		font-family: "Hiragino Mincho ProN", "ヒラギノ明朝 Pro W3", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+	}
 
+	.interview #ct_right .ttl1 {
+		margin: 0 0 21px 0;
+		padding: 10px 0 18px 0;
+		border-bottom: 2px #c1b78a solid;
+		font-size: 128.3%;
+		font-family: "Hiragino Mincho ProN", "ヒラギノ明朝 Pro W3", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+	}
 
-.interview #ct_right .lead_box {
-	margin: 0 0 26px 0;
-	padding: 15px 10px 15px 10px;
-	border: 1px #f3f0e0 solid;
-	border-radius: 8px;		/* CSS3草案 */
-	-webkit-border-radius: 8px;	/* Safari,Google Chrome用 */
-	-moz-border-radius: 8px;	/* Firefox用 */
-	background: #f3f0e0;
-	font-size: 142.5%;
-	font-family: "Hiragino Mincho ProN", "ヒラギノ明朝 Pro W3", "HGS明朝E","ＭＳ Ｐ明朝", "MS PMincho", serif;
-}
+	.interview #ct_right .list_index_box {
+		width: 102%;
+		margin: 0 -2% 35px 0;
+		overflow: hidden;
+	}
 
-.interview #ct_right .ttl1 {
-	margin: 0 0 21px 0;
-	padding: 10px 0 18px 0;
-	border-bottom: 2px #c1b78a solid;
-	font-size: 128.3%;
-	font-family: "Hiragino Mincho ProN", "ヒラギノ明朝 Pro W3", "HGS明朝E","ＭＳ Ｐ明朝", "MS PMincho", serif;
-}
+	.interview #ct_right dl.list_index {
+		position: relative;
+		float: left;
+		width: 48%;
+		margin: 0 2% 25px 0;
+	}
 
+	.interview #ct_right dl.list_index dt {
+		margin: 0 0 7px 105px;
+		padding: 0 0 7px 3px;
+		border-bottom: 2px #b30926 solid;
+		font-size: 129%;
+		font-family: "Hiragino Mincho ProN", "ヒラギノ明朝 Pro W3", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+	}
 
-.interview #ct_right .list_index_box{
-	width: 102%;
-	margin: 0 -2% 35px 0;
-	overflow: hidden;
-}
+	.interview #ct_right dl.list_index dt a:hover {
+		opacity: 0.7;
+		background: #fff;
+	}
 
-.interview #ct_right dl.list_index{
-	position: relative;
-	float: left;
-	width: 48%;
-	margin: 0 2% 25px 0;
-}
+	.interview #ct_right dl.list_index dt span {
+		font-size: 77.5%;
+	}
 
-.interview #ct_right dl.list_index dt{
-	margin: 0 0 7px 105px;
-	padding: 0 0 7px 3px;
-	border-bottom: 2px #b30926 solid;
-	font-size: 129%;
-	font-family: "Hiragino Mincho ProN", "ヒラギノ明朝 Pro W3", "HGS明朝E","ＭＳ Ｐ明朝", "MS PMincho", serif;
-}
-.interview #ct_right dl.list_index dt a:hover {
-	opacity: 0.7;
-	background: #fff;
-}
+	.interview #ct_right dl.list_index dd {
+		margin: 0 0 0 105px;
+	}
 
-.interview #ct_right dl.list_index dt span{
-	font-size: 77.5%;
-}
+	.interview #ct_right dl.list_index dd p a {
+		padding: 0 0 0 12px;
+		background: url(../images/ico_arw3.gif) no-repeat 0 50%;
+		font-size: 128.3%;
+		font-family: "Hiragino Mincho ProN", "ヒラギノ明朝 Pro W3", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+	}
 
-.interview #ct_right dl.list_index dd{
-	margin: 0 0 0 105px;
-}
+	.interview #ct_right dl.list_index dd span {
+		font-size: 86%;
+	}
 
-.interview #ct_right dl.list_index dd p a{
-	padding: 0 0 0 12px;
-	background: url(/application/themes/cms_wrestling3/assets/images/ico_arw3.gif) no-repeat 0 50%;
-	font-size: 128.3%;
-	font-family: "Hiragino Mincho ProN", "ヒラギノ明朝 Pro W3", "HGS明朝E","ＭＳ Ｐ明朝", "MS PMincho", serif;
-}
+	.interview #ct_right dl.list_index .left_img {
+		position: absolute;
+		left: 0;
+		margin: 0 0 0 0;
+		border: 3px #f4f1e2 solid;
+		border-radius: 6px; /* CSS3草案 */
+		-webkit-border-radius: 6px; /* Safari,Google Chrome用 */
+		-moz-border-radius: 6px; /* Firefox用 */
+	}
 
-.interview #ct_right dl.list_index dd span{
-	font-size: 86%;
-}
+	.interview .link_interview_box {
+		margin: 0 0 0 0;
+		padding: 37px 0 0 0;
+		border-top: 1px #cdc6a2 solid;
+	}
 
-.interview #ct_right dl.list_index .left_img{
-	position: absolute;
-	left: 0;
-	margin: 0 0 0 0;
-	border: 3px #f4f1e2 solid;
-	border-radius: 6px;		/* CSS3草案 */
-	-webkit-border-radius: 6px;	/* Safari,Google Chrome用 */
-	-moz-border-radius: 6px;	/* Firefox用 */
-}
+	.interview .link_interview_box li {
+		margin: 0 0 5px 0;
+	}
 
+	.interview .link_interview_box li {
+		margin: 0 0 5px 0;
+	}
 
-.interview .link_interview_box {
-	margin: 0 0 0 0;
-	padding: 37px 0 0 0;
-	border-top: 1px #cdc6a2 solid;
-}
+	.interview .link_interview_box li img {
+		vertical-align: middle;
+		margin: 0 0 0 5px;
+	}
 
-.interview .link_interview_box li{
-	margin: 0 0 5px 0;
-}
+	.interview .link_interview_box li a {
+		display: inline-block;
+		padding: 0 0 0 24px;
+		background: url(../images/ico_arw2.gif) no-repeat 0 .35em;
+		line-height: 20px;
+	}
 
-.interview .link_interview_box li{
-	margin: 0 0 5px 0;
-}
+	.interview #ct_right .list_detail_box {
+		width: 100%;
+		margin: 0 0 35px 0;
+	}
 
-.interview .link_interview_box li img{
-	vertical-align: middle;
-	margin: 0 0 0 5px;
-}
+	.interview #ct_right .list_detail_box dl.list_index {
+		position: relative;
+		float: right;
+		width: 59%;
+		margin: 0 2% 25px 0;
+	}
 
-.interview .link_interview_box li a{
-	display: inline-block;
-	padding: 0 0 0 24px;
-	background: url(/application/themes/cms_wrestling3/assets/images/ico_arw2.gif) no-repeat 0 .35em;
-	line-height: 20px;
-}
+	.interview #ct_right .list_detail_box .data {
+		margin: 0 0 15px 0;
+	}
 
+	.interview #ct_right .list_detail_box .left_box {
+		display: inline;
+		float: left;
+		width: 62%;
+		margin: 0 0 0 10px;
+	}
 
+	.interview #ct_right .list_detail_box .left_box p {
+		margin: 0 0 14px 0;
+	}
 
+	.interview #ct_right .list_detail_box .course_ttl {
+		font-size: 129%;
+		font-family: "Hiragino Mincho ProN", "ヒラギノ明朝 Pro W3", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+	}
 
-.interview #ct_right .list_detail_box{
-	width: 100%;
-	margin: 0 0 35px 0;
-}
+	.interview #ct_right .list_detail_box .course_ttl span {
+		font-size: 77.5%;
+	}
 
-.interview #ct_right .list_detail_box dl.list_index{
-	position: relative;
-	float: right;
-	width: 59%;
-	margin: 0 2% 25px 0;
-}
+	.interview #ct_right .list_detail_box p.name {
+		padding: 5px 10px 5px 10px;
+		border: 1px #f3f0e0 solid;
+		border-radius: 4px; /* CSS3草案 */
+		-webkit-border-radius: 4px; /* Safari,Google Chrome用 */
+		-moz-border-radius: 4px; /* Firefox用 */
+		background: #f3f0e0;
+		font-size: 128.3%;
+		font-family: "Hiragino Mincho ProN", "ヒラギノ明朝 Pro W3", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+	}
 
-.interview #ct_right .list_detail_box .data{
-	margin: 0 0 15px 0;
-}
+	.interview #ct_right .list_detail_box dl {
+		margin: 0;
+	}
 
-.interview #ct_right .list_detail_box .left_box{
-	display: inline;
-	float: left;
-	width: 62%;
-	margin: 0 0 0 10px;
-}
+	.interview #ct_right .list_detail_box dt {
+		margin: 0 0 7px 0;
+		padding: 0 0 7px 0;
+		background: url(../images/line_dot1.gif) repeat-x left bottom;
+	}
 
-.interview #ct_right .list_detail_box .left_box p{
-	margin: 0 0 14px 0;
-}
+	.interview #ct_right .list_detail_box .left_img {
+		float: left;
+		margin: 0 0 0 0;
+		border: 3px #f4f1e2 solid;
+		border-radius: 6px; /* CSS3草案 */
+		-webkit-border-radius: 6px; /* Safari,Google Chrome用 */
+		-moz-border-radius: 6px; /* Firefox用 */
+	}
 
-.interview #ct_right .list_detail_box .course_ttl{
-	font-size: 129%;
-	font-family: "Hiragino Mincho ProN", "ヒラギノ明朝 Pro W3", "HGS明朝E","ＭＳ Ｐ明朝", "MS PMincho", serif;
-}
+	.interview #ct_right .teacher_area {
+		margin: 0 0 40px 0;
+	}
 
-.interview #ct_right .list_detail_box .course_ttl span{
-	font-size: 77.5%;
-}
+	.interview #ct_right .teacher_area dt {
+		margin: 0 0 2.1% 0;
+		font-size: 128.3%;
+		font-family: "Hiragino Mincho ProN", "ヒラギノ明朝 Pro W3", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+	}
 
-.interview #ct_right .list_detail_box p.name{
-	padding: 5px 10px 5px 10px;
-	border: 1px #f3f0e0 solid;
-	border-radius: 4px;		/* CSS3草案 */
-	-webkit-border-radius: 4px;	/* Safari,Google Chrome用 */
-	-moz-border-radius: 4px;	/* Firefox用 */
-	background: #f3f0e0;
-	font-size: 128.3%;
-	font-family: "Hiragino Mincho ProN", "ヒラギノ明朝 Pro W3", "HGS明朝E","ＭＳ Ｐ明朝", "MS PMincho", serif;
-}
-
-.interview #ct_right .list_detail_box dl{
-	margin: 0;
-}
-
-.interview #ct_right .list_detail_box dt{
-	margin: 0 0 7px 0;
-	padding: 0 0 7px 0;
-	background: url(/application/themes/cms_wrestling3/assets/images/line_dot1.gif) repeat-x left bottom;
-}
-
-.interview #ct_right .list_detail_box .left_img{
-	float: left;
-	margin: 0 0 0 0;
-	border: 3px #f4f1e2 solid;
-	border-radius: 6px;		/* CSS3草案 */
-	-webkit-border-radius: 6px;	/* Safari,Google Chrome用 */
-	-moz-border-radius: 6px;	/* Firefox用 */
-}
-
-.interview #ct_right .teacher_area{
-	margin: 0 0 40px 0;
-}
-
-.interview #ct_right .teacher_area dt{
-	margin: 0 0 2.1% 0;
-	font-size: 128.3%;
-	font-family: "Hiragino Mincho ProN", "ヒラギノ明朝 Pro W3", "HGS明朝E","ＭＳ Ｐ明朝", "MS PMincho", serif;
 }

@@ -2,6 +2,7 @@
 namespace Application\Theme\CmsWrestling3;
 
 use Application\Asset\CssMediaQueriedAsset;
+use Application\Asset\CustomCssAsset;
 use Concrete\Core\Area\Layout\Preset\Provider\ThemeProviderInterface;
 use Concrete\Core\Asset\Asset;
 use Concrete\Core\Asset\AssetList;
@@ -25,53 +26,35 @@ class PageTheme extends Theme implements ThemeProviderInterface
     {
         $al = AssetList::getInstance();
 
-        $asset = new CssMediaQueriedAsset('cms_wrestling3/vtngq900000002qh');
-        $asset->register(
-            'themes/cms_wrestling3/assets/css/vtngq900000002qh.css',
-            [
-                'position' => Asset::ASSET_POSITION_HEADER,
-                'local' => true,
-                'version' => false,
-                'combine' => false,
-                'minify' => true,
-                'media' => 'all and (min-width: 641px)'
-            ]
-        );
+        $asset = new CustomCssAsset('cms_wrestling3/vtngq900000002q2');
+        $asset->register('themes/cms_wrestling3/assets/css/vtngq900000002q2.css', [
+            'local' => true
+        ]);
         $al->registerAsset($asset);
 
-        $asset = new CssMediaQueriedAsset('cms_wrestling3/vtngq900000002qc');
-        $asset->register(
-            'themes/cms_wrestling3/assets/css/vtngq900000002qc.css',
-            [
-                'position' => Asset::ASSET_POSITION_HEADER,
-                'local' => true,
-                'version' => false,
-                'combine' => false,
-                'minify' => true,
-                'media' => 'screen and (min-width: 0px) and (max-width: 640px)'
-            ]
-        );
+        $asset = new CustomCssAsset('cms_wrestling3/vtngq900000002q7');
+        $asset->register('themes/cms_wrestling3/assets/css/vtngq900000002q7.css', [
+            'local' => true
+        ]);
         $al->registerAsset($asset);
 
-        $asset = new CssMediaQueriedAsset('cms_wrestling3/vtngq900000002q7');
-        $asset->register(
-            'themes/cms_wrestling3/assets/css/vtngq900000002q7.css',
-            [
-                'position' => Asset::ASSET_POSITION_HEADER,
-                'local' => true,
-                'version' => false,
-                'combine' => false,
-                'minify' => true,
-                'media' => 'print'
-            ]
-        );
+        $asset = new CustomCssAsset('cms_wrestling3/vtngq900000002qc');
+        $asset->register('themes/cms_wrestling3/assets/css/vtngq900000002qc.css', [
+            'local' => true
+        ]);
         $al->registerAsset($asset);
 
-        $al->register(
-            'css',
-            'cms_wrestling3/prospect',
-            'themes/cms_wrestling3/assets/css/prospect.css'
-        );
+        $asset = new CustomCssAsset('cms_wrestling3/vtngq900000002qc');
+        $asset->register('themes/cms_wrestling3/assets/css/vtngq900000002qc.css', [
+            'local' => true
+        ]);
+        $al->registerAsset($asset);
+
+        $asset = new CustomCssAsset('cms_wrestling3/prospect');
+        $asset->register('themes/cms_wrestling3/assets/css/prospect.css', [
+            'local' => true
+        ]);
+        $al->registerAsset($asset);
 
         $al->register(
             'javascript',
@@ -119,7 +102,7 @@ class PageTheme extends Theme implements ThemeProviderInterface
 //        $al->register(
 //            'javascript-inline',
 //            'cms_wrestling3/no-conflict',
-//            'var $1_12_4 = $.noConflict();' // WTF is this?
+//            'var $1_12_4 = $.noConflict();'
 //        );
 
         $al->register(
@@ -130,10 +113,11 @@ class PageTheme extends Theme implements ThemeProviderInterface
 
         $al->registerGroup('cms_wrestling3', [
             ['javascript', 'jquery'],
-            ['css-media-queried', 'cms_wrestling3/vtngq900000002qh'],
-            ['css-media-queried', 'cms_wrestling3/vtngq900000002qc'],
-            ['css-media-queried', 'cms_wrestling3/vtngq900000002q7'],
-            ['css', 'cms_wrestling3/prospect'],
+            ['css-custom', 'cms_wrestling3/vtngq900000002q2'],
+            ['css-custom', 'cms_wrestling3/vtngq900000002q7'],
+            ['css-custom', 'cms_wrestling3/vtngq900000002qc'],
+            ['css-custom', 'cms_wrestling3/vtngq900000002qh'],
+            ['css-custom', 'cms_wrestling3/prospect'],
 //            ['javascript', 'cms_wrestling3/vtngq900000002r1'], // jquery
             ['javascript', 'cms_wrestling3/vtngq900000002qw'],
             ['javascript', 'cms_wrestling3/vtngq900000002qr'],
@@ -141,6 +125,7 @@ class PageTheme extends Theme implements ThemeProviderInterface
             ['javascript', 'cms_wrestling3/vtngq900000002qm'],
             ['javascript-conditional', 'cms_wrestling3/vtngq900000002rb'],
             ['javascript', 'cms_wrestling3/vtngq900000002qw'],
+//            ['javascript-inline', 'cms_wrestling3/no-conflict'], // WTF is this?
             ['javascript', 'cms_wrestling3/prospect'],
         ]);
 

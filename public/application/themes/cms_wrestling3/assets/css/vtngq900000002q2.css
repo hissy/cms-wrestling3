@@ -226,13 +226,13 @@ div#hd_sp {
 	width: 100%;
 	margin: 0 0 143px 0;
 	padding: 0 0 1px 0;
-	background: url(/application/themes/cms_wrestling3/assets/images/hd_bg.gif) repeat-x left bottom;
+	background: url(../images/hd_bg.gif) repeat-x left bottom;
 }
 
 div#hd {
 	width: 100%;
 	padding: 0 0 1px 0;
-	background: url(/application/themes/cms_wrestling3/assets/images/hd_bg.gif) repeat-x left bottom;
+	background: url(../images/hd_bg.gif) repeat-x left bottom;
 }
 
 div#hd .hd_nav_link_sp{
@@ -256,7 +256,7 @@ div#hd .hd_nav_link ul li{
 	float: right;
 	margin: 0 0 0 10px;
 	padding: 0 0 0 18px;
-	background: url(/application/themes/cms_wrestling3/assets/images/ico_arw1.gif) no-repeat 0 center;
+	background: url(../images/ico_arw1.gif) no-repeat 0 center;
 }
 div#hd .hd_nav_link ul li a:link {
 	color: #fff;
@@ -313,8 +313,8 @@ div#hd .hd_other .other_box .btn_en a{
 	text-indent: -9999px;
 }
 
-div#hd .hd_other .other_box .btn_en a{background: url(/application/themes/cms_wrestling3/assets/images/btn_en_ot.gif) no-repeat 0 0;}
-div#hd .hd_other .other_box .btn_en a:hover{background: url(/application/themes/cms_wrestling3/assets/images/btn_en_ov.gif) no-repeat 0 0;}
+div#hd .hd_other .other_box .btn_en a{background: url(../images/btn_en_ot.gif) no-repeat 0 0;}
+div#hd .hd_other .other_box .btn_en a:hover{background: url(../images/btn_en_ov.gif) no-repeat 0 0;}
 
 div#hd .hd_other .other_box .search_box {
     display: inline;
@@ -334,7 +334,7 @@ div#hd .hd_other .other_box .search_box input.search_area{
 	border-radius: 3px;		/* CSS3草案 */
 	-webkit-border-radius: 3px;	/* Safari,Google Chrome用 */
 	-moz-border-radius: 3px;	/* Firefox用 */
-	background: url(/application/themes/cms_wrestling3/assets/images/ico_search.gif) no-repeat 3px center;
+	background: url(../images/ico_search.gif) no-repeat 3px center;
 }
 
 div#hd .hd_other .other_box .search_box a {
@@ -417,8 +417,8 @@ div#hd .hd_other .gsc-search-button img{
 
 */
 
-div#hd .hd_other .other_box .search_box a{background: url(/application/themes/cms_wrestling3/assets/images/btn_search_ot.gif) no-repeat 0 0 !important;}
-div#hd .hd_other .other_box .search_box a:hover{background: url(/application/themes/cms_wrestling3/assets/images/btn_search_ov.gif) no-repeat 0 0;}
+div#hd .hd_other .other_box .search_box a{background: url(../images/btn_search_ot.gif) no-repeat 0 0 !important;}
+div#hd .hd_other .other_box .search_box a:hover{background: url(../images/btn_search_ov.gif) no-repeat 0 0;}
 
 div#hd .hd_other .gsst_a {
 	display: none;
@@ -446,19 +446,19 @@ div#hd .hd_other .other_link li{
 }
 
 div#hd .hd_other .other_link li.other1{
-	background: url(/application/themes/cms_wrestling3/assets/images/ico_other1.gif) no-repeat 0 0;
+	background: url(../images/ico_other1.gif) no-repeat 0 0;
 }
 
 div#hd .hd_other .other_link li.other2{
-	background: url(/application/themes/cms_wrestling3/assets/images/ico_other2.gif) no-repeat 0 0;
+	background: url(../images/ico_other2.gif) no-repeat 0 0;
 }
 
 div#hd .hd_other .other_link li.other3{
-	background: url(/application/themes/cms_wrestling3/assets/images/ico_other3.gif) no-repeat 0 0;
+	background: url(../images/ico_other3.gif) no-repeat 0 0;
 }
 
 div#hd .hd_other .other_link li.other4{
-	background: url(/application/themes/cms_wrestling3/assets/images/ico_other4.gif) no-repeat 0 0;
+	background: url(../images/ico_other4.gif) no-repeat 0 0;
 }
 
 
@@ -484,23 +484,23 @@ div#hd .gnav li a{
 	text-indent: -9999px;
 }
 
-div#hd .gnav li#gnav1 a{width: 99px;background: url(/application/themes/cms_wrestling3/assets/images/gnav1_ot.gif) no-repeat 0 0;}
-div#hd .gnav li#gnav2 a{width: 115px;background: url(/application/themes/cms_wrestling3/assets/images/gnav2_ot.gif) no-repeat 0 0;}
-div#hd .gnav li#gnav3 a{width: 106px;background: url(/application/themes/cms_wrestling3/assets/images/gnav3_ot.gif) no-repeat 0 0;}
-div#hd .gnav li#gnav4 a{width: 138px;background: url(/application/themes/cms_wrestling3/assets/images/gnav4_ot.gif) no-repeat 0 0;}
-div#hd .gnav li#gnav5 a{width: 163px;background: url(/application/themes/cms_wrestling3/assets/images/gnav5_ot.gif) no-repeat 0 0;}
-div#hd .gnav li#gnav6 a{width: 106px;background: url(/application/themes/cms_wrestling3/assets/images/gnav6_ot.gif) no-repeat 0 0;}
-div#hd .gnav li#gnav7 a{width: 138px;background: url(/application/themes/cms_wrestling3/assets/images/gnav7_ot.gif) no-repeat 0 0;}
-div#hd .gnav li#gnav8 a{width: 135px;background: url(/application/themes/cms_wrestling3/assets/images/gnav8_ot.gif) no-repeat 0 0;}
+div#hd .gnav li#gnav1 a{width: 99px;background: url(../images/gnav1_ot.gif) no-repeat 0 0;}
+div#hd .gnav li#gnav2 a{width: 115px;background: url(../images/gnav2_ot.gif) no-repeat 0 0;}
+div#hd .gnav li#gnav3 a{width: 106px;background: url(../images/gnav3_ot.gif) no-repeat 0 0;}
+div#hd .gnav li#gnav4 a{width: 138px;background: url(../images/gnav4_ot.gif) no-repeat 0 0;}
+div#hd .gnav li#gnav5 a{width: 163px;background: url(../images/gnav5_ot.gif) no-repeat 0 0;}
+div#hd .gnav li#gnav6 a{width: 106px;background: url(../images/gnav6_ot.gif) no-repeat 0 0;}
+div#hd .gnav li#gnav7 a{width: 138px;background: url(../images/gnav7_ot.gif) no-repeat 0 0;}
+div#hd .gnav li#gnav8 a{width: 135px;background: url(../images/gnav8_ot.gif) no-repeat 0 0;}
 
-div#hd .gnav li#gnav1 a:hover{background: url(/application/themes/cms_wrestling3/assets/images/gnav1_ov.gif) no-repeat 0 0;}
-div#hd .gnav li#gnav2 a:hover{background: url(/application/themes/cms_wrestling3/assets/images/gnav2_ov.gif) no-repeat 0 0;}
-div#hd .gnav li#gnav3 a:hover{background: url(/application/themes/cms_wrestling3/assets/images/gnav3_ov.gif) no-repeat 0 0;}
-div#hd .gnav li#gnav4 a:hover{background: url(/application/themes/cms_wrestling3/assets/images/gnav4_ov.gif) no-repeat 0 0;}
-div#hd .gnav li#gnav5 a:hover{background: url(/application/themes/cms_wrestling3/assets/images/gnav5_ov.gif) no-repeat 0 0;}
-div#hd .gnav li#gnav6 a:hover{background: url(/application/themes/cms_wrestling3/assets/images/gnav6_ov.gif) no-repeat 0 0;}
-div#hd .gnav li#gnav7 a:hover{background: url(/application/themes/cms_wrestling3/assets/images/gnav7_ov.gif) no-repeat 0 0;}
-div#hd .gnav li#gnav8 a:hover{background: url(/application/themes/cms_wrestling3/assets/images/gnav8_ov.gif) no-repeat 0 0;}
+div#hd .gnav li#gnav1 a:hover{background: url(../images/gnav1_ov.gif) no-repeat 0 0;}
+div#hd .gnav li#gnav2 a:hover{background: url(../images/gnav2_ov.gif) no-repeat 0 0;}
+div#hd .gnav li#gnav3 a:hover{background: url(../images/gnav3_ov.gif) no-repeat 0 0;}
+div#hd .gnav li#gnav4 a:hover{background: url(../images/gnav4_ov.gif) no-repeat 0 0;}
+div#hd .gnav li#gnav5 a:hover{background: url(../images/gnav5_ov.gif) no-repeat 0 0;}
+div#hd .gnav li#gnav6 a:hover{background: url(../images/gnav6_ov.gif) no-repeat 0 0;}
+div#hd .gnav li#gnav7 a:hover{background: url(../images/gnav7_ov.gif) no-repeat 0 0;}
+div#hd .gnav li#gnav8 a:hover{background: url(../images/gnav8_ov.gif) no-repeat 0 0;}
 
 
 div#hd .gnav li#gnav1 div.sub,
@@ -637,7 +637,7 @@ div#hd .gnav li#gnav8 div.sub ul li a{
 	width: auto;
 	height: auto;
 	padding: 0 0 0 21px;
-	background: url(/application/themes/cms_wrestling3/assets/images/ico_arw2.gif) no-repeat 0 .35em;
+	background: url(../images/ico_arw2.gif) no-repeat 0 .35em;
 	font-size: 117%;
 	text-indent: 0;
 }
@@ -660,7 +660,7 @@ div#hd .gnav li#gnav8 div.sub ul li.arw_small a{
 	height: auto;
 	margin: 0 0 0 0;
 	padding: 0 0 0 15px;
-	background: url(/application/themes/cms_wrestling3/assets/images/ico_arw3.gif) no-repeat 0 .55em;
+	background: url(../images/ico_arw3.gif) no-repeat 0 .55em;
 	font-size: 100%;
 	text-indent: 0;
 }
@@ -695,9 +695,9 @@ div#hd .gnav li#gnav8 div.sub ul li.arw_small a{
 	filter: alpha(opacity=0);
 	-ms-filter: "alpha(opacity=0)";
 }
-.font_s #font_change li#font_s { width:25px; height: 24px; background: url(/application/themes/cms_wrestling3/assets/images/txt_size1_ov.gif) no-repeat;}
-.font_m #font_change li#font_m { width:25px; height: 24px; background: url(/application/themes/cms_wrestling3/assets/images/txt_size2_ov.gif) no-repeat;}
-.font_l #font_change li#font_l { width:25px; height: 24px; background: url(/application/themes/cms_wrestling3/assets/images/txt_size3_ov.gif) no-repeat;}
+.font_s #font_change li#font_s { width:25px; height: 24px; background: url(../images/txt_size1_ov.gif) no-repeat;}
+.font_m #font_change li#font_m { width:25px; height: 24px; background: url(../images/txt_size2_ov.gif) no-repeat;}
+.font_l #font_change li#font_l { width:25px; height: 24px; background: url(../images/txt_size3_ov.gif) no-repeat;}
 
 
 /* --------------------------------------------------------------------------------------
@@ -717,7 +717,7 @@ div#hd .gnav li#gnav8 div.sub ul li.arw_small a{
 	float: left;
 	margin: 0 10px 0 0;
 	padding: 0 16px 0 0;
-	background: url(/application/themes/cms_wrestling3/assets/images/ico_arw5.gif) no-repeat right center;
+	background: url(../images/ico_arw5.gif) no-repeat right center;
 }
 
 
@@ -729,7 +729,7 @@ div#hd .gnav li#gnav8 div.sub ul li.arw_small a{
 	width: 100%;
 	height: 80px;
 	margin: 60px 0 0 0;
-	background: url(/application/themes/cms_wrestling3/assets/images/bg_pagetop.gif) repeat-x left top;
+	background: url(../images/bg_pagetop.gif) repeat-x left top;
 }
 
 .pagetop p{
@@ -747,8 +747,8 @@ div#hd .gnav li#gnav8 div.sub ul li.arw_small a{
 	text-indent: -9999px;
 }
 
-.pagetop a{background: url(/application/themes/cms_wrestling3/assets/images/pagetop_ot.gif) no-repeat 0 0;}
-.pagetop a:hover{background: url(/application/themes/cms_wrestling3/assets/images/pagetop_ov.gif) no-repeat 0 0;}
+.pagetop a{background: url(../images/pagetop_ot.gif) no-repeat 0 0;}
+.pagetop a:hover{background: url(../images/pagetop_ov.gif) no-repeat 0 0;}
 
 div#ft_sp {
 	display: none;
@@ -787,7 +787,7 @@ div#ft .ft_nav ul{
 div#ft .ft_nav ul li{
 	margin: 0 0 0 0;
 	padding: 0 0 0 25px;
-	background: url(/application/themes/cms_wrestling3/assets/images/ico_arw2.gif) no-repeat 0 .2em;
+	background: url(../images/ico_arw2.gif) no-repeat 0 .2em;
 }
 div#ft .ft_nav ul li img{
 	vertical-align: middle;
@@ -802,7 +802,7 @@ div#ft .ft_nav ul li ul{
 div#ft .ft_nav ul li ul li{
 	margin: 0 0 0 0;
 	padding: 0 0 9px 14px;
-	background: url(/application/themes/cms_wrestling3/assets/images/ico_arw3.gif) no-repeat 0 .45em;
+	background: url(../images/ico_arw3.gif) no-repeat 0 .45em;
 	font-size: 87%;
 }
 
@@ -837,7 +837,7 @@ div#ft .copy_box ul li{
 	float: left;
 	margin: 0 10px 0 0;
 	padding: 0 0 0 11px;
-	background: url(/application/themes/cms_wrestling3/assets/images/ico_arw4.gif) no-repeat 0 center;
+	background: url(../images/ico_arw4.gif) no-repeat 0 center;
 }
 div#ft .copy_box ul li a:link {
 	color: #fff;
@@ -870,7 +870,7 @@ div#ft .copy_box ul li a:active {
 	min-height: 44px;
 	margin: 0 0 26px 0;
 	padding: 6px 0 4px 65px;
-	background: url(/application/themes/cms_wrestling3/assets/images/ttl_ico1.gif) no-repeat 0 0;
+	background: url(../images/ttl_ico1.gif) no-repeat 0 0;
 	font-size: 171%;
 	font-family: "Hiragino Mincho ProN", "ヒラギノ明朝 Pro W3", "HGS明朝E","ＭＳ Ｐ明朝", "MS PMincho", serif;
 }
@@ -939,27 +939,27 @@ div#ft .copy_box ul li a:active {
 
 #ct_left ul li.active{
 	display: block;
-	background: url(/application/themes/cms_wrestling3/assets/images/side_bg_hover.gif) repeat-x left top;
+	background: url(../images/side_bg_hover.gif) repeat-x left top;
 }
 
 #ct_left ul li span{
 	display: block;
 	margin: -1px 0 0 0;
-	background: url(/application/themes/cms_wrestling3/assets/images/ico_arw2.gif) no-repeat 20px 1.1em;
+	background: url(../images/ico_arw2.gif) no-repeat 20px 1.1em;
 	line-height: 20px;
 }
 
 #ct_left ul.arw_small li span{
 	display: block;
 	margin: -1px 0 0 0;
-	background: url(/application/themes/cms_wrestling3/assets/images/ico_arw3.gif) no-repeat 24px 1.4em;
+	background: url(../images/ico_arw3.gif) no-repeat 24px 1.4em;
 	line-height: 20px;
 }
 
 #ct_left ul li a{
 	display: block;
 	padding: 11px 5px 13px 44px;
-	background: url(/application/themes/cms_wrestling3/assets/images/line_dot1.gif) repeat-x left top;
+	background: url(../images/line_dot1.gif) repeat-x left top;
 }
 
 /* 階層2 */
@@ -977,18 +977,18 @@ div#ft .copy_box ul li a:active {
 #ct_left ul ul li.active{
 	display: block;
 	padding: 10px 0 3px 30px;
-	background: url(/application/themes/cms_wrestling3/assets/images/side_bg_hover2.gif) repeat-x left top;
+	background: url(../images/side_bg_hover2.gif) repeat-x left top;
 }
 
 #ct_left ul ul li.active a{
 	padding: 0 0 0 14px;
-	background: url(/application/themes/cms_wrestling3/assets/images/ico_arw3.gif) no-repeat 0 .55em;
+	background: url(../images/ico_arw3.gif) no-repeat 0 .55em;
 }
 
 #ct_left ul ul li{
 	margin: 0 0 7px 0;
 	padding: 0 5px 0 44px;
-	background: url(/application/themes/cms_wrestling3/assets/images/ico_arw3.gif) no-repeat 30px .55em;
+	background: url(../images/ico_arw3.gif) no-repeat 30px .55em;
 }
 
 #ct_left ul ul li a{
