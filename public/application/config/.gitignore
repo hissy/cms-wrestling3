@@ -1,1 +1,4 @@
-*.php
+doctrine/proxies
+generated_overrides
+database.php
+*.database.php
