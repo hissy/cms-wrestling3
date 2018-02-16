@@ -7,6 +7,24 @@ if ($app->isInstalled() && $app->isRunThroughCommandLineInterface()) {
     $console->add(new \Application\Console\Command\ImageOptimizeCommand());
 }
 
+if ($app->isInstalled() && \Concrete\Core\User\User::isLoggedIn() != true) {
+    /** @var \Symfony\Component\EventDispatcher\EventDispatcherInterface $director */
+    $director = $app['director'];
+    $director->addListener('on_page_output', function ($event) {
+        /** @var \Symfony\Component\EventDispatcher\GenericEvent $event */
+        $contents = $event->getArgument('contents');
+        $minifier = new \zz\Html\HTMLMinify($contents, [
+            'doctype' => \zz\Html\HTMLMinify::DOCTYPE_XHTML1,
+            'optimizationLevel' => \zz\Html\HTMLMinify::OPTIMIZATION_ADVANCED,
+            'emptyElementAddSlash' => false,
+            'emptyElementAddWhitespaceBeforeSlash' => false,
+            'removeComment' => true,
+            'removeDuplicateAttribute' => true,
+        ]);
+        $event->setArgument('contents', $minifier->process());
+    });
+}
+
 /*
  * ----------------------------------------------------------------------------
  * # Custom Application Handler
