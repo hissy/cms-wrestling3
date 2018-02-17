@@ -125,9 +125,9 @@ class PageTheme extends Theme implements ThemeProviderInterface
 
         $al->registerGroup('cms_wrestling3', [
             ['css-custom', 'cms_wrestling3/vtngq900000002q2'],
-            ['css-custom', 'cms_wrestling3/vtngq900000002q7'],
-            ['css-custom', 'cms_wrestling3/vtngq900000002qc'],
             ['css-custom', 'cms_wrestling3/vtngq900000002qh'],
+            ['css-custom', 'cms_wrestling3/vtngq900000002qc'],
+            ['css-custom', 'cms_wrestling3/vtngq900000002q7'],
             ['css-custom', 'cms_wrestling3/prospect'],
             ['javascript', 'jquery'],
             ['javascript', 'lazysizes'],
