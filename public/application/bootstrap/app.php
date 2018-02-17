@@ -7,9 +7,10 @@ if ($app->isInstalled() && $app->isRunThroughCommandLineInterface()) {
     $console->add(new \Application\Console\Command\ImageOptimizeCommand());
 }
 
+/** @var \Symfony\Component\EventDispatcher\EventDispatcherInterface $director */
+$director = $app['director'];
+
 if ($app->isInstalled() && \Concrete\Core\User\User::isLoggedIn() != true) {
-    /** @var \Symfony\Component\EventDispatcher\EventDispatcherInterface $director */
-    $director = $app['director'];
     $director->addListener('on_page_output', function ($event) {
         /** @var \Symfony\Component\EventDispatcher\GenericEvent $event */
         $contents = $event->getArgument('contents');
@@ -22,6 +23,38 @@ if ($app->isInstalled() && \Concrete\Core\User\User::isLoggedIn() != true) {
             'removeDuplicateAttribute' => true,
         ]);
         $event->setArgument('contents', $minifier->process());
+    });
+}
+
+if ($app->isInstalled() && \Concrete\Core\User\User::isLoggedIn() == true) {
+    $director->addListener('on_file_version_add', function ($event) use ($app) {
+        $nh = $app->make('helper/number');
+
+        /** @var \Concrete\Core\Entity\File\Version $fv */
+        $fv = $event->getFileVersionObject();
+
+        /** @var Concrete\Core\Entity\File\StorageLocation\StorageLocation $fsl */
+        $fsl = $fv->getFile()->getFileStorageLocationObject();
+        $fsc = $fsl->getConfigurationObject();
+        if ($fsc instanceof \Concrete\Core\File\StorageLocation\Configuration\LocalConfiguration) {
+            $path = $fv->getFileResource()->getPath();
+            $item = $fsc->getRootPath() . '/' . $path;
+//dd($item);
+            $factory = new \ImageOptimizer\OptimizerFactory($app['config']->get('concrete.assets.optimize'));
+            $optimizer = $factory->get();
+
+            $before = filesize($item);
+            $optimizer->optimize($item);
+            clearstatcache();
+            $after = filesize($item);
+            \Log::info(sprintf(
+                '%s reduced %s -> %s (%d %%)',
+                $path,
+                $nh->formatSize($before, 'KB'),
+                $nh->formatSize($after, 'KB'),
+                100 - $nh->flexround($after / $before * 100)
+            ));
+        }
     });
 }
 
