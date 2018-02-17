@@ -314,10 +314,13 @@ return;
 //preload images
 var images = [];
 $("a img,:image").each(function(index){
-if($(this).attr("src").match(/_ot./)){
-images[index]= new Image();
-images[index].src = $(this).attr("src").replace("_ov.", "_ot.");
-}
+	var src = $(this).attr("src");
+	if (src) {
+        if (src.match(/_ot./)) {
+            images[index] = new Image();
+            images[index].src = $(this).attr("src").replace("_ov.", "_ot.");
+        }
+    }
 });
 });
 })(jQuery);

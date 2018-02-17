@@ -11,7 +11,8 @@ jQuery(function($) {
 	(function() {
 		var $mv = $('#js-mv');
 		var mv_style = $mv.attr('style');
-		var mv_img = mv_style.match(/background-image: ?url\((.*)\)/)[1];
+		// var mv_img = mv_style.match(/background-image: ?url\((.*)\)/)[1];
+		var mv_img = $mv.data('bg-pc');
 		var mv_img_sp = $mv.data('bg-sp');
 
 		$w.on({

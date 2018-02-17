@@ -111,13 +111,26 @@ class PageTheme extends Theme implements ThemeProviderInterface
             'themes/cms_wrestling3/assets/js/prospect.js'
         );
 
+        $al->register(
+            'javascript',
+            'lazysizes',
+            'http://afarkas.github.io/lazysizes/lazysizes.min.js',
+            [
+                'position' => Asset::ASSET_POSITION_HEADER,
+                'local' => false,
+                'combine' => false,
+                'minify' => false
+            ]
+        );
+
         $al->registerGroup('cms_wrestling3', [
-            ['javascript', 'jquery'],
             ['css-custom', 'cms_wrestling3/vtngq900000002q2'],
             ['css-custom', 'cms_wrestling3/vtngq900000002q7'],
             ['css-custom', 'cms_wrestling3/vtngq900000002qc'],
             ['css-custom', 'cms_wrestling3/vtngq900000002qh'],
             ['css-custom', 'cms_wrestling3/prospect'],
+            ['javascript', 'jquery'],
+            ['javascript', 'lazysizes'],
 //            ['javascript', 'cms_wrestling3/vtngq900000002r1'], // jquery
             ['javascript', 'cms_wrestling3/vtngq900000002qw'],
             ['javascript', 'cms_wrestling3/vtngq900000002qr'],
@@ -134,7 +147,18 @@ class PageTheme extends Theme implements ThemeProviderInterface
         $this->providesAsset('javascript-conditional', 'respond');
 
         $r = ResponseAssetGroup::get();
-        $r->addHeaderAsset(new HeadLink($this->getThemeURL() . '/assets/images/favicon.ico', 'shortcut icon'));
+        $r->addHeaderAsset(new HeadLink(
+            $this->getThemeURL() . '/assets/images/favicon.ico',
+            'shortcut icon'
+        ));
+        $r->addHeaderAsset((new HeadLink(
+            $this->getThemeURL() . '/assets/vtngq9000000009n-img/logo_sp.gif',
+            'preload'
+        ))->setAttribute('as', 'image'));
+        $r->addHeaderAsset((new HeadLink(
+            $this->getThemeURL() . '/assets/vtngq9000000009n-img/logo_new.gif',
+            'preload'
+        ))->setAttribute('as', 'image'));
     }
 
     public function getThemeAreaLayoutPresets()

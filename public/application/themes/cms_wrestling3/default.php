@@ -441,7 +441,7 @@
             $spURL = $thumb->getThumbnailURL('sp');
         }
         ?>
-        <div class="section mv" id="js-mv" style="background-image: url(<?=h($fullURL)?>);" data-bg-sp="<?=h($spURL)?>">
+        <div class="section mv" id="js-mv" data-bg-pc="<?=h($fullURL)?>" data-bg-sp="<?=h($spURL)?>">
         <?php
         $a = new Area('Main Image');
         $a->display($c);
@@ -523,7 +523,7 @@
                                 <div class="btn">
                                     <a href="http://kouhou.tsuda.ac.jp/strengths/" target="_blank">
                                         <b class="click"><span>CLICK!</span></b>
-                                        <span class="image"><img src="<?php echo $view->getThemePath()?>/assets/hak1k3000000gw81/hak1k3000000gw86.jpg" alt="データで見る 津田塾大学の強み" width="331" height="220" /></span>
+                                        <span class="image"><img class="lazyload" data-src="<?php echo $view->getThemePath()?>/assets/hak1k3000000gw81/hak1k3000000gw86.jpg" alt="データで見る 津田塾大学の強み" width="331" height="220" /></span>
                                     </a>
 
 
@@ -637,25 +637,25 @@
                                 <li>
                                     <a href="/faculty/dept-eng/index.html">
                                         <span class="text">英文学科</span><span class="circle"></span>
-                                        <img src="<?php echo $view->getThemePath()?>/assets/hak1k3000000gw81/hak1k3000000gw8i.png" alt="" width="302" height="302" />
+                                        <img class="lazyload" data-src="<?php echo $view->getThemePath()?>/assets/hak1k3000000gw81/hak1k3000000gw8i.png" alt="" width="302" height="302" />
                                     </a>
                                 </li>
                                 <li>
                                     <a href="/faculty/dept-inti/index.html">
                                         <span class="text">国際<br />関係学科</span><span class="circle"></span>
-                                        <img src="<?php echo $view->getThemePath()?>/assets/hak1k3000000gw81/hak1k3000000gw8k.png" alt="" width="302" height="302" />
+                                        <img class="lazyload" data-src="<?php echo $view->getThemePath()?>/assets/hak1k3000000gw81/hak1k3000000gw8k.png" alt="" width="302" height="302" />
                                     </a>
                                 </li>
                                 <li>
                                     <a href="/faculty/dept-math/index.html">
                                         <span class="text">数学科</span><span class="circle"></span>
-                                        <img src="<?php echo $view->getThemePath()?>/assets/hak1k3000000gw81/hak1k3000000gw8m.png" alt="" width="302" height="302" />
+                                        <img class="lazyload" data-src="<?php echo $view->getThemePath()?>/assets/hak1k3000000gw81/hak1k3000000gw8m.png" alt="" width="302" height="302" />
                                     </a>
                                 </li>
                                 <li>
                                     <a href="/faculty/dept-cs/index.html">
                                         <span class="text">情報科学科</span><span class="circle"></span>
-                                        <img src="<?php echo $view->getThemePath()?>/assets/hak1k3000000gw81/hak1k3000000gw8o.png" alt="" width="302" height="302" />
+                                        <img class="lazyload" data-src="<?php echo $view->getThemePath()?>/assets/hak1k3000000gw81/hak1k3000000gw8o.png" alt="" width="302" height="302" />
                                     </a>
                                 </li>
                             </ul>
@@ -666,7 +666,7 @@
                                 <li>
                                     <a href="/faculty/dept-ps/index.html">
                                         <span class="text">総合<br />政策学科</span><span class="circle"></span>
-                                        <img src="<?php echo $view->getThemePath()?>/assets/hak1k3000000gw81/hak1k3000000gw8q.png" alt="" width="302" height="302" />
+                                        <img class="lazyload" data-src="<?php echo $view->getThemePath()?>/assets/hak1k3000000gw81/hak1k3000000gw8q.png" alt="" width="302" height="302" />
                                     </a>
                                 </li>
                             </ul>
@@ -712,8 +712,8 @@
                     <h2 class="section_hdg"><span lang="en">CAREER</span><span lang="ja">キャリア・就職</span></h2>
                     <div class="btn_area">
                         <div class="upper">
-                            <div class="btn"><a href="/career/feature/index.html" class="link_btn"><span><span><img src="<?php echo $view->getThemePath()?>/assets/hak1k3000000gw81/hak1k3000000gw88.png" alt="" width="90" height="106" />進路の特徴</span></span></a></div>
-                            <div class="btn"><a href="/career/support/index.html" class="link_btn"><span><span><img src="<?php echo $view->getThemePath()?>/assets/hak1k3000000gw81/hak1k3000000gw8a.png" alt="" width="92" height="106" />進路サポート体制</span></span></a></div>
+                            <div class="btn"><a href="/career/feature/index.html" class="link_btn"><span><span><img class="lazyload" data-src="<?php echo $view->getThemePath()?>/assets/hak1k3000000gw81/hak1k3000000gw88.png" alt="" width="90" height="106" />進路の特徴</span></span></a></div>
+                            <div class="btn"><a href="/career/support/index.html" class="link_btn"><span><span><img class="lazyload" data-src="<?php echo $view->getThemePath()?>/assets/hak1k3000000gw81/hak1k3000000gw8a.png" alt="" width="92" height="106" />進路サポート体制</span></span></a></div>
                             <div class="balloon support">
                                 <div class="row">
 
@@ -730,8 +730,8 @@
                             </div>
                         </div>
                         <div class="lower">
-                            <div class="btn"><a href="/career/employment/index.html" class="link_btn"><span><span><img src="<?php echo $view->getThemePath()?>/assets/hak1k3000000gw81/hak1k3000000gw8c.png" alt="" width="84" height="106" />就職先</span></span></a></div>
-                            <div class="btn"><a href="/career/grad-school/index.html" class="link_btn"><span><span><img src="<?php echo $view->getThemePath()?>/assets/hak1k3000000gw81/hak1k3000000gw8e.png" alt="" width="96" height="106" />進学先</span></span></a></div>
+                            <div class="btn"><a href="/career/employment/index.html" class="link_btn"><span><span><img class="lazyload" data-src="<?php echo $view->getThemePath()?>/assets/hak1k3000000gw81/hak1k3000000gw8c.png" alt="" width="84" height="106" />就職先</span></span></a></div>
+                            <div class="btn"><a href="/career/grad-school/index.html" class="link_btn"><span><span><img class="lazyload" data-src="<?php echo $view->getThemePath()?>/assets/hak1k3000000gw81/hak1k3000000gw8e.png" alt="" width="96" height="106" />進学先</span></span></a></div>
                             <div class="balloon job">
                                 <div class="row">
 
@@ -808,7 +808,7 @@
                         <div class="btn">
                             <a href="http://pg.tsuda.ac.jp/" target="_blank">
                                 <b class="click"><span>CLICK!</span></b>
-                                <span class="image"><img src="<?php echo $view->getThemePath()?>/assets/hak1k3000000gw81/hak1k3000000gw8g.png" alt="キャンパスと世界のいまを伝える plum garden" width="400" height="100" /></span>
+                                <span class="image"><img class="lazyload" data-src="<?php echo $view->getThemePath()?>/assets/hak1k3000000gw81/hak1k3000000gw8g.png" alt="キャンパスと世界のいまを伝える plum garden" width="400" height="100" /></span>
                             </a>
                         </div>
                     </div>
@@ -1058,8 +1058,8 @@
 <div id="ft_sp">
     <div class="clearfix">
         <div id="ft_btn" class="clearfix">
-            <p class="search_area_sp"><a href="javascript:void(0)"><img src="<?php echo $view->getThemePath()?>/assets/images/btn_search_sp.gif" width="148" height="54" alt="検索" /></a></p>
-            <p class="ft_nav_sp"><a href="javascript:void(0)"><img src="<?php echo $view->getThemePath()?>/assets/images/btn_nav_sp.gif" width="148" height="54" alt="メニュー" /></a></p>
+            <p class="search_area_sp"><a href="javascript:void(0)"><img class="lazyload" data-src="<?php echo $view->getThemePath()?>/assets/images/btn_search_sp.gif" width="148" height="54" alt="検索" /></a></p>
+            <p class="ft_nav_sp"><a href="javascript:void(0)"><img class="lazyload" data-src="<?php echo $view->getThemePath()?>/assets/images/btn_nav_sp.gif" width="148" height="54" alt="メニュー" /></a></p>
         </div>
     </div>
 
