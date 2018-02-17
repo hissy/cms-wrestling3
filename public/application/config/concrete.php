@@ -27,7 +27,8 @@ return [
         'optimize' => [
             'jpegoptim_options' => [
                 '--strip-all',
-                '--all-progressive'
+                '--all-progressive',
+                '--max=75'
             ],
             'optipng_options' => [
                 '-o7',
@@ -35,7 +36,8 @@ return [
             ],
             'gifsicle_options' => [
                 '-O3',
-                '-b'
+                '-b',
+                '--color=128'
             ]
         ]
     ],

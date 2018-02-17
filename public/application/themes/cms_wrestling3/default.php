@@ -7,6 +7,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo Localization::activeLanguage() ?>" lang="<?php echo Localization::activeLanguage() ?>">
 <head>
+    <meta name="viewport" content="width=device-width,user-scalable=yes" />
     <?php
     View::element('header_required', [
         'pageTitle' => isset($pageTitle) ? $pageTitle : '',
