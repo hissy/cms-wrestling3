@@ -38,5 +38,10 @@ return [
                 '-b'
             ]
         ]
+    ],
+    'cache' => [
+        'page' => array(
+            'adapter' => 'memcached',
+        ),
     ]
 ];
