@@ -431,36 +431,21 @@
     </ul>
 
     <div id="ct_area" class="clearfix">
-
-
-        <div class="section mv" id="js-mv" style="background-image: url(/application/themes/cms_wrestling3/assets/prospect/hak1k3000000gxks-img/main1.jpg);" data-bg-sp="/prospect/hak1k3000000gxks-img/mainsp.jpg">
-            <div class="section_inner">
-                <h1 class="copy">
-                    <a href="/about/index.html">
-
-
-                        <span class="main_copy" lang="en">MAKE A<br />DIFFERENCE</span>
-                        <span class="sub_copy">津田塾でなりたい自分を発見しよう</span>
-                    </a>
-                </h1>
-            </div>
-
-
-            <div class="nav_menu" id="js-nav_menu">
-                <ul class="anchor_list" id="js-anchor_list">
-                    <ul>
-                        <li><a href="#admission" id="anchor_admission"><span><span>入試･入学<br />
-    情報</span></span></a></li>
-                        <li><a href="#learning" id="anchor_learning"><span><span>津田塾の<br />
-    学び</span></span></a></li>
-                        <li><a href="#career" id="anchor_career"><span><span>キャリア<br />
-    就職</span></span></a></li>
-                        <li><a href="#campus" id="anchor_campus"><span><span>キャンパス<br />
-    ライフ</span></span></a></li>
-                    </ul>
-                </ul>
-                <p class="link"><a href="/admission/request/index.html"><span>資料･願書<br />請求</span></a></p>
-            </div>
+        <?php
+        $fullURL = '';
+        $spURL = '';
+        /** @var \Concrete\Core\Entity\File\File|\Concrete\Core\Entity\File\Version $thumb */
+        $thumb = $c->getAttribute('thumbnail');
+        if ($thumb) {
+            $fullURL = $thumb->getURL();
+            $spURL = $thumb->getThumbnailURL('sp');
+        }
+        ?>
+        <div class="section mv" id="js-mv" style="background-image: url(<?=h($fullURL)?>);" data-bg-sp="<?=h($spURL)?>">
+        <?php
+        $a = new Area('Main Image');
+        $a->display($c);
+        ?>
         </div>
 
 
@@ -779,27 +764,23 @@
 
         <div class="section campus" id="campus">
             <div class="section_inner">
-                <ul class="bg_list" id="js-bg_list">
-
-                    <li style="background-image: url(/application/themes/cms_wrestling3/assets/prospect/hak1k3000000gxks-img/image1.jpg);"></li>
-
-                    <li style="background-image: url(/application/themes/cms_wrestling3/assets/prospect/hak1k3000000gxks-img/image2.jpg);"></li>
-
-                    <li style="background-image: url(/application/themes/cms_wrestling3/assets/prospect/hak1k3000000gxks-img/image3.jpg);"></li>
-
-                    <li style="background-image: url(/application/themes/cms_wrestling3/assets/prospect/hak1k3000000gxks-img/image4.jpg);"></li>
-
-                    <li style="background-image: url(/application/themes/cms_wrestling3/assets/prospect/hak1k3000000gxks-img/image5.jpg);"></li>
-
-                    <li style="background-image: url(/application/themes/cms_wrestling3/assets/prospect/hak1k3000000gxks-img/image6.jpg);"></li>
-
-                    <li style="background-image: url(/application/themes/cms_wrestling3/assets/prospect/hak1k3000000gxks-img/image7.jpg);"></li>
-
-                    <li style="background-image: url(/application/themes/cms_wrestling3/assets/prospect/hak1k3000000gxks-img/image8.jpg);"></li>
-
-                    <li style="background-image: url(/application/themes/cms_wrestling3/assets/prospect/hak1k3000000gxks-img/image9.jpg);"></li>
-
-                </ul>
+                <?php
+                if ($c->isEditMode()) {
+                    ?>
+                    <style>
+                        body.prospect div#ct_area .section.campus {
+                            background-color: rgba(0, 0, 0, 0.4);
+                        }
+                        body.prospect div#ct_area .section.campus:before,
+                        body.prospect div#ct_area .section.campus:after {
+                            position: relative;
+                        }
+                    </style>
+                    <?php
+                }
+                $a = new Area('Campus Image');
+                $a->display($c);
+                ?>
                 <div class="container">
                     <h2 class="section_hdg"><span lang="en">CAMPUS</span><span lang="ja">キャンパスライフ</span></h2>
                     <ul class="link_list">
